@@ -1,0 +1,76 @@
+/* Resetting some defaults so we can define things manually */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia";
+}
+
+/* Styling our header */
+header {
+  background-color: black;
+  text-align: center;
+  color: white;
+  height: 100px;
+  padding: 10px;
+}
+
+
+.title {
+  padding: 20px;
+}
+
+.wrapper {
+  flex-grow: 1; /* The div will now grow to fill the available space */
+
+  /* TODO make sure the minimum height of the wrapper is such that it fills the remaining space */
+  /* NB we are going to do this in a slightly hacky way */
+  /* vh is the viewheight, you should use this VERY sparingly, this situation is ok because we're limiting what the user can do */
+  /* we'll minus 150px as this is the height we have manually defined the header and footer to be combined (100px + 50px)*/
+  /* If we changed the height of the header and footer we'd have to change this here too! */
+  min-height: calc(100vh - 150px);
+}
+
+svg {
+  background-color: #444;
+  font-family: "Georgia";
+  
+}
+
+/* TODO illustrate how to use css classes to interact with d3 elements */
+
+/* TODO update the stylings so the web page is more aesthetically pleasing. As a bare minimum change the backgroud colours of the left and right panel */
+
+  #map-wrap { 
+    margin: 0 32px; 
+    border-radius: 12px; 
+
+  }
+
+  #map-svg {
+    width: 100%;
+    height: auto;
+  }
+
+  #legend { 
+    display: inline-flex; 
+
+    flex-direction: row;
+  gap: 48px;
+  padding: 14px 32px 28px;
+  }
+
+
+  .legend-swatch { 
+    width: 28px; 
+    height: 20px; 
+    border-radius: 2px; 
+    flex-direction: row;
+    display: inline-flex;
+  }
+
+  .space {
+    color: white
+  }
+

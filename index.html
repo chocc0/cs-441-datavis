@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Radial Graph</title>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> Not using yet -->
+  <head>
+    <title>Pollution &amp; People of Color — City Map</title>
+    <link rel="stylesheet" type="text/css" href="map-styles.css" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
-</head>
-<body>
-    <svg id="radar"></svg>
-    <script src="radar.js"></script>
-</body>
+  </head>
+  <body>
+  <header>
+    <h1>Pollution &amp; People of Color — US Cities</h1>
+    <p>CO₂ per capita, ozone levels, and POC gap index across 265 US cities</p>
+  </header>
+  <main class="wrapper">
+    <div id="map-wrap">
+      <svg id="map-svg" viewBox="0 0 960 560"></svg>
+    </div>
+    
+    <div id="legend">
+        <div class="legend-block">
+    <div class="legend-title">POC gap index (color)</div>
+    <div class="legend-minmax" style="width:200px;" id="color-min"></div>
+    <div class="legend-bar" id="color-bar" width="200" height="32"></div>
+    <div class="legend-minmax" style="width:200px;" id="color-max"></div>
+  </div>
+  <div class="legend-block">
+    <div class="legend-title">CO₂ per capita — metric tons (size)</div>
+        <div class="legend-text" style="width:200px;" id="size-min"></div>
+
+    <svg id="size-legend-svg" width="200" height="32"></svg>
+     <div class="legend-text" style="width:200px;" id="size-max"></div>
+   
+  </div>
+    </div>
+  
+  </main>
+  <!--Map help from Claude AI-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  <script src="map.js"></script>
+  </body>
 </html>
