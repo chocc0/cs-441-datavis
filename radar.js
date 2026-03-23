@@ -93,7 +93,7 @@ function drawAtlantaRadial(data) {
             .attr("y", -radius-(radius/5)) // -radius goes up bc y=0 is center, radius/5 aligns text
             .attr("text-anchor", "middle")
             .attr("font-size", "x-large")
-            .text("High School Graduation Rate by Race");
+            .text("Atlanta: High School Graduation Rate by Race");
 }
 
 // Determines how labels align with spokes
