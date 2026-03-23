@@ -28,18 +28,41 @@ function drawAtlantaRadial(data) {
     const race = ["Asian", "Black", "Hispanic", "Other", "White"];
     const spoke = (2 * Math.PI) / race.length;
 
-    // Draw concentric grid rings
-    for (let ring=1; ring<=10; ring++) { // 10% increments
+    // Draw concentric grid rings (DOTTED)
+    for (let ring=1; ring<=10; ring+=2) { // 10% increments
         
-        let increments = ""; // x,y values for each spoke's increments (rings)
+        let increments1 = ""; // x,y values for each spoke's increments (rings)
         for (let i=0; i<race.length; i++) {
-            increments += ( Math.cos(spoke*i) * radius * (ring/10) ) + "," + 
+            increments1 += ( Math.cos(spoke*i) * radius * (ring/10) ) + "," + 
                 ( Math.sin(spoke*i) * radius * (ring/10) ) + " ";
         }
         chart.append("polygon") // rings
-            .attr("points", increments)
+            .attr("points", increments1)
             .attr("fill", "none")
-            .attr("stroke", "#767676");
+            .attr("stroke", "#767676")
+            .style("stroke-dasharray", ("2, 2"))
+            .style("opacity", 0.5);
+        chart.append("text") // % labels
+            .attr("x", (radius*ring/10)-(radius/12)) // radius/12 aligns text
+            .attr("y", 0)
+            .attr("font-size", "xx-small")
+            .style("opacity", 0.7)
+            .text(ring*10 + "%");
+    }
+    // Draw concentric grid rings (DASHED) 
+    for (let ring=2; ring<=10; ring+=2) { // 10% increments
+        
+        let increments2 = ""; // x,y values for each spoke's increments (rings)
+        for (let i=0; i<race.length; i++) {
+            increments2 += ( Math.cos(spoke*i) * radius * (ring/10) ) + "," + 
+                ( Math.sin(spoke*i) * radius * (ring/10) ) + " ";
+        }
+        chart.append("polygon") // rings
+            .attr("points", increments2)
+            .attr("fill", "none")
+            .attr("stroke", "#767676")
+            .style("stroke-dasharray", ("10, 5"))
+            .style("opacity", 0.5);
         chart.append("text") // % labels
             .attr("x", (radius*ring/10)-(radius/12)) // radius/12 aligns text
             .attr("y", 0)
@@ -59,7 +82,7 @@ function drawAtlantaRadial(data) {
         .attr("y1", 0) // center
         .attr("y2", (d, i) => 
             Math.sin(spoke*i) * radius) // extends y-direction
-        .attr("stroke", "#1f1f1f");
+        .attr("stroke", "#000000");
 
     // Draw labels for the axes
     chart.selectAll("text.label")
@@ -83,9 +106,10 @@ function drawAtlantaRadial(data) {
         }
         chart.append("polygon")
             .attr("points", radar)
-            .attr("fill", "#68c0ff")
+            .attr("fill", "#9ed6ff")
             .attr("fill-opacity", 0.2)
-            .attr("stroke", "#113650");
+            .attr("stroke-width", 2)
+            .attr("stroke", "#0095ff");
 
         // Add title above graph
         chart.append("text")
