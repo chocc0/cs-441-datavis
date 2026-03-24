@@ -6,15 +6,21 @@ p {
   font-family: "Zalando Sans SemiExpanded", sans-serif;
 }
 
-.header {
+header {
   background-color: rgb(79, 104, 137); 
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   color: white;
-  height: 100px;
   padding: 10px;
+}
+
+footer {
+  background-color: rgb(79, 104, 137); 
+  padding: 10px;
+  color: white;
+  font-size: 8pt;
 }
 
 .title {
@@ -40,6 +46,10 @@ p {
   display: flex;
   flex-flow: column;
   gap: 25px;
+}
+
+.article p{
+  line-height: 1.4em;
 }
 
 .quote{
