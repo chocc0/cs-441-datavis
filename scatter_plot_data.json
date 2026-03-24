@@ -1,0 +1,502 @@
+[
+  {
+    "city": "Worcester, MA",
+    "Air Pollution - Ozone_Total 2019": 432.2,
+    "Cardiovascular Disease Deaths_2019_Total\r": 165.9
+  },
+  {
+    "city": "Longmont, CO",
+    "Air Pollution - Ozone_Total 2019": 521.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 159.1
+  },
+  {
+    "city": "New York, NY",
+    "Air Pollution - Ozone_Total 2019": 385,
+    "Cardiovascular Disease Deaths_2019_Total\r": 217.4
+  },
+  {
+    "city": "Sanford, FL",
+    "Air Pollution - Ozone_Total 2019": 472.2,
+    "Cardiovascular Disease Deaths_2019_Total\r": 252.8
+  },
+  {
+    "city": "St. Joseph, MO",
+    "Air Pollution - Ozone_Total 2019": 433.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 219.2
+  },
+  {
+    "city": "Sioux Falls, SD",
+    "Air Pollution - Ozone_Total 2019": 428.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 189.6
+  },
+  {
+    "city": "Scranton, PA",
+    "Air Pollution - Ozone_Total 2019": 430.7,
+    "Cardiovascular Disease Deaths_2019_Total\r": 231.7
+  },
+  {
+    "city": "Elyria, OH",
+    "Air Pollution - Ozone_Total 2019": 441.5,
+    "Cardiovascular Disease Deaths_2019_Total\r": 233.9
+  },
+  {
+    "city": "Kentwood, MI",
+    "Air Pollution - Ozone_Total 2019": 425.6,
+    "Cardiovascular Disease Deaths_2019_Total\r": 167.9
+  },
+  {
+    "city": "Azusa, CA",
+    "Air Pollution - Ozone_Total 2019": 535.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 269.6
+  },
+  {
+    "city": "Palm Coast, FL",
+    "Air Pollution - Ozone_Total 2019": 467.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 206.1
+  },
+  {
+    "city": "Irondequoit, NY",
+    "Air Pollution - Ozone_Total 2019": 420.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 87.7
+  },
+  {
+    "city": "Santa Ana, CA",
+    "Air Pollution - Ozone_Total 2019": 513.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 204.5
+  },
+  {
+    "city": "Tulare, CA",
+    "Air Pollution - Ozone_Total 2019": 546.4,
+    "Cardiovascular Disease Deaths_2019_Total\r": 324.2
+  },
+  {
+    "city": "Savannah, GA",
+    "Air Pollution - Ozone_Total 2019": 457.4,
+    "Cardiovascular Disease Deaths_2019_Total\r": 289.7
+  },
+  {
+    "city": "Queen Creek, AZ",
+    "Air Pollution - Ozone_Total 2019": 563.2,
+    "Cardiovascular Disease Deaths_2019_Total\r": 214.9
+  },
+  {
+    "city": "San Marcos, CA",
+    "Air Pollution - Ozone_Total 2019": 526.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 208.4
+  },
+  {
+    "city": "Midland, TX",
+    "Air Pollution - Ozone_Total 2019": 547.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 202.5
+  },
+  {
+    "city": "Newport News, VA",
+    "Air Pollution - Ozone_Total 2019": 469.5,
+    "Cardiovascular Disease Deaths_2019_Total\r": 208.2
+  },
+  {
+    "city": "San Jacinto, CA",
+    "Air Pollution - Ozone_Total 2019": 624.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 309.6
+  },
+  {
+    "city": "Pompano Beach, FL",
+    "Air Pollution - Ozone_Total 2019": 429.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 226.7
+  },
+  {
+    "city": "Aurora, CO",
+    "Air Pollution - Ozone_Total 2019": 524.3,
+    "Cardiovascular Disease Deaths_2019_Total\r": 152.6
+  },
+  {
+    "city": "San Antonio, TX",
+    "Air Pollution - Ozone_Total 2019": 467.2,
+    "Cardiovascular Disease Deaths_2019_Total\r": 216.8
+  },
+  {
+    "city": "Deerfield Beach, FL",
+    "Air Pollution - Ozone_Total 2019": 434.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 150.9
+  },
+  {
+    "city": "Cupertino, CA",
+    "Air Pollution - Ozone_Total 2019": 421.2,
+    "Cardiovascular Disease Deaths_2019_Total\r": 101
+  },
+  {
+    "city": "Miramar, FL",
+    "Air Pollution - Ozone_Total 2019": 413.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 134.1
+  },
+  {
+    "city": "Logan, UT",
+    "Air Pollution - Ozone_Total 2019": 519.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 143.3
+  },
+  {
+    "city": "Little Rock, AR",
+    "Air Pollution - Ozone_Total 2019": 440.7,
+    "Cardiovascular Disease Deaths_2019_Total\r": 220.9
+  },
+  {
+    "city": "Taylorsville, UT",
+    "Air Pollution - Ozone_Total 2019": 489.2,
+    "Cardiovascular Disease Deaths_2019_Total\r": 187.8
+  },
+  {
+    "city": "Grand Prairie, TX",
+    "Air Pollution - Ozone_Total 2019": 469.4,
+    "Cardiovascular Disease Deaths_2019_Total\r": 189.4
+  },
+  {
+    "city": "Maricopa, AZ",
+    "Air Pollution - Ozone_Total 2019": 544.4,
+    "Cardiovascular Disease Deaths_2019_Total\r": 179.8
+  },
+  {
+    "city": "Evanston, IL",
+    "Air Pollution - Ozone_Total 2019": 423,
+    "Cardiovascular Disease Deaths_2019_Total\r": 139.7
+  },
+  {
+    "city": "Erie, PA",
+    "Air Pollution - Ozone_Total 2019": 433,
+    "Cardiovascular Disease Deaths_2019_Total\r": 202.2
+  },
+  {
+    "city": "New Orleans, LA",
+    "Air Pollution - Ozone_Total 2019": 457.2,
+    "Cardiovascular Disease Deaths_2019_Total\r": 205.5
+  },
+  {
+    "city": "Valdosta, GA",
+    "Air Pollution - Ozone_Total 2019": 462.7,
+    "Cardiovascular Disease Deaths_2019_Total\r": 261.4
+  },
+  {
+    "city": "San Marcos, TX",
+    "Air Pollution - Ozone_Total 2019": 464.7,
+    "Cardiovascular Disease Deaths_2019_Total\r": 206
+  },
+  {
+    "city": "Olathe, KS",
+    "Air Pollution - Ozone_Total 2019": 434,
+    "Cardiovascular Disease Deaths_2019_Total\r": 167.5
+  },
+  {
+    "city": "Placentia, CA",
+    "Air Pollution - Ozone_Total 2019": 509.5,
+    "Cardiovascular Disease Deaths_2019_Total\r": 193.4
+  },
+  {
+    "city": "Concord, NC",
+    "Air Pollution - Ozone_Total 2019": 505.5,
+    "Cardiovascular Disease Deaths_2019_Total\r": 176
+  },
+  {
+    "city": "Franklin Lakes, NJ",
+    "Air Pollution - Ozone_Total 2019": 444.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 123.3
+  },
+  {
+    "city": "Pensacola, FL",
+    "Air Pollution - Ozone_Total 2019": 468.3,
+    "Cardiovascular Disease Deaths_2019_Total\r": 316.9
+  },
+  {
+    "city": "Hammond, IN",
+    "Air Pollution - Ozone_Total 2019": 379.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 207.9
+  },
+  {
+    "city": "Hendersonville, TN",
+    "Air Pollution - Ozone_Total 2019": 464.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 231.1
+  },
+  {
+    "city": "Gresham, OR",
+    "Air Pollution - Ozone_Total 2019": 364.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 127.2
+  },
+  {
+    "city": "Mission, TX",
+    "Air Pollution - Ozone_Total 2019": 443.2,
+    "Cardiovascular Disease Deaths_2019_Total\r": 187
+  },
+  {
+    "city": "St. Cloud, FL",
+    "Air Pollution - Ozone_Total 2019": 456.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 244.3
+  },
+  {
+    "city": "Howell Township, NJ",
+    "Air Pollution - Ozone_Total 2019": 459,
+    "Cardiovascular Disease Deaths_2019_Total\r": 224.6
+  },
+  {
+    "city": "Escondido, CA",
+    "Air Pollution - Ozone_Total 2019": 558.3,
+    "Cardiovascular Disease Deaths_2019_Total\r": 233.3
+  },
+  {
+    "city": "Dunwoody, GA",
+    "Air Pollution - Ozone_Total 2019": 485.7,
+    "Cardiovascular Disease Deaths_2019_Total\r": 63.6
+  },
+  {
+    "city": "Lakewood, CA",
+    "Air Pollution - Ozone_Total 2019": 467.3,
+    "Cardiovascular Disease Deaths_2019_Total\r": 224.1
+  },
+  {
+    "city": "Manchester, NH",
+    "Air Pollution - Ozone_Total 2019": 419.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 186.6
+  },
+  {
+    "city": "Dallas, TX",
+    "Air Pollution - Ozone_Total 2019": 472.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 215.8
+  },
+  {
+    "city": "Mobile, AL",
+    "Air Pollution - Ozone_Total 2019": 455.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 283.4
+  },
+  {
+    "city": "Round Rock, TX",
+    "Air Pollution - Ozone_Total 2019": 465.2,
+    "Cardiovascular Disease Deaths_2019_Total\r": 228.2
+  },
+  {
+    "city": "Muncie, IN",
+    "Air Pollution - Ozone_Total 2019": 447,
+    "Cardiovascular Disease Deaths_2019_Total\r": 315.8
+  },
+  {
+    "city": "Berwyn, IL",
+    "Air Pollution - Ozone_Total 2019": 395.6,
+    "Cardiovascular Disease Deaths_2019_Total\r": 240.3
+  },
+  {
+    "city": "Missouri City, TX",
+    "Air Pollution - Ozone_Total 2019": 445.5,
+    "Cardiovascular Disease Deaths_2019_Total\r": 194.8
+  },
+  {
+    "city": "Oak Lawn, IL",
+    "Air Pollution - Ozone_Total 2019": 410.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 233.8
+  },
+  {
+    "city": "Peabody, MA",
+    "Air Pollution - Ozone_Total 2019": 434.7,
+    "Cardiovascular Disease Deaths_2019_Total\r": 153.7
+  },
+  {
+    "city": "Paramus, NJ",
+    "Air Pollution - Ozone_Total 2019": 423,
+    "Cardiovascular Disease Deaths_2019_Total\r": 178.6
+  },
+  {
+    "city": "Bradenton, FL",
+    "Air Pollution - Ozone_Total 2019": 455.7,
+    "Cardiovascular Disease Deaths_2019_Total\r": 366.6
+  },
+  {
+    "city": "Deltona, FL",
+    "Air Pollution - Ozone_Total 2019": 469.3,
+    "Cardiovascular Disease Deaths_2019_Total\r": 202.8
+  },
+  {
+    "city": "Boynton Beach, FL",
+    "Air Pollution - Ozone_Total 2019": 431.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 294
+  },
+  {
+    "city": "Bellflower, CA",
+    "Air Pollution - Ozone_Total 2019": 461.5,
+    "Cardiovascular Disease Deaths_2019_Total\r": 200.4
+  },
+  {
+    "city": "Cathedral City, CA",
+    "Air Pollution - Ozone_Total 2019": 608.3,
+    "Cardiovascular Disease Deaths_2019_Total\r": 230.1
+  },
+  {
+    "city": "Canton Charter Township, MI",
+    "Air Pollution - Ozone_Total 2019": 423.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 188.7
+  },
+  {
+    "city": "Normal, IL",
+    "Air Pollution - Ozone_Total 2019": 446.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 141.2
+  },
+  {
+    "city": "Marana, AZ",
+    "Air Pollution - Ozone_Total 2019": 530.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 46.1
+  },
+  {
+    "city": "La Mesa, CA",
+    "Air Pollution - Ozone_Total 2019": 503.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 245
+  },
+  {
+    "city": "Gainesville, FL",
+    "Air Pollution - Ozone_Total 2019": 462.3,
+    "Cardiovascular Disease Deaths_2019_Total\r": 217.5
+  },
+  {
+    "city": "Loveland, CO",
+    "Air Pollution - Ozone_Total 2019": 502.6,
+    "Cardiovascular Disease Deaths_2019_Total\r": 159.8
+  },
+  {
+    "city": "Irving, TX",
+    "Air Pollution - Ozone_Total 2019": 468.5,
+    "Cardiovascular Disease Deaths_2019_Total\r": 213.9
+  },
+  {
+    "city": "Huntington, NY",
+    "Air Pollution - Ozone_Total 2019": 466,
+    "Cardiovascular Disease Deaths_2019_Total\r": 130.8
+  },
+  {
+    "city": "Orlando, FL",
+    "Air Pollution - Ozone_Total 2019": 449.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 435.6
+  },
+  {
+    "city": "Paramount, CA",
+    "Air Pollution - Ozone_Total 2019": 461.5,
+    "Cardiovascular Disease Deaths_2019_Total\r": 221.9
+  },
+  {
+    "city": "Texas City, TX",
+    "Air Pollution - Ozone_Total 2019": 458.7,
+    "Cardiovascular Disease Deaths_2019_Total\r": 228.6
+  },
+  {
+    "city": "Richmond, CA",
+    "Air Pollution - Ozone_Total 2019": 388.6,
+    "Cardiovascular Disease Deaths_2019_Total\r": 177.4
+  },
+  {
+    "city": "Fort Lauderdale, FL",
+    "Air Pollution - Ozone_Total 2019": 418.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 260.6
+  },
+  {
+    "city": "El Paso, TX",
+    "Air Pollution - Ozone_Total 2019": 539.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 187.8
+  },
+  {
+    "city": "Wichita, KS",
+    "Air Pollution - Ozone_Total 2019": 450.3,
+    "Cardiovascular Disease Deaths_2019_Total\r": 194.8
+  },
+  {
+    "city": "Des Plaines, IL",
+    "Air Pollution - Ozone_Total 2019": 363.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 191.7
+  },
+  {
+    "city": "Smyrna, TN",
+    "Air Pollution - Ozone_Total 2019": 466.3,
+    "Cardiovascular Disease Deaths_2019_Total\r": 202.8
+  },
+  {
+    "city": "Cranston, RI",
+    "Air Pollution - Ozone_Total 2019": 448.4,
+    "Cardiovascular Disease Deaths_2019_Total\r": 175.7
+  },
+  {
+    "city": "Bayonne, NJ",
+    "Air Pollution - Ozone_Total 2019": 394.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 188.7
+  },
+  {
+    "city": "Livonia, MI",
+    "Air Pollution - Ozone_Total 2019": 423,
+    "Cardiovascular Disease Deaths_2019_Total\r": 217.3
+  },
+  {
+    "city": "Spokane, WA",
+    "Air Pollution - Ozone_Total 2019": 416.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 197
+  },
+  {
+    "city": "Bensalem Township, PA",
+    "Air Pollution - Ozone_Total 2019": 460.7,
+    "Cardiovascular Disease Deaths_2019_Total\r": 168
+  },
+  {
+    "city": "Cuyahoga Falls, OH",
+    "Air Pollution - Ozone_Total 2019": 452.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 201
+  },
+  {
+    "city": "Pocatello, ID",
+    "Air Pollution - Ozone_Total 2019": 507.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 193.5
+  },
+  {
+    "city": "Pico Rivera, CA",
+    "Air Pollution - Ozone_Total 2019": 455.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 205.6
+  },
+  {
+    "city": "Freehold, NJ",
+    "Air Pollution - Ozone_Total 2019": 461.2,
+    "Cardiovascular Disease Deaths_2019_Total\r": 286
+  },
+  {
+    "city": "Bellevue, NE",
+    "Air Pollution - Ozone_Total 2019": 407.5,
+    "Cardiovascular Disease Deaths_2019_Total\r": 195.7
+  },
+  {
+    "city": "Madison, AL",
+    "Air Pollution - Ozone_Total 2019": 476.8,
+    "Cardiovascular Disease Deaths_2019_Total\r": 206.3
+  },
+  {
+    "city": "Pasco, WA",
+    "Air Pollution - Ozone_Total 2019": 432.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 177.3
+  },
+  {
+    "city": "New Rochelle, NY",
+    "Air Pollution - Ozone_Total 2019": 447.3,
+    "Cardiovascular Disease Deaths_2019_Total\r": 183.8
+  },
+  {
+    "city": "Union, NY",
+    "Air Pollution - Ozone_Total 2019": 423.1,
+    "Cardiovascular Disease Deaths_2019_Total\r": 164.5
+  },
+  {
+    "city": "Trenton, NJ",
+    "Air Pollution - Ozone_Total 2019": 458.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 244.9
+  },
+  {
+    "city": "Folsom, CA",
+    "Air Pollution - Ozone_Total 2019": 508.2,
+    "Cardiovascular Disease Deaths_2019_Total\r": 176.3
+  },
+  {
+    "city": "San Ramon, CA",
+    "Air Pollution - Ozone_Total 2019": 431.9,
+    "Cardiovascular Disease Deaths_2019_Total\r": 121.1
+  },
+  {
+    "city": "Morgantown, WV",
+    "Air Pollution - Ozone_Total 2019": 456.7,
+    "Cardiovascular Disease Deaths_2019_Total\r": 251.7
+  }
+]
