@@ -1,0 +1,97 @@
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia";
+}
+
+.header {
+  background-color: rgb(79, 104, 137); 
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100px;
+  padding: 10px;
+}
+
+.title {
+  background-color: rgb(127, 170, 196) ;
+  color: white; text-align: center; padding: 15px;
+}
+
+.wrapper {
+  flex-grow: 1;
+  min-height: calc(100vh - 150px);
+}
+
+.map-wrapper, .scatterplot-wrapper, .radar-wrapper {
+  padding: 20px 0;
+}
+
+#legend { 
+  display: inline-flex; 
+  flex-direction: row;
+  gap: 48px;
+  padding: 14px 32px 28px;
+  background: rgb(181, 181, 181);
+  border-radius: 12px;
+  align-self: center;
+}
+
+#size-min, #color-min{
+  display: flex;
+  justify-content: space-between;
+}
+
+#legend-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.legend-title{
+  font-weight: bold;
+}
+
+
+.legend-swatch { 
+  width: 25px; 
+  height: 20px; 
+  border-radius: 2px; 
+  flex-direction: row;
+  display: inline-flex;
+}
+
+#size-legend-svg {
+  background-color: rgb(216, 216, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.space {
+  color: white
+}
+
+.scatter-container, .radar-container, #map-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+#radar-svg, #scatter-svg, #map-svg {
+  padding: 40px 40px;
+  color: black;
+  background-color: #dbdbdb;  
+  border-radius: 10px;
+}
+
+#radar-svg{
+  padding: 0;
+}
+

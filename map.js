@@ -288,8 +288,6 @@ const pocColor = {
     scale: d3.scaleSequential(d3.interpolateOrRd),
   };
 
-
-
 const radiusScale = d3.scaleSqrt()
   .domain(co2Extent)
   .range([1, 20]);
@@ -301,7 +299,7 @@ let dotSelection = null;
 
 // Map help from Claude AI
 const svg        = d3.select('#map-svg');
-const projection = d3.geoAlbersUsa().scale(1100).translate([480, 280]);
+const projection = d3.geoAlbersUsa().scale(950).translate([450, 250]);
 const path       = d3.geoPath(projection);
 
 d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(us => {
@@ -311,9 +309,9 @@ d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(us => {
     .data(topojson.feature(us, us.objects.states).features)
     .join('path')
     .attr('d', path)
-    .attr('fill', '#141418')
-    .attr('stroke', 'rgba(255,255,255,0.08)')
-    .attr('stroke-width', 0.5);
+    .attr('fill', '#b0b0b0')
+    .attr('stroke', 'rgba(0, 0, 0, 0.08)')
+    .attr('stroke-width', 2);
 
   // Project cities that fall within the AlbersUSA bounds
   const mapped = cities
@@ -333,7 +331,7 @@ d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(us => {
     .attr('r',  d => radiusScale(d.co2))
     .attr('fill',         d => colorScale(d.poc_gap))
     .attr('stroke',       'rgba(0,0,0,0.4)')
-    .attr('stroke-width', 0.5)
+    .attr('stroke-width', 1)
     .attr('opacity',      0.85)
     
 });
@@ -343,7 +341,7 @@ function buildColorLegend() {
   const minv = document.getElementById('color-min');
   const maxv = document.getElementById('color-max');
   const STEPS  = 8;
-  minv.innerHTML = `<span>${pocExtent[0].toFixed(1)}</span><span class="space">&emsp&emsp&emsp&emsp</span><span>${pocExtent[1].toFixed(1)}</span>`
+  minv.innerHTML = `<span>${pocExtent[0].toFixed(1)}</span><span>${pocExtent[1].toFixed(1)}</span>`
   for (let i = 0; i < STEPS; i++) {
     const t  = i / (STEPS - 1);
     const sw = document.createElement('div');
@@ -358,22 +356,24 @@ function buildColorLegend() {
 function buildSizeLegend() {
   const svg    = d3.select('#size-legend-svg');
   const minv = document.getElementById('size-min');
-  const maxv = document.getElementById('size-max');
   const stops  = [co2Extent[0], (co2Extent[0] + co2Extent[1]) / 2, co2Extent[1]];
   const radii  = stops.map(v => radiusScale(v));
   const totalW = 200;
   const spacing = totalW / stops.length;
-  const cy = 18;
+  const cy = 30;
+
+
   stops.forEach((val, i) => {
     const cx = spacing * i + spacing / 2;
     svg.append('circle')
       .attr('cx', cx).attr('cy', cy)
       .attr('r',  radii[i])
-      .attr('fill', 'rgba(255,255,255,0.15)')
-      .attr('stroke', 'rgba(255,255,255,0.35)')
-      .attr('stroke-width', 0.8);
+      .attr('fill', 'rgba(55, 46, 46, 0.15)')
+      .attr('stroke', 'rgba(27, 27, 27, 0.35)')
+      .attr('stroke-width', 2.5);
   });
-  minv.innerHTML = `<span>${stops[0].toFixed(1)}</span><span class="space">&emsp&emsp&emsp</span><span>${stops[2].toFixed(1)}</span>`;
+  minv.innerHTML = `<span>${stops[0].toFixed(1)}</span><span>${stops[2].toFixed(1)}</span>`;
+
 }
 
 buildColorLegend();

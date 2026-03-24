@@ -41,8 +41,8 @@ function initalizeSVG()
         .attr("x", chartWidth / 2)
         .attr("y", chartHeight + 50)
         .attr("text-anchor", "middle")
-        .style("font-size", "12px")
-        .style("fill", "white")
+        .style("font-size", "20px")
+        .style("fill", "black")
         .text("");
 
     chart.append("text")
@@ -51,8 +51,8 @@ function initalizeSVG()
         .attr("x", -chartHeight / 2)
         .attr("y", -55)
         .attr("text-anchor", "middle")
-        .style("font-size", "12px")
-        .style("fill", "white")
+        .style("font-size", "20px")
+        .style("fill", "black")
         .text("");
 
     scattersvg.append("text")
@@ -60,8 +60,8 @@ function initalizeSVG()
         .attr("x", width / 2)
         .attr("y", 20)
         .attr("text-anchor", "middle")
-        .style("font-size", "18px")
-        .style("fill", "white")
+        .style("font-size", "25px")
+        .style("fill", "black")
         .text("");
 }
 

@@ -1,4 +1,4 @@
-let svgRadar = d3.select("#radar");
+let svgRadar = d3.select("#radar-svg");
 const widthR = 800;
 const heightR = 800;
 const radiusR = 250;
