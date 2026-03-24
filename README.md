@@ -9,6 +9,9 @@ Website: https://github.com/chocc0/cs-441-datavis
 
 ### Launch Instructions
 
-Download files with ```Insert github download files```
+1. Clone repository with 
+    ```
+    git clone https://github.com/chocc0/cs-441-datavis.git
+    ```
 
-Launch locally through ```index.html``` file
+2. Launch locally with either Live Server or pasting your local ```index.html```  path into your search engine.
