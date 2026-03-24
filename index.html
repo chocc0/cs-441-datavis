@@ -11,26 +11,28 @@
     <p>CO₂ per capita, ozone levels, and POC gap index across 265 US cities</p>
   </header>
   <main class="wrapper">
+    <!-- Map SVG -->
     <div id="map-wrap">
       <svg id="map-svg" viewBox="0 0 960 560"></svg>
     </div>
     
     <div id="legend">
         <div class="legend-block">
-    <div class="legend-title">POC gap index (color)</div>
-    <div class="legend-minmax" style="width:200px;" id="color-min"></div>
-    <div class="legend-bar" id="color-bar" width="200" height="32"></div>
-    <div class="legend-minmax" style="width:200px;" id="color-max"></div>
-  </div>
-  <div class="legend-block">
-    <div class="legend-title">CO₂ per capita — metric tons (size)</div>
-        <div class="legend-text" style="width:200px;" id="size-min"></div>
+        <div class="legend-title">POC gap index (color)</div>
+        <div class="legend-minmax" style="width:200px;" id="color-min"></div>
+        <div class="legend-bar" id="color-bar" width="200" height="32"></div>
+        <div class="legend-minmax" style="width:200px;" id="color-max"></div>
+      </div>
+      <div class="legend-block">
+        <div class="legend-title">CO₂ per capita — metric tons (size)</div>
+            <div class="legend-text" style="width:200px;" id="size-min"></div>
 
-    <svg id="size-legend-svg" width="200" height="32"></svg>
-     <div class="legend-text" style="width:200px;" id="size-max"></div>
-   
-  </div>
+        <svg id="size-legend-svg" width="200" height="32"></svg>
+        <div class="legend-text" style="width:200px;" id="size-max"></div>
+      </div>
     </div>
+
+    <!-- Scatterplot SVG -->
     <div>
       <div style="background-color: black; color: white; text-align: center; padding: 15px;">
         <h1 >Scatter Plot</h1>
@@ -41,10 +43,19 @@
         <svg id="scatter-svg"></svg>
       </div>
     </div>
+
+    <!-- Radar SVG -->
+      <div style="background-color: black; color: white; text-align: center; padding: 15px;">
+        <h1>Radar Plot</h1>
+      </div>
+     <div class ="radar-container">
+        <svg id="radar" viewBox="0 0 960 560"></svg>
+      </div>
   </main>
   <!--Map help from Claude AI-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
   <script src="map.js"></script>
   <script src="scatter.js"></script>
+  <script src="radar.js"></script>
   </body>
 </html>
