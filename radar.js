@@ -1,7 +1,7 @@
 let svgRadar = d3.select("#radar-svg");
 const widthR = 800;
 const heightR = 800;
-const radiusR = 250;
+const radiusR = (1/3) * Math.min(widthR, heightR); // 1/3 of the most restrictive dim. makes it flexible 
 let chartRadar;
 let atlantaChartData;
 
@@ -24,53 +24,54 @@ function initialiseSVG(){
 function drawAtlantaRadial(data) {
 
     const radialScale = d3.scaleLinear()
-        .domain([0, 100]) // percentages 
+        .domain([70, 100]) // percentage values 
         .range([0, radiusR]);
 
     const race = ["Asian", "Black", "Hispanic", "Other", "White"];
     const spoke = (2 * Math.PI) / race.length;
+    const increments = [0, 80, 90, 100]
 
-    // Draw concentric grid rings (DOTTED)
-    for (let ring=1; ring<=10; ring+=2) { // 10% increments
+    // Draw concentric grid rings (DASHED)
+    for (let ring=1; ring<=3; ring+=2) { // 10% increments
         
         let increments1 = ""; // x,y values for each spoke's increments (rings)
         for (let i=0; i<race.length; i++) {
-            increments1 += ( Math.cos(spoke*i) * radiusR * (ring/10) ) + "," + 
-                ( Math.sin(spoke*i) * radiusR * (ring/10) ) + " ";
+            increments1 += ( Math.cos(spoke*i) * radiusR * (ring/3) ) + "," + 
+                ( Math.sin(spoke*i) * radiusR * (ring/3) ) + " ";
         }
         chartRadar.append("polygon") // rings
             .attr("points", increments1)
             .attr("fill", "none")
             .attr("stroke", "#767676")
-            .style("stroke-dasharray", ("2, 2"))
+            .style("stroke-dasharray", ("10, 8"))
             .style("opacity", 0.5);
         chartRadar.append("text") // % labels
-            .attr("x", (radiusR*ring/10)-(radiusR/12)) // radius/12 aligns text
+            .attr("x", (radiusR*ring/3)-(radiusR/8)) // radius/8 aligns text
             .attr("y", 0)
             .attr("font-size", "xx-small")
             .style("opacity", 0.7)
-            .text(ring*10 + "%");
+            .text(increments[ring] + "%");
     }
-    // Draw concentric grid rings (DASHED) 
-    for (let ring=2; ring<=10; ring+=2) { // 10% increments
+    // Draw concentric grid rings (DOTTED) 
+    for (let ring=2; ring<=3; ring+=2) { // 10% increments
         
         let increments2 = ""; // x,y values for each spoke's increments (rings)
         for (let i=0; i<race.length; i++) {
-            increments2 += ( Math.cos(spoke*i) * radiusR * (ring/10) ) + "," + 
-                ( Math.sin(spoke*i) * radiusR * (ring/10) ) + " ";
+            increments2 += ( Math.cos(spoke*i) * radiusR * (ring/3) ) + "," + 
+                ( Math.sin(spoke*i) * radiusR * (ring/3) ) + " ";
         }
         chartRadar.append("polygon") // rings
             .attr("points", increments2)
             .attr("fill", "none")
             .attr("stroke", "#767676")
-            .style("stroke-dasharray", ("10, 5"))
+            .style("stroke-dasharray", ("2, 5"))
             .style("opacity", 0.5);
         chartRadar.append("text") // % labels
-            .attr("x", (radiusR*ring/10)-(radiusR/12)) // radius/12 aligns text
+            .attr("x", (radiusR*ring/3)-(radiusR/8)) // radius/8 aligns text
             .attr("y", 0)
             .attr("font-size", "xx-small")
             .style("opacity", 0.7)
-            .text(ring*10 + "%");
+            .text(increments[ring] + "%");
     }
 
     // Draw spokes as the axes
@@ -119,7 +120,7 @@ function drawAtlantaRadial(data) {
             .attr("y", -radiusR-(radiusR/5)) // -radius goes up bc y=0 is center, radius/5 aligns text
             .attr("text-anchor", "middle")
             .attr("font-size", "x-large")
-            .text("Atlanta: High School Graduation Rate by Race");
+            .text("Atlanta: High School Graduation Rate by Race (2024)");
 }
 
 // Determines how labels align with spokes
