@@ -152,7 +152,7 @@ function updateScatterPlot(data, title = "")
 
 async function loadData() 
 {
-    await d3.json("/scatter_plot_data.json").then(data => {
+    await d3.json("scatter_plot_data.json").then(data => {
         scatterData = data;
     });
 }
