@@ -16,56 +16,93 @@
     </div>
   </header>
   <main class="wrapper">
-    <!-- Map SVG -->
-    <div class="map-wrapper">
-      <div class="title">
-          <h1>Pollution &amp; People of Color — US Cities</h1>
-      <p>CO₂ per capita, ozone levels, and POC gap index across 265 US cities</p>
-      </div>
-      <div id="map-wrap">
-        <svg id="map-svg" viewBox="0 0 900 500"></svg>
-      </div>
-      
-      <div id="legend-wrapper">
-        <div id="legend">
-            <div class="legend-block">
-            <div class="legend-title">POC gap index (color)</div>
-            <div class="legend-minmax" style="width:200px;" id="color-min"></div>
-            <div class="legend-bar" id="color-bar" width="200" height="32"></div>
-            <div class="legend-minmax" style="width:200px;" id="color-max"></div>
-          </div>
-          <div class="legend-block">
-            <div class="legend-title">CO₂ per capita — metric tons (size)</div>
-                <div class="legend-text" style="width:200px;" id="size-min"></div>
+    <div class="article">
+      <p>Environmental cleanliness is an overlooked yet essential part of living a healthy life. Thinking in terms of managing nature to minimize negative effects on individual health can at first seem ridiculous or nebulous. However, humans have altered the health of our environments, and those changes are beginning to cascade down to a personal level. Consider the Flint, Michigan Water Crisis, a localized environmental disaster in 2015. It is the story of children in a predominantly-Black city being poisoned from drinking water. “Simply put, the economic situation in Flint and the logic that made providing poisoned water seem like a reasonable idea would not have occurred without racism” . While no single person or explicit racism was to blame for the lethal levels of lead in the town’s drinking water, the outcry led to a nationwide focus on “structural racism”. Kemi Fuentes-George–a Middlebury College political science professor–may have synthesized it best:</p>
+      <p class="quote">
+        While the American political economy has done pretty well so far at externalizing environmental costs to the poor and marginalized, environmental hazards do travel, perhaps more easily than poor black citizens. In the same way that racist and authoritarian police practices have killed Eric Garner, Jack Crawford and Kelly Thomas, the environmental vulnerability that has devastated Flint – rotting infrastructure, industrial pollution, intransigent political institutions – puts us all at risk.1</p>
+      <p >
+        For years, local officials denied claims of elevated lead concentrations and occurrences of Legionnaires Disease. The city government violated Environmental Protection Agency (EPA) regulations by flushing samples for reporting water cleanliness. Further, chlorine in the water supply excessively reacted with lead in the pipes and impeded its antibacterial effect. The dilution triggered an uptick in Legionnaires’ disease, a dangerous bacterial pneumonia. Negligence imparted elevated blood-lead levels in as many as 1 in 10 children, according to investigations at Hurley Medical Center. Flint’s child population is now facing developmental risks and lower life expectancies. Although the Flint water crisis is an extreme example, it demonstrates that environmental trends are difficult to track and agencies may not be held accountable. Despite modern-day progress, a lack of responsibility for environmental health pervades the zeitgeist. The story of Flint tells us that although environmental indicators point to health risks on a statistical basis, there is a motivation to confound and dismiss data inappropriately. 
+      </p>
+      <p>
+        So, what happened after Flint, Michigan’s water crisis of the 2010’s? Was change made? In August 2025, the city declared the problem “fixed,” but many citizens argued this was only partly true as the structural racism associated with the original problem had not been addressed. The question then becomes, what next? Or, more accurately, where is next? Where is the next city that will face infrastructural and environmental racism and have to wait over a decade for a health problem to be “fixed”? 
+      </p>
+      <p>
+        A study by Zhe Sun et al. found “that rural residents were exposed to 7.7 ± 1.8 ppb higher O3 than urban citizens over [1990-2019], uncovering a long-overlooked issue of urban-rural environmental injustice. More control efforts should be directed to highly O3-polluted rural areas, especially in regions with high cardiovascular incidences”. The study found that not only was O3-heavy pollution more common in rural areas, but there was a positive relationship between the presence of O3 and cardiovascular disease. 
+      </p>
+      <p>
+        Further, while Flint’s environmental problems stemmed from water pollution (and specifically iron output from industrial plants), pollution comes in many forms, including CO2, and health concerns come in many forms, including mental distress and cardiovascular diseases. In general, it has been found that pollutants show strong positive relationships with both depression and anxiety across exposure windows, indicating that air pollution broadly contributes to adverse mental health. Specifically, a study by Bereziartua et al. found a moderate to strong short-term positive relationship between NO2 and anxiety. The relationship reflects both pollutant characteristics and symptom dynamics, and NO2 is a highly reactive gas that fluctuates sharply with traffic emissions and is known to rapidly induce oxidative stress, inflammation, and autonomic activation. 
+      </p>
 
-            <svg id="size-legend-svg" width="200" height="60"></svg>
-            <div class="legend-text" style="width:200px;" id="size-max"></div>
+      <p>
+        With increasing O3, NO2, CO2, lead, and others, we can start to see relationships between increased pollution and health, and we can also see changes in pollutants in certain areas, such as increased lead in Flint (a predominantly-Black community) and increased O3 in rural areas. These spaces have witnessed increased presence of poor physical health.
+      </p>
+
+      <p>
+        Not only can pollution have physical repercussions, but it can also take a toll on a person’s mental health. Studies have found a negative correlation between air pollution and mental health and particular mental disorders. Existing research finds consistent evidence on how air pollution has adverse effects on adolescent cognitive development, learning performance, and susceptibility to diseases in their adult life. Studies in large urban school districts found an increase in school absences and a decrease in grades for those regularly exposed to higher levels of air pollution. Particularly marginalized student groups, such as Hispanic and Black youth, were observed to be more susceptible to pollution exposure, having lower grades and higher disciplinary referrals in tandem with worsening air conditions.
+      </p>
+
+      <p>
+        The first step toward meaningful progress is understanding how pollution affects the world around us. Awareness is at a high point as more people recognize the consequences of catastrophes like Flint’s water contamination. Scientists began closely tracking pollutants like CO₂ emissions in the 1950s through Charles David Keeling’s measurements in Hawaii. However, it wasn’t until the 1990s that the United Nations held a convention focused on stabilizing greenhouse gas emissions. This timeline shows how long it can take for a problem to move from scientific observation to global action. Raising awareness to create policy on such a large scale is progress, but this alone cannot solve the problem. Real change depends on the institutions that shape society, especially businesses and governments. The actions taken up to this point have not been enough to create lasting improvements. Recycling is a clear example. A joint study by the World Economic Forum, SAP, and Qualtrics found that around 80% of Americans believe recycling is important, but many face barriers such as limited services and weak local programs. Recognizing who has the power to create change and where that change is most needed is essential. Seeing pollution’s effects in American cities is the first step toward building a cleaner, healthier future. 
+      </p>
+    </div>
+    <!-- Map SVG -->
+    <div class="svg-wrapper">
+
+      <div class="bar-wrapper">
+        <div style="width: auto; height: 500px"></div>
+      </div>
+
+      <div class="map-wrapper">
+        <div class="title">
+            <h1>Pollution &amp; People of Color — US Cities</h1>
+        <p>CO₂ per capita, ozone levels, and POC gap index across 265 US cities</p>
+        </div>
+        <div id="map-wrap">
+          <svg id="map-svg" viewBox="0 0 900 500"></svg>
+        </div>
+        
+        <div id="legend-wrapper">
+          <div id="legend">
+              <div class="legend-block">
+              <div class="legend-title">POC gap index (color)</div>
+              <div class="legend-minmax" style="width:200px;" id="color-min"></div>
+              <div class="legend-bar" id="color-bar" width="200" height="32"></div>
+              <div class="legend-minmax" style="width:200px;" id="color-max"></div>
+            </div>
+            <div class="legend-block">
+              <div class="legend-title">CO₂ per capita — metric tons (size)</div>
+                  <div class="legend-text" style="width:200px;" id="size-min"></div>
+
+              <svg id="size-legend-svg" width="200" height="60"></svg>
+              <div class="legend-text" style="width:200px;" id="size-max"></div>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Scatterplot SVG -->
+      <div class="scatterplot-wrapper">
+        <div class="title">
+          <h1 >Scatter Plot</h1>
+          <p>Gathering a subset of 100 cities to compare their air pollution and health outcomes with a regression line to show the relationship</p>
+        </div>
+        
+        <div class ="scatter-container">
+          <svg id="scatter-svg"></svg>
+        </div>
+      </div>
+
+      <!-- Radar SVG -->
+      <div class="radar-wrapper">
+        <div class="title">
+          <h1>Radar Plot</h1>
+        </div>
+        <div class ="radar-container">
+          <svg id="radar-svg"></svg>
         </div>
       </div>
     </div>
 
-    <!-- Scatterplot SVG -->
-    <div class="scatterplot-wrapper">
-      <div class="title">
-        <h1 >Scatter Plot</h1>
-        <p>Gathering a subset of 100 cities to compare their air pollution and health outcomes with a regression line to show the relationship</p>
-      </div>
-      
-      <div class ="scatter-container">
-        <svg id="scatter-svg"></svg>
-      </div>
-    </div>
-
-    <!-- Radar SVG -->
-    <div class="radar-wrapper">
-      <div class="title">
-        <h1>Radar Plot</h1>
-      </div>
-      <div class ="radar-container">
-        <svg id="radar-svg"></svg>
-      </div>
-    </div>
 
   </main>
   <!--Map help from Claude AI-->

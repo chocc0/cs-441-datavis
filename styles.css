@@ -23,11 +23,30 @@ p {
 }
 
 .wrapper {
+  display: flex;
   flex-grow: 1;
   min-height: calc(100vh - 150px);
+  padding: 20px;
+  gap: 30px;
 }
 
-.map-wrapper, .scatterplot-wrapper, .radar-wrapper {
+.svg-wrapper {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+}
+
+.quote{
+  margin-left: 20px;
+}
+
+.map-wrapper, .scatterplot-wrapper, .radar-wrapper, .bar-wrapper {
   padding: 20px 0;
 }
 
