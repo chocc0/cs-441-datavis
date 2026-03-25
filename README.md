@@ -34,4 +34,4 @@ For the visualizations, we modified the radar plots to display graduation rates 
 ## AI Disclaimer
 
 AI was utilized to help with:
-- Generating the atlanta map visualization
+- Generating the U.S. map visualization
