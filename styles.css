@@ -125,3 +125,24 @@ footer {
   padding: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  #map-svg {
+    height: 280px;
+  }
+
+  #scatter-svg, #radar-svg{
+    scale: 70%;
+  }
+
+  .scatter-container{
+    margin: 0;
+  }
+
+  .article {
+    width: 500px;;
+  }
+
+  .title{
+    width: auto;
+  }
+}
