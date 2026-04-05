@@ -61,6 +61,11 @@ footer {
   padding: 20px 0;
 }
 
+#info-block {
+  position: fixed;
+  background: rgba(210, 209, 209, 0.75);
+}
+
 #legend { 
   display: inline-flex; 
   flex-direction: row;
