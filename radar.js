@@ -143,10 +143,10 @@ function labelPadding(spoke) {
     return 10;
 }
 
-async function initialise() {
+export async function initialiseRadar() {
     await loadData();
     initialiseSVG();
     drawAtlantaRadial(atlantaChartData);
 }
 
-initialise();
+initialiseRadar();

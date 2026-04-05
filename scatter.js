@@ -157,11 +157,11 @@ async function loadData()
     });
 }
 
-async function initalize()
+export async function initializeScatter()
 {
     await loadData();
     initalizeSVG();
     updateScatterPlot(scatterData, "Air Pollution vs Cardiovascular Disease Deaths (2019)");
 }
 
-initalize();
+initializeScatter();

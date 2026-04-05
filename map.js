@@ -319,8 +319,8 @@ function updateRadar(event, d) {
   console.log("Clicked " + d.city);
 }
 
-
-d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(us => {
+function createMap() {
+  d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(us => {
   // State outlines
   svg.append('g')
     .selectAll('path')
@@ -353,7 +353,10 @@ d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(us => {
     .on('mousemove', showInfo)
     .on('mouseleave', hideInfo)
     .on('mousedown', updateRadar)
-});
+  });
+
+
+}
 
 function buildColorLegend() {
   const bar    = document.getElementById('color-bar');
@@ -371,6 +374,7 @@ function buildColorLegend() {
   const barWidth = STEPS * 28;
   bar.style.width = barWidth + 'px';
 }
+
 
 function buildSizeLegend() {
   const svg    = d3.select('#size-legend-svg');
@@ -395,5 +399,13 @@ function buildSizeLegend() {
 
 }
 
-buildColorLegend();
-buildSizeLegend();
+
+
+export async function initialiseMap()
+{
+  console.log("run");
+  createMap();
+  buildColorLegend();
+  buildSizeLegend();
+}
+
