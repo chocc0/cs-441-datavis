@@ -268,6 +268,8 @@ const RAW = [
   ["Yonkers, NY", "NY", 4.4, 7.4, 37.9, 40.9312, -73.8988, 157.2],
 ];
 
+import { updateActiveCity } from './main.js';
+
 const cities = RAW.map(r => ({
   city: r[0], state: r[1], co2: r[2], poc_gap: r[3], ozone: r[4], lat: r[5], lon: r[6], cardio: r[7]
 }));
@@ -292,9 +294,10 @@ let dotSelection = null;
 
 // Map help from Claude AI
 const svg        = d3.select('#map-svg');
-const projection = d3.geoAlbersUsa().scale(950).translate([450, 250]);
+const projection = d3.geoAlbersUsa().scale(1200).translate([570, 320]);
 const path       = d3.geoPath(projection);
 
+let activeCity = null;
 
 // Hover functions
 const hovering = document.getElementById('info-block');
@@ -317,6 +320,32 @@ function hideInfo() {
 // Click functions
 function updateRadar(event, d) {
   console.log("Clicked " + d.city);
+  updateActiveCity(d);
+}
+
+export function highlightCityMap(city) 
+{
+  if (!dotSelection) return; // Map not loaded yet
+  dotSelection
+    .attr('opacity', d => d.city === city.city ? 1.0 : 0.4)
+    .attr('stroke', d => d.city === city.city
+      ? '#ffffff'
+      : 'rgba(0,0,0,0.4)')
+    .attr('stroke-width', d => d.city === city.city ? 2.5 : 1)
+    .attr('r', d => d.city === city.city
+      ? radiusScale(d.co2) * 1.1
+      : radiusScale(d.co2));
+}
+
+export function clearHighlightMap() {
+  if (!dotSelection) return;
+  activeCity = null;
+
+  dotSelection
+    .attr('opacity', 0.5)
+    .attr('stroke', 'rgba(0,0,0,0.4)')
+    .attr('stroke-width', 1)
+    .attr('r', d => radiusScale(d.co2));
 }
 
 function createMap() {
@@ -354,7 +383,6 @@ function createMap() {
     .on('mouseleave', hideInfo)
     .on('mousedown', updateRadar)
   });
-
 
 }
 

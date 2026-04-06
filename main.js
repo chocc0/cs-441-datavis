@@ -1,8 +1,10 @@
-import {initialiseMap} from './map.js'
+import {initialiseMap, highlightCityMap, clearHighlightMap} from './map.js'
 import {initialiseRadar} from './radar.js'
 import {initializeScatter} from './scatter.js'
 
 const maxScroll =  window.visualViewport.height;
+
+let activeCity = null;
 
 function initialize() {
     initialiseMap();
@@ -14,12 +16,18 @@ function updateGraphic(s){
     // console.log(s);
 }
 
+export function updateActiveCity(city) {
+    activeCity = city;
+    console.log("Active city updated to: " + city.city);
+    highlightCityMap(city);
+}
+
 window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;
     if(scrolled >= maxScroll){
-        document.getElementById('test-wrapper').style.visibility = "visible";
+        document.getElementById('map-wrapper').style.visibility = "visible";
     } else {
-        document.getElementById('test-wrapper').style.visibility = "hidden";
+        document.getElementById('map-wrapper').style.visibility = "hidden";
 
     }
 });
