@@ -6,8 +6,9 @@ p {
   font-family: "Zalando Sans SemiExpanded", sans-serif;
 }
 
-header {
+#front-page {
   background-color: rgb(79, 104, 137); 
+  height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -25,15 +26,16 @@ footer {
 }
 
 .title {
+  display: none;
   background-color: rgb(127, 170, 196) ;
   color: white; text-align: center; padding: 15px;
 }
 
-.wrapper {
+main{
   display: flex;
   flex-grow: 1;
   min-height: calc(100vh - 150px);
-  padding: 30px;
+  padding: 86px;
   gap: 30px;
 }
 
@@ -41,16 +43,40 @@ footer {
   gap: 50px;
   display: flex;
   flex-direction: column;
+  height: 50px;
+  width: 50px;
+}
+
+#test-wrapper {
+  visibility: hidden;
+  position: fixed;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  left: 75%;
+  top: 50%;
 }
 
 .article {
   display: flex;
   flex-flow: column;
-  gap: 25px;
+  gap: 120px;
+  max-width: 38vw;
+  
+  /* overflow: auto;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;*/
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* .article::-webkit-scrollbar {
+  display: none;
+} */
+
+
 .article p{
-  line-height: 1.4em;
+  line-height: 1.55em;
+  font-size: 1.15em;
 }
 
 .quote{

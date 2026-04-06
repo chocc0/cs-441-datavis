@@ -396,10 +396,7 @@ function buildSizeLegend() {
       .attr('stroke-width', 2.5);
   });
   minv.innerHTML = `<span>${stops[0].toFixed(1)}</span><span>${stops[2].toFixed(1)}</span>`;
-
 }
-
-
 
 export async function initialiseMap()
 {
