@@ -35,6 +35,8 @@ function initialiseSVG(){
 
     chartRadar = svgRadar.append("g")
         .attr("transform", `translate(${widthR/2},${heightR/2})`);
+
+    resetCity();
 }
 
 function getCityData(cityName) {
