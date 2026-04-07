@@ -93,6 +93,11 @@ main{
   background: rgba(210, 209, 209, 0.75);
 }
 
+#scatterInfoBlock {
+  position: fixed;
+  background: rgba(210, 209, 209, 0.75);
+}
+
 #legend { 
   display: inline-flex; 
   flex-direction: row;
