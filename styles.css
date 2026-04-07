@@ -7,7 +7,10 @@ p {
 }
 
 #front-page {
-  background-color: rgb(79, 104, 137); 
+  background-color: rgb(79, 104, 137);
+  background-image: url('dat/Los Angeles La GIF by 1091.gif');
+  background-size: cover;
+  background-repeat: no-repeat; 
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -56,6 +59,11 @@ main {
   transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
+.svg-title{
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
 .svg-wrapper {
   opacity: 0;
   visibility: hidden;
@@ -82,7 +90,7 @@ main {
 
 .article p {
   line-height: 1.80em;
-  font-size: 0.8em;
+  font-size: 0.85em;
 }
 
 .quote {

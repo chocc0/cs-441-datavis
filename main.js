@@ -59,6 +59,7 @@ function updateGraphic(classList) {
 }
 
 export function updateActiveCity(city) {
+    const title = document.querySelector(".svg-title")
     activeCity = city;
     console.log(activeCity)
     if (city === null) {
@@ -66,6 +67,7 @@ export function updateActiveCity(city) {
         clearHighlightScatter();
         resetCity();
     } else {
+        title.textContent = "Selected City: " + city.city
         console.log("Active city updated to: " + city.city);
         highlightCityMap(city);
         highlightCityScatter(city);
