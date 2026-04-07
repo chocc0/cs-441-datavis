@@ -30,9 +30,11 @@ export function updateActiveCity(city) {
 window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;
     if(scrolled >= maxScroll){
-        document.querySelector('.svg-wrapper').style.visibility = "visible";
+        document.getElementById('scatterplot-wrapper').style.visibility = "visible";
+        document.getElementById('map-wrapper').style.visibility = "visible";
     } else {
-        document.querySelector('.svg-wrapper').style.visibility = "hidden";
+        document.getElementById('scatterplot-wrapper').style.visibility = "hidden";
+        document.getElementById('map-wrapper').style.visibility = "hidden";
     }
 });
 

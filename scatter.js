@@ -65,20 +65,42 @@ function initalizeSVG()
         .text("");
 }
 
+const hovering = document.getElementById("scatterInfoBlock");
+
+function showInfo(event, d)
+{
+    hovering.style.display = "block";
+    hovering.style.left = (event.clientX + 10) + "px";
+    hovering.style.top = (event.clientY) + "px";
+    document.getElementById("city-labelScatter").textContent = d.city;
+    document.getElementById("pollution-label").textContent = d['Air Pollution - Ozone_Total 2021'];
+    document.getElementById("death-label").textContent = d['Cardiovascular Disease Deaths_2021_Total\r'];
+}
+
+function moveInfo(event) {
+    hovering.style.left = (event.clientX + 10) + "px";
+    hovering.style.top = (event.clientY) + "px";
+}
+
+function hideInfo()
+{
+    hovering.style.display = "none";
+}
+
 function updateScatterPlot(data, title = "")
 {
-    xScale.domain([d3.min(data, d => d['Air Pollution - Ozone_Total 2019']) -50, d3.max(data, d => d['Air Pollution - Ozone_Total 2019'])]).nice();
-    yScale.domain([0, d3.max(data, d => +d['Cardiovascular Disease Deaths_2019_Total\r'])]).nice();
+    xScale.domain([d3.min(data, d => d['Air Pollution - Ozone_Total 2021']) -50, d3.max(data, d => d['Air Pollution - Ozone_Total 2021'])]).nice();
+    yScale.domain([0, d3.max(data, d => +d['Cardiovascular Disease Deaths_2021_Total\r'])]).nice();
 
     // Regression line calculation
-    const xMean = d3.mean(data, d => +d['Air Pollution - Ozone_Total 2019']);
-    const yMean = d3.mean(data, d => +d['Cardiovascular Disease Deaths_2019_Total\r']);
-    const slope = d3.sum(data, d => (+d['Air Pollution - Ozone_Total 2019'] - xMean) * (+d['Cardiovascular Disease Deaths_2019_Total\r'] - yMean))
-                / d3.sum(data, d => Math.pow(+d['Air Pollution - Ozone_Total 2019'] - xMean, 2));
+    const xMean = d3.mean(data, d => +d['Air Pollution - Ozone_Total 2021']);
+    const yMean = d3.mean(data, d => +d['Cardiovascular Disease Deaths_2021_Total\r']);
+    const slope = d3.sum(data, d => (+d['Air Pollution - Ozone_Total 2021'] - xMean) * (+d['Cardiovascular Disease Deaths_2021_Total\r'] - yMean))
+                / d3.sum(data, d => Math.pow(+d['Air Pollution - Ozone_Total 2021'] - xMean, 2));
     const intercept = yMean - slope * xMean;
 
-    const xMin = d3.min(data, d => d['Air Pollution - Ozone_Total 2019']) - 62;
-    const xMax = d3.max(data, d => +d['Air Pollution - Ozone_Total 2019']);
+    const xMin = d3.min(data, d => d['Air Pollution - Ozone_Total 2021']) - 62;
+    const xMax = d3.max(data, d => +d['Air Pollution - Ozone_Total 2021']);
 
     // Regression line
     const regLine = chart.selectAll(".regression-line")
@@ -110,13 +132,13 @@ function updateScatterPlot(data, title = "")
 
     circles.transition()
         .duration(500)
-        .attr("cx", d => xScale(+d['Air Pollution - Ozone_Total 2019']))
-        .attr("cy", d => yScale(+d['Cardiovascular Disease Deaths_2019_Total\r']));
+        .attr("cx", d => xScale(+d['Air Pollution - Ozone_Total 2021']))
+        .attr("cy", d => yScale(+d['Cardiovascular Disease Deaths_2021_Total\r']));
 
     circles.enter().append("circle")
         .attr("class", "dot")
-        .attr("cx", d => xScale(+d['Air Pollution - Ozone_Total 2019']))
-        .attr("cy", d => yScale(+d['Cardiovascular Disease Deaths_2019_Total\r']))
+        .attr("cx", d => xScale(+d['Air Pollution - Ozone_Total 2021']))
+        .attr("cy", d => yScale(+d['Cardiovascular Disease Deaths_2021_Total\r']))
         .attr("r", 0)
         .attr("fill", "steelblue")
         .attr("opacity", 0.7)
@@ -125,6 +147,11 @@ function updateScatterPlot(data, title = "")
         .transition()
         .duration(1000)
         .attr("r", 6);
+
+    chart.selectAll(".dot")
+        .on("mouseover", showInfo)
+        .on("mousemove", moveInfo)
+        .on("mouseout", hideInfo);
 
     // Axes
     chart.select(".x-axis")
@@ -138,8 +165,8 @@ function updateScatterPlot(data, title = "")
         .call(d3.axisLeft(yScale));
 
     // Axis labels
-    chart.select(".x-label").text("Air Pollution - Ozone Total 2019");
-    chart.select(".y-label").text("Cardiovascular Disease Deaths 2019 Total\r");
+    chart.select(".x-label").text("Air Pollution - Ozone Total 2021");
+    chart.select(".y-label").text("Cardiovascular Disease Deaths 2021 Total\r");
 
     if (title.length > 0)
     {
@@ -161,7 +188,7 @@ export async function initializeScatter()
 {
     await loadData();
     initalizeSVG();
-    updateScatterPlot(scatterData, "Air Pollution vs Cardiovascular Disease Deaths (2019)");
+    updateScatterPlot(scatterData, "Air Pollution vs Cardiovascular Disease Deaths (2021)");
 }
 
 initializeScatter();
