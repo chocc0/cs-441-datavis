@@ -1,9 +1,13 @@
+import { updateActiveCity } from './main.js';
+
 let scattersvg = d3.select("#scatter-svg");
 let chart, xScale, yScale, chartWidth, chartHeight;
 let scatterData = [];
 
 const width = 400;
 const height = 400;
+
+let activeCity = null;
 
 function initalizeSVG()
 {
@@ -63,6 +67,7 @@ function initalizeSVG()
         .style("font-size", "25px")
         .style("fill", "black")
         .text("");
+    
 }
 
 const hovering = document.getElementById("scatterInfoBlock");
@@ -85,6 +90,40 @@ function moveInfo(event) {
 function hideInfo()
 {
     hovering.style.display = "none";
+}
+
+
+function updateCity(event, d)
+{
+    event.stopPropagation();
+    if (activeCity === d.city) {
+        activeCity = null;
+        updateActiveCity(null);
+    } else {
+        activeCity = d.city;
+        updateActiveCity(d);
+    }
+}
+
+export function highlightCityScatter(city)
+{
+    if (!chart) return; 
+    chart.selectAll(".dot")
+        .attr("opacity", d => d.city === city.city ? 1.0 : 0.3)
+        .attr("stroke", d => d.city === city.city ? "#ffffff" : "rgba(0,0,0,0.4)")
+        .attr("stroke-width", d => d.city === city.city ? 2.5 : 0.5)
+        .attr("r", d => d.city === city.city ? 9 : 6);
+}
+
+export function clearHighlightScatter()
+{
+    if (!chart) return;
+    activeCity = null;
+    chart.selectAll(".dot")
+        .attr("opacity", 0.7)
+        .attr("stroke", "rgba(0,0,0,0.4)")
+        .attr("stroke-width", 0.5)
+        .attr("r", 6);
 }
 
 function updateScatterPlot(data, title = "")
@@ -121,7 +160,7 @@ function updateScatterPlot(data, title = "")
 
 
     // Data points
-    const circles = chart.selectAll(".dot")
+    let circles = chart.selectAll(".dot")
         .data(data, d => d.city);
 
     circles.exit()
@@ -151,7 +190,14 @@ function updateScatterPlot(data, title = "")
     chart.selectAll(".dot")
         .on("mouseover", showInfo)
         .on("mousemove", moveInfo)
-        .on("mouseout", hideInfo);
+        .on("mouseout", hideInfo)
+        .on("mousedown", updateCity);
+
+    scattersvg.on("mousedown", function() {
+    activeCity = null;
+    updateActiveCity(null);
+    clearHighlightScatter();
+    });
 
     // Axes
     chart.select(".x-axis")

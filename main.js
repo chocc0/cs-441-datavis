@@ -1,6 +1,6 @@
 import {initialiseMap, highlightCityMap, clearHighlightMap} from './map.js'
 import {initialiseRadar} from './radar.js'
-import {initializeScatter} from './scatter.js'
+import {initializeScatter, highlightCityScatter, clearHighlightScatter} from './scatter.js'
 
 const maxScroll =  window.visualViewport.height;
 
@@ -20,21 +20,23 @@ export function updateActiveCity(city) {
     activeCity = city;
     if (city === null) {
         clearHighlightMap();
+        clearHighlightScatter();
     }
     else {
         console.log("Active city updated to: " + city.city);
         highlightCityMap(city);
+        highlightCityScatter(city);
     }
 }
 
 window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;
     if(scrolled >= maxScroll){
-        document.getElementById('scatterplot-wrapper').style.visibility = "visible";
-        document.getElementById('map-wrapper').style.visibility = "visible";
+        document.querySelector('.scatterplot-wrapper').style.visibility = "visible";
+        document.querySelector('.map-wrapper').style.visibility = "visible";
     } else {
-        document.getElementById('scatterplot-wrapper').style.visibility = "hidden";
-        document.getElementById('map-wrapper').style.visibility = "hidden";
+        document.querySelector('.scatterplot-wrapper').style.visibility = "hidden";
+        document.querySelector('.map-wrapper').style.visibility = "hidden";
     }
 });
 
