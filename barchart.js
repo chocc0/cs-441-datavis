@@ -1,3 +1,6 @@
+// Max Pb measured: 158ppb
+// # of samples: 271
+
 let svgBar = d3.select("#bar-svg");
 let cellpadding = 30;
 let text_align = 15;
@@ -20,16 +23,16 @@ async function loadData() {
 function initialiseSVG() {
     svgBar.selectAll("*").remove();
 
-    // // Compute available size from CSS/layout; enforce a minimum scale
-    // const bbox = svgBar.node().getBoundingClientRect();
-    // const MIN_WIDTH = 360;
-    // const MIN_HEIGHT = 270; // 4:3 fallback
-    // const width = Math.max(MIN_WIDTH, Math.round(bbox.width) || MIN_WIDTH);
-    // const height = Math.max(MIN_HEIGHT, Math.round(bbox.height) || Math.round(width * 0.75));
+    // Compute available size from CSS/layout; enforce a minimum scale
+    const bbox = svgBar.node().getBoundingClientRect();
+    const MIN_WIDTH = 360;
+    const MIN_HEIGHT = 270; // 4:3 fallback
+    const width = Math.max(MIN_WIDTH, Math.round(bbox.width) || MIN_WIDTH);
+    const height = Math.max(MIN_HEIGHT, Math.round(bbox.height) || Math.round(width * 0.75));
 
-    // // Set viewBox so svg scales responsively
-    // svgBar.attr('viewBox', `0 0 ${graph_w} ${graph_h}`)
-    //         .attr('preserveAspectRatio', 'xMidYMid meet');
+    // Set viewBox so svg scales responsively
+    svgBar.attr('viewBox', `0 0 ${graph_w} ${graph_h}`)
+            .attr('preserveAspectRatio', 'xMidYMid meet');
 }
 
 function drawFlintBar(data) {
