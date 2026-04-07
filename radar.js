@@ -1,7 +1,7 @@
 let svgRadar = d3.select("#radar-svg");
-const widthR = 800;
-const heightR = 800;
-const radiusR = (1/3) * Math.min(widthR, heightR); // 1/3 of the most restrictive dim. makes it flexible 
+let widthR = 800;
+let heightR = 800;
+let radiusR = 200;
 let chartRadar;
 let atlantaChartData;
 
@@ -14,11 +14,25 @@ async function loadData() {
 }
 
 function initialiseSVG(){
-    svgRadar.attr("width", widthR);
-    svgRadar.attr("height", heightR);
+    // Clear previous contents
+    svgRadar.selectAll("*").remove();
+
+    // Compute available size from layout; enforce minimum scale
+    const bbox = svgRadar.node().getBoundingClientRect();
+    const MIN_WIDTH = 360;
+    const MIN_HEIGHT = 270;
+    widthR = Math.max(MIN_WIDTH, Math.round(bbox.width) || MIN_WIDTH);
+    heightR = Math.max(MIN_HEIGHT, Math.round(bbox.height) || Math.round(widthR * 0.75));
+
+    // Set viewBox so svg scales responsively
+    svgRadar.attr('viewBox', `0 0 ${widthR} ${heightR}`)
+            .attr('preserveAspectRatio', 'xMidYMid meet');
+
+    // radius is a third of the smaller dimension
+    radiusR = (1/3) * Math.min(widthR, heightR);
 
     chartRadar = svgRadar.append("g")
-        .attr("transform", "translate(" + widthR/2 + "," + heightR/2 + ")");
+        .attr("transform", `translate(${widthR/2},${heightR/2})`);
 }
 
 function drawAtlantaRadial(data) {
@@ -30,6 +44,10 @@ function drawAtlantaRadial(data) {
     const race = ["Asian", "Black", "Hispanic", "Other", "White"];
     const spoke = (2 * Math.PI) / race.length;
     const increments = [0, 80, 90, 100]
+    // scale-dependent font sizes
+    const ringLabelSize = `${Math.max(8, Math.round(radiusR * 0.06))}px`;
+    const axisLabelSize = `${Math.max(10, Math.round(radiusR * 0.07))}px`;
+    const titleSize = `${Math.max(12, Math.round(radiusR * 0.09))}px`;
 
     // Draw concentric grid rings (DASHED)
     for (let ring=1; ring<=3; ring+=2) { // 10% increments
@@ -48,7 +66,7 @@ function drawAtlantaRadial(data) {
         chartRadar.append("text") // % labels
             .attr("x", (radiusR*ring/3)-(radiusR/8)) // radius/8 aligns text
             .attr("y", 0)
-            .attr("font-size", "xx-small")
+            .style("font-size", ringLabelSize)
             .style("opacity", 0.7)
             .text(increments[ring] + "%");
     }
@@ -69,7 +87,7 @@ function drawAtlantaRadial(data) {
         chartRadar.append("text") // % labels
             .attr("x", (radiusR*ring/3)-(radiusR/8)) // radius/8 aligns text
             .attr("y", 0)
-            .attr("font-size", "xx-small")
+            .style("font-size", ringLabelSize)
             .style("opacity", 0.7)
             .text(increments[ring] + "%");
     }
@@ -97,7 +115,7 @@ function drawAtlantaRadial(data) {
         .attr("y", (d, i) => 
             Math.sin(spoke*i) * radiusR + labelPadding(spoke*i))
         .attr("text-anchor", (d, i) => labelAlign(spoke*i))
-        .attr("font-size", "medium")
+        .style("font-size", axisLabelSize)
         .text(d => d + 
             " (" + data[0]["High School Completion_2023_"+d] + "%)");
 
@@ -111,7 +129,7 @@ function drawAtlantaRadial(data) {
             .attr("points", radar)
             .attr("fill", "#9ed6ff")
             .attr("fill-opacity", 0.2)
-            .attr("stroke-width", 2)
+            .attr("stroke-width", Math.max(1, Math.round(radiusR * 0.01)))
             .attr("stroke", "#0095ff");
 
         // Add title above graph
@@ -119,7 +137,7 @@ function drawAtlantaRadial(data) {
             .attr("x", 0)
             .attr("y", -radiusR-(radiusR/5)) // -radius goes up bc y=0 is center, radius/5 aligns text
             .attr("text-anchor", "middle")
-            .attr("font-size", "x-large")
+            .style("font-size", titleSize)
             .text("Atlanta: High School Graduation Rate by Race (2024)");
 }
 
@@ -137,16 +155,29 @@ function labelAlign(spoke) {
 function labelPadding(spoke) {
     let x = Math.cos(spoke) * radiusR;
     let y = Math.sin(spoke) * radiusR;
-    
-    if (x<0) return -10;
-    if (y<0) return -10;
-    return 10;
+    const pad = Math.max(6, Math.round(radiusR * 0.06));
+    if (x < 0) return -pad;
+    if (y < 0) return -pad;
+    return pad;
 }
 
 export async function initialiseRadar() {
     await loadData();
     initialiseSVG();
     drawAtlantaRadial(atlantaChartData);
+
+    // Attach a debounced resize handler to redraw on layout changes
+    if (!window._radarResizeAttached) {
+        window._radarResizeAttached = true;
+        let resizeTimeout = null;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                initialiseSVG();
+                drawAtlantaRadial(atlantaChartData);
+            }, 150);
+        });
+    }
 }
 
 initialiseRadar();

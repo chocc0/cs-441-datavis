@@ -40,7 +40,7 @@ main{
 }
 
 .svg-wrapper {
-  gap: 50px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -92,7 +92,6 @@ main{
 }
 
 .map-wrapper, .scatterplot-wrapper, .radar-wrapper, .bar-wrapper {
-  padding: 20px 0;
   /* visibility: hidden; */
   width: 100%;
 }
@@ -157,19 +156,21 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25px;
     width: 100%;
 }
 
 /* Make SVGs responsive: use viewBox on the SVG and let CSS control width */
 #radar-svg, #scatter-svg, #map-svg {
-  padding: 40px 40px;
+  padding: 20px 20px;
   color: black;
   background-color: #dbdbdb;  
   border-radius: 10px;
   width: 100%;
   height: auto; /* let aspect ratio follow viewBox */
   display: block;
+  /* Minimum size to avoid overly small/scaled charts */
+  min-width: 360px;
+  min-height: 270px;
 }
 
 #radar-svg{

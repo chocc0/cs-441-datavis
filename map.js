@@ -460,7 +460,7 @@ export async function initialiseMap()
 {
   console.log("run");
   createMap();
-  buildColorLegend();
-  buildSizeLegend();
+  // buildColorLegend();
+  // buildSizeLegend();
 }
 

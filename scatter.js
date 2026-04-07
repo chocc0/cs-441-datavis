@@ -4,16 +4,28 @@ let scattersvg = d3.select("#scatter-svg");
 let chart, xScale, yScale, chartWidth, chartHeight;
 let scatterData = [];
 
-const width = 400;
-const height = 400;
+// Responsive dimensions will be computed from the SVG bounding box / viewBox
 
 let activeCity = null;
 
 function initalizeSVG()
 {
-    scattersvg.attr("width", width);
-    scattersvg.attr("height", height);
     scattersvg.selectAll("*").remove();
+
+    // Compute available size from CSS/layout; enforce a minimum scale
+    const bbox = scattersvg.node().getBoundingClientRect();
+    const MIN_WIDTH = 360;
+    const MIN_HEIGHT = 270; // 4:3 fallback
+    const width = Math.max(MIN_WIDTH, Math.round(bbox.width) || MIN_WIDTH);
+    const height = Math.max(MIN_HEIGHT, Math.round(bbox.height) || Math.round(width * 0.75));
+
+    // Scale factor relative to the design target (400x400)
+    const scale = Math.max(0.5, Math.min(2, Math.min(width / 400, height / 400)));
+    scattersvg.node().__scatter_scale = scale;
+
+    // Set viewBox so the SVG scales responsively while we work in pixel units
+    scattersvg.attr('viewBox', `0 0 ${width} ${height}`)
+              .attr('preserveAspectRatio', 'xMidYMid meet');
 
     const margin = { top: 30, right: 30, bottom: 60, left: 70 };
     chartWidth = width - margin.left - margin.right;
@@ -45,7 +57,7 @@ function initalizeSVG()
         .attr("x", chartWidth / 2)
         .attr("y", chartHeight + 50)
         .attr("text-anchor", "middle")
-        .style("font-size", "20px")
+        .style("font-size", `${Math.max(10, Math.round(20 * scale))}px`)
         .style("fill", "black")
         .text("");
 
@@ -55,7 +67,7 @@ function initalizeSVG()
         .attr("x", -chartHeight / 2)
         .attr("y", -55)
         .attr("text-anchor", "middle")
-        .style("font-size", "20px")
+        .style("font-size", `${Math.max(10, Math.round(20 * scale))}px`)
         .style("fill", "black")
         .text("");
 
@@ -64,7 +76,7 @@ function initalizeSVG()
         .attr("x", width / 2)
         .attr("y", 20)
         .attr("text-anchor", "middle")
-        .style("font-size", "25px")
+        .style("font-size", `${Math.max(12, Math.round(25 * scale))}px`)
         .style("fill", "black")
         .text("");
     
@@ -128,6 +140,7 @@ export function clearHighlightScatter()
 
 function updateScatterPlot(data, title = "")
 {
+    const scale = scattersvg.node().__scatter_scale || 1;
     xScale.domain([d3.min(data, d => d['Air Pollution - Ozone_Total 2021']) -50, d3.max(data, d => d['Air Pollution - Ozone_Total 2021'])]).nice();
     yScale.domain([0, d3.max(data, d => +d['Cardiovascular Disease Deaths_2021_Total\r'])]).nice();
 
@@ -185,7 +198,7 @@ function updateScatterPlot(data, title = "")
         .attr("stroke-width", 0.5)
         .transition()
         .duration(1000)
-        .attr("r", 6);
+        .attr("r", Math.max(3, Math.round(6 * scale)));
 
     chart.selectAll(".dot")
         .on("mouseover", showInfo)
@@ -209,6 +222,15 @@ function updateScatterPlot(data, title = "")
         .transition()
         .duration(500)
         .call(d3.axisLeft(yScale));
+
+    // Tweak tick label sizes to avoid cramping
+    const tickFont = `${Math.max(9, Math.round(12 * scale))}px`;
+    chart.selectAll('.x-axis text').style('font-size', tickFont);
+    chart.selectAll('.y-axis text').style('font-size', tickFont);
+
+    // Update axis label font sizes in case of resize
+    chart.select('.x-label').style('font-size', `${Math.max(10, Math.round(16 * scale))}px`);
+    chart.select('.y-label').style('font-size', `${Math.max(10, Math.round(16 * scale))}px`);
 
     // Axis labels
     chart.select(".x-label").text("Air Pollution - Ozone Total 2021");
@@ -235,6 +257,19 @@ export async function initializeScatter()
     await loadData();
     initalizeSVG();
     updateScatterPlot(scatterData, "Air Pollution vs Cardiovascular Disease Deaths (2021)");
+
+    // // Attach a debounced resize handler so the chart redraws when layout changes
+    // if (!window._scatterResizeAttached) {
+    //     window._scatterResizeAttached = true;
+    //     let resizeTimeout = null;
+    //     window.addEventListener('resize', () => {
+    //         clearTimeout(resizeTimeout);
+    //         resizeTimeout = setTimeout(() => {
+    //             initalizeSVG();
+    //             updateScatterPlot(scatterData, "Air Pollution vs Cardiovascular Disease Deaths (2021)");
+    //         }, 150);
+    //     });
+    // }
 }
 
 initializeScatter();

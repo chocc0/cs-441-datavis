@@ -54,7 +54,7 @@
             <div><span>Cardiovascular Death Rate: </span><strong id="cardio-label"></strong></div>
           </div>
 
-          <div id="legend-wrapper">
+          <!-- <div id="legend-wrapper">
             <div id="legend">
                 <div class="legend-block">
                 <div class="legend-title">POC gap index (color)</div>
@@ -70,38 +70,41 @@
                 <div class="legend-text" style="width:200px;" id="size-max"></div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
-        <!-- Scatterplot SVG -->
-        <div class="scatterplot-wrapper">
-          <div class="title">
-            <h1 >Scatter Plot</h1>
-            <p>Gathering a subset of 100 cities to compare their air pollution and health outcomes with a regression line to show the relationship</p>
-          </div>
-          
-          <div class ="scatter-container">
-            <svg id="scatter-svg"></svg>
-          </div>
+        <div class="sub-svg-wrapper">
+          <!-- Scatterplot SVG -->
+          <div class="scatterplot-wrapper">
+            <div class="scatterplot-wrapper" id = "scatterplot-wrapper">
+              <div class="title">
+                <h1 >Scatter Plot</h1>
+                <p>Gathering a subset of 100 cities to compare their air pollution and health outcomes with a regression line to show the relationship</p>
+              </div>
+              
+              <div class ="scatter-container">
+                <svg id="scatter-svg"></svg>
+              </div>
 
-          <div id="scatterInfoBlock">
-            <div id="city-labelScatter"></div>
-            <div><span>Air Pollution (Ozone): </span><strong id="pollution-label"></strong></div>
-            <div><span>Cardiovascular Deaths: </span><strong id="death-label"></strong></div>
-          </div>
-          
-        </div>
-
-          <!-- Radar SVG -->
-          <div class="radar-wrapper">
-            <div class="title">
-              <h1>Radar Plot</h1>
-              <p>Highschool Graduation Rates Divided by School Demographics in 2024</p>
-            </div>
-            <div class ="radar-container">
-              <svg id="radar-svg"></svg>
+              <div id="scatterInfoBlock">
+                <div id="city-labelScatter"></div>
+                <div><span>Air Pollution (Ozone): </span><strong id="pollution-label"></strong></div>
+                <div><span>Cardiovascular Deaths: </span><strong id="death-label"></strong></div>
+              </div>
+              
             </div>
           </div>
+
+            <!-- Radar SVG -->
+            <div class="radar-wrapper">
+              <div class="title">
+                <h1>Radar Plot</h1>
+                <p>Highschool Graduation Rates Divided by School Demographics in 2024</p>
+              </div>
+              <div class ="radar-container">
+                <svg id="radar-svg"></svg>
+              </div>
+            </div>
         </div>
         
       </div> 
