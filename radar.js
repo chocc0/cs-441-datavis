@@ -35,6 +35,8 @@ function initialiseSVG(){
 
     chartRadar = svgRadar.append("g")
         .attr("transform", `translate(${widthR/2},${heightR/2})`);
+
+    resetCity();
 }
 
 function getCityData(cityName) {
@@ -63,19 +65,19 @@ function drawRadial(data) {
 
     const race = ["Asian", "Black", "Hispanic", "Other", "White\r"];
     const spoke = (2 * Math.PI) / race.length;
-    const increments = [0, 80, 90, 100]
+    const increments = [0, 60, 70, 80, 90, 100]
     // scale-dependent font sizes
     const ringLabelSize = `${Math.max(8, Math.round(radiusR * 0.06))}px`;
     const axisLabelSize = `${Math.max(10, Math.round(radiusR * 0.07))}px`;
     const titleSize = `${Math.max(12, Math.round(radiusR * 0.09))}px`;
 
     // Draw concentric grid rings (DASHED)
-    for (let ring=1; ring<=3; ring+=2) { // 10% increments
+    for (let ring=1; ring<=5; ring+=2) { // 10% increments
         
         let increments1 = ""; // x,y values for each spoke's increments (rings)
         for (let i=0; i<race.length; i++) {
-            increments1 += ( Math.cos(spoke*i) * radiusR * (ring/3) ) + "," + 
-                ( Math.sin(spoke*i) * radiusR * (ring/3) ) + " ";
+            increments1 += ( Math.cos(spoke*i) * radiusR * (ring/5) ) + "," + 
+                ( Math.sin(spoke*i) * radiusR * (ring/5) ) + " ";
         }
         chartRadar.append("polygon") // rings
             .attr("points", increments1)
@@ -84,19 +86,19 @@ function drawRadial(data) {
             .style("stroke-dasharray", ("10, 8"))
             .style("opacity", 0.5);
         chartRadar.append("text") // % labels
-            .attr("x", (radiusR*ring/3)-(radiusR/8)) // radius/8 aligns text
+            .attr("x", (radiusR*ring/5)-(radiusR/8)) // radius/8 aligns text
             .attr("y", 0)
             .style("font-size", ringLabelSize)
             .style("opacity", 0.7)
             .text(increments[ring] + "%");
     }
     // Draw concentric grid rings (DOTTED) 
-    for (let ring=2; ring<=3; ring+=2) { // 10% increments
+    for (let ring=2; ring<=5; ring+=2) { // 10% increments
         
         let increments2 = ""; // x,y values for each spoke's increments (rings)
         for (let i=0; i<race.length; i++) {
-            increments2 += ( Math.cos(spoke*i) * radiusR * (ring/3) ) + "," + 
-                ( Math.sin(spoke*i) * radiusR * (ring/3) ) + " ";
+            increments2 += ( Math.cos(spoke*i) * radiusR * (ring/5) ) + "," + 
+                ( Math.sin(spoke*i) * radiusR * (ring/5) ) + " ";
         }
         chartRadar.append("polygon") // rings
             .attr("points", increments2)
@@ -105,7 +107,7 @@ function drawRadial(data) {
             .style("stroke-dasharray", ("2, 5"))
             .style("opacity", 0.5);
         chartRadar.append("text") // % labels
-            .attr("x", (radiusR*ring/3)-(radiusR/8)) // radius/8 aligns text
+            .attr("x", (radiusR*ring/5)-(radiusR/8)) // radius/8 aligns text
             .attr("y", 0)
             .style("font-size", ringLabelSize)
             .style("opacity", 0.7)
