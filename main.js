@@ -7,6 +7,12 @@ let headerHeight = 0;
 let footerHeight = 0;
 let showSvg = false; // tracks whether #para6 has been reached
 
+const title = document.querySelector(".svg-title")
+const infoblock = document.querySelector("#info-block")
+const scatterInfoBlock = document.querySelector("#scatter-info-block")
+document.querySelector(".svg-title").textContent = " "
+
+
 document.addEventListener('DOMContentLoaded', () => {
     headerHeight = document.querySelector('#front-page')?.offsetHeight ?? 0;
     footerHeight = document.querySelector('footer')?.offsetHeight ?? 0;
@@ -59,7 +65,6 @@ function updateGraphic(classList) {
 }
 
 export function updateActiveCity(city) {
-    const title = document.querySelector(".svg-title")
     activeCity = city;
     console.log(activeCity)
     if (city === null) {

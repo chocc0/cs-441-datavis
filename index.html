@@ -17,15 +17,15 @@
 
     <main>
       <div class="article">
-        <p id="para1" class="para bar">Environmental cleanliness is an essential part of living a healthy life and creating a fair society. Nature may feel separate from our health and social life, but our careless actions have altered the environment, and those changes are cascading downward. Consider the Flint Water Crisis in 2015. Flint not only suffered an environmental disaster that poisoned its children, but it warned us that marginalized communities bear the brunt of environmental consequences.</p>
+        <p id="para1" class="para bar">Environmental cleanliness is an essential part of living a healthy life and creating a fair society. Nature may feel separate from our health and social life, but our careless actions have altered the environment, and those changes are cascading downward. Consider the Flint Water Crisis in 2015. Flint not only suffered an environmental disaster that poisoned its citizens but warned us that marginalized communities bear the brunt of environmental consequences.</p>
         
-        <p id="para2" class="para bar">*Data shows that Flint experienced a 50% higher cardiovascular mortality rate compared to the national average. “Simply put, the economic situation in Flint and the logic that made providing poisoned water seem like a reasonable idea would not have occurred without racism”. While no single person’s racial biases were to blame for the lethal levels of lead, Flint’s outcry directed national focus on “structural racism”. Kemi Fuentes-George–a Middlebury College political science professor–may have synthesized it best:</p>
+        <p id="para2" class="para bar">*Data shows that Flint experienced a 50% higher cardiovascular mortality rate compared to the national average. “Simply put, the economic situation in Flint and the logic that made providing poisoned water seem like a reasonable idea would not have occurred without racism”. While no single person’s racial biases were to blame for the lethal levels of lead, Flint’s outcry directed national focus on “structural racism." Kemi Fuentes-George–a Middlebury College political science professor–may have synthesized it best:</p>
 
         <p id="para3" class="para quote bar">While the American political economy has done pretty well so far at externalizing environmental costs to the poor and marginalized, environmental hazards do travel, perhaps more easily than poor black citizens. In the same way that racist and authoritarian police practices have killed Eric Garner, Jack Crawford and Kelly Thomas, the environmental vulnerability that has devastated Flint – rotting infrastructure, industrial pollution, intransigent political institutions – puts us all at risk.</p>
 
         <p id="para4" class="para map">For years local officials denied claims of elevated lead concentrations and occurrences of Legionnaires Disease. In an effort to dismiss these claims, the city government violated Environmental Protection Agency regulations by flushing water samples used in cleanliness reports. Excess lead in Flint’s pipes reacted with chlorine, an antibacterial agent used to keep drinking water safe. The reaction reduced chlorine concentrations and triggered an uptick in Legionnaires’ disease. This governmental negligence imparted elevated blood-lead levels in as many as 1 in 10 children, according to investigations at Hurley Medical Center. Flint’s child population is now facing developmental risks and lower life expectancies. The Flint Water Crisis demonstrates that environmental trends are difficult to track, and agencies may not be held accountable. Although environmental indicators point to health risks, institutions are motivated to confound and dismiss data inappropriately.</p>
 
-        <p id="para5" class="para map">So, what happened after the Flint Water Crisis? In August 2025, the city declared the problem “fixed,” but many citizens argued as the structural racism problem had not been addressed. The question then becomes, what next? Or, more accurately, where is next? Where is the next city that will face infrastructural and environmental racism and have to wait over a decade for it to be “fixed”? Let’s zoom out and survey.</p>
+        <p id="para5" class="para map">So, what happened after the Flint Water Crisis? In August 2025, the city declared the problem “fixed,” but many citizens argued as the structural racism problem had not been addressed. The question then becomes, what next? Or, more accurately, where is next? Where is the next city that will face infrastructural and environmental racism and have to wait over a decade for it to be “fixed?"" Let’s zoom out and survey.</p>
 
         <p id="para6" class="para map">Our collective health is changing with the chemical makeup of the atmosphere. Evidence shows that air pollution negatively affects us physically and mentally. Complicating the problem, these effects are not uniformly distributed. Marginalized groups are experiencing outsized suffering: rural areas have higher mortality rates from cardiovascular disease and urban adolescents are struggling in school. A 7% rise in CO2 concentration can complicate cardiovascular health and raise blood pressure. Coincidentally, the global CO2 average has gone up by 7% in the past decade. Although our data does not cover rural cardiovascular deaths, we can see somewhat rural areas (between 3-10% rurality) experiencing marginally higher cardiovascular mortality rates. This finding indicates that a gradient exists moving outward from urban centers to rural surroundings. In terms of metropolitan areas, Black and Hispanic student groups are more exposed to pollution which drives lower grades and more disciplinary referrals. Our analysis of Atlanta corroborates this research. We found that Black and Hispanic students experience a 13% lower high school graduation rate compared to White students.</p>
 
@@ -38,10 +38,8 @@
       </div>
 
       <div class="svg-wrapper">
-        <h1>Pollution & People of Color — US Cities</h1>
-        <div class="svg-title">
-            
-        </div>
+        <h1>Pollution & People of Color — US Cities (2021)</h1>
+        <div class="svg-title"></div>
         <!-- Map SVG -->
         <div class="map-wrapper">
           <!-- <div class="title">
@@ -52,7 +50,7 @@
             <svg id="map-svg" viewBox="0 0 1000 500"></svg>
           </div>
           
-          <div id="info-block" className="info-block">
+          <div id="info-block">
             <div id="city-label"></div>
             <div><span>CO₂/capita: </span><strong id="co2-label"></strong></div>
             <div><span>POC gap: </span><strong id="poc-label"></strong></div>
@@ -83,16 +81,13 @@
           <!-- Scatterplot SVG -->
           <div class="scatterplot-wrapper">
             <div class="scatterplot-wrapper" id = "scatterplot-wrapper">
-              <!-- <div class="title">
-                <h1 >Scatter Plot</h1>
-                <p>Gathering a subset of 100 cities to compare their air pollution and health outcomes with a regression line to show the relationship</p>
-              </div> -->
-              
+              <div class="title">Air Pollution vs. Cardiovascular Disease Deaths</div>
+
               <div class ="scatter-container">
                 <svg id="scatter-svg"></svg>
               </div>
 
-              <div id="scatterInfoBlock" className="info-block">
+              <div id="scatter-info-block">
                 <div id="city-labelScatter"></div>
                 <div><span>Air Pollution (Ozone): </span><strong id="pollution-label"></strong></div>
                 <div><span>Cardiovascular Deaths: </span><strong id="death-label"></strong></div>
@@ -103,10 +98,7 @@
 
             <!-- Radar SVG -->
             <div class="radar-wrapper">
-              <!-- <div class="title">
-                <h1>Radar Plot</h1>
-                <p>Highschool Graduation Rates Divided by School Demographics in 2024</p>
-              </div> -->
+              <div class="title">Highschool Graduation Rates Divided by School Demographics</div>
               <div class ="radar-container">
                 <svg id="radar-svg"></svg>
               </div>

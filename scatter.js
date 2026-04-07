@@ -71,18 +71,18 @@ function initalizeSVG()
         .style("fill", "black")
         .text("");
 
-    scattersvg.append("text")
-        .attr("id", "chart-title")
-        .attr("x", width / 2)
-        .attr("y", 20)
-        .attr("text-anchor", "middle")
-        .style("font-size", `${Math.max(12, Math.round(25 * scale))}px`)
-        .style("fill", "black")
-        .text("");
+    // scattersvg.append("text")
+    //     .attr("id", "chart-title")
+    //     .attr("x", width / 2)
+    //     .attr("y", 20)
+    //     .attr("text-anchor", "middle")
+    //     .style("font-size", `${Math.max(12, Math.round(25 * scale))}px`)
+    //     .style("fill", "black")
+    //     .text("");
     
 }
 
-const hovering = document.getElementById("scatterInfoBlock");
+const hovering = document.getElementById("scatter-info-block");
 
 function showInfo(event, d)
 {
@@ -124,7 +124,7 @@ export function highlightCityScatter(city)
         .attr("opacity", d => d.city === city.city ? 1.0 : 0.3)
         .attr("stroke", d => d.city === city.city ? "#ffffff" : "rgba(0,0,0,0.4)")
         .attr("stroke-width", d => d.city === city.city ? 2.5 : 0.5)
-        .attr("r", d => d.city === city.city ? 9 : 6);
+        .attr("r", d => d.city === city.city ? 9 : 4);
 }
 
 export function clearHighlightScatter()
@@ -135,7 +135,7 @@ export function clearHighlightScatter()
         .attr("opacity", 0.7)
         .attr("stroke", "rgba(0,0,0,0.4)")
         .attr("stroke-width", 0.5)
-        .attr("r", 6);
+        .attr("r", 4);
 }
 
 function updateScatterPlot(data, title = "")
@@ -192,7 +192,7 @@ function updateScatterPlot(data, title = "")
         .attr("cx", d => xScale(+d['Air Pollution - Ozone_Total 2021']))
         .attr("cy", d => yScale(+d['Cardiovascular Disease Deaths_2021_Total\r']))
         .attr("r", 0)
-        .attr("fill", "steelblue")
+        .attr("fill", "#4c9db2")
         .attr("opacity", 0.7)
         .attr("stroke", "black")
         .attr("stroke-width", 0.5)
@@ -233,8 +233,8 @@ function updateScatterPlot(data, title = "")
     chart.select('.y-label').style('font-size', `${Math.max(10, Math.round(16 * scale))}px`);
 
     // Axis labels
-    chart.select(".x-label").text("Air Pollution - Ozone Total 2021");
-    chart.select(".y-label").text("Cardiovascular Disease Deaths 2021 Total\r");
+    chart.select(".x-label").text("Air Pollution - Ozone Total");
+    chart.select(".y-label").text("Cardiovascular Disease Deaths Total\r");
 
     if (title.length > 0)
     {
