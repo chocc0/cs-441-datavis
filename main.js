@@ -18,8 +18,13 @@ function updateGraphic(s){
 
 export function updateActiveCity(city) {
     activeCity = city;
-    console.log("Active city updated to: " + city.city);
-    highlightCityMap(city);
+    if (city === null) {
+        clearHighlightMap();
+    }
+    else {
+        console.log("Active city updated to: " + city.city);
+        highlightCityMap(city);
+    }
 }
 
 window.addEventListener('scroll', () => {

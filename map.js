@@ -325,8 +325,14 @@ function hideInfo() {
 
 // Click functions
 function updateRadar(event, d) {
-  console.log("Clicked " + d.city);
-  updateActiveCity(d);
+  event.stopPropagation();
+  if (activeCity === d.city) {
+    activeCity = null;
+    updateActiveCity(null);
+  } else {
+    activeCity = d.city;
+    updateActiveCity(d);
+  }
 }
 
 export function highlightCityMap(city) 
@@ -364,8 +370,15 @@ function createMap() {
     .attr('d', path)
     .attr('fill', '#b0b0b0')
     .attr('stroke', 'rgba(0, 0, 0, 0.08)')
-    .attr('stroke-width', 2);
+    .attr('stroke-width', 2)
+    .style('pointer-events', 'none');
 
+  svg.on('click', (event) => {
+    if(event.target === svg.node()) {
+      activeCity = null;
+      updateActiveCity(null);
+    }
+  });
   // Get city locations 
   const mapped = cities
     .map(c => {
