@@ -23,6 +23,9 @@ p {
 
 footer {
   background-color: rgb(79, 104, 137); 
+  background-image: url('dat/Los Angeles La GIF by 1091.gif');
+  background-size: cover;
+  background-repeat: no-repeat; 
   padding: 25px;
   color: white;
   font-size: 8pt;
@@ -73,6 +76,12 @@ main {
   opacity: 0;
   visibility: hidden;
 }
+
+.info-block{
+  left: 0;
+  top: 0;
+}
+
 
 .sub-svg-wrapper {
   display: flex;
