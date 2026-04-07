@@ -44,17 +44,26 @@ main{
   display: flex;
   flex-direction: column;
   flex: 1;
+  position: fixed;
+  /* background-color: blue; */
+  left: 45%;
+  top: 0%;
 }
 
-#test-wrapper {
+.sub-svg-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+/* #test-wrapper {
   visibility: hidden;
   position: fixed;
   background-color: blue;
   width: 100px;
   height: 100px;
-  left: 75%;
-  top: 50%;
-}
+  left: 50%;
+  top: 0%;
+} */
 
 .article {
   display: flex;
@@ -74,8 +83,8 @@ main{
 
 
 .article p{
-  line-height: 1.55em;
-  font-size: 1.15em;
+  line-height: 1.50em;
+  font-size: 1.05em;
 }
 
 .quote{
@@ -84,7 +93,7 @@ main{
 
 .map-wrapper, .scatterplot-wrapper, .radar-wrapper, .bar-wrapper {
   padding: 20px 0;
-  visibility: hidden;
+  /* visibility: hidden; */
   width: 100%;
 }
 
@@ -147,13 +156,15 @@ main{
     width: 100%;
 }
 
+/* Make SVGs responsive: use viewBox on the SVG and let CSS control width */
 #radar-svg, #scatter-svg, #map-svg {
   padding: 40px 40px;
   color: black;
   background-color: #dbdbdb;  
   border-radius: 10px;
   width: 100%;
-  height: 500px;
+  height: auto; /* let aspect ratio follow viewBox */
+  display: block;
 }
 
 #radar-svg{

@@ -285,7 +285,7 @@ const pocColor = {
 
 const radiusScale = d3.scaleSqrt()
   .domain(co2Extent)
-  .range([1, 20]);
+  .range([5, 40]);
 const colorScale = d3.scaleSequential(d3.interpolateOrRd)
   .domain(pocExtent);
 
@@ -294,8 +294,8 @@ let dotSelection = null;
 
 // Map help from Claude AI
 const svg        = d3.select('#map-svg');
-const projection = d3.geoAlbersUsa().scale(1200).translate([570, 320]);
-const path       = d3.geoPath(projection);
+let projection = null;
+let path = null;
 
 let activeCity = null;
 
@@ -345,7 +345,7 @@ export function highlightCityMap(city)
       : 'rgba(0,0,0,0.4)')
     .attr('stroke-width', d => d.city === city.city ? 2.5 : 1)
     .attr('r', d => d.city === city.city
-      ? radiusScale(d.co2) * 1.1
+      ? radiusScale(d.co2) * 1
       : radiusScale(d.co2));
 }
 
@@ -362,10 +362,20 @@ export function clearHighlightMap() {
 
 function createMap() {
   d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(us => {
+  // Read svg size from viewBox (fallback to bounding box)
+  const vb = (svg.attr('viewBox') || '0 0 1000 500').split(/\s+/).map(Number);
+  const width = vb[2] || svg.node().getBoundingClientRect().width || 1000;
+  const height = vb[3] || svg.node().getBoundingClientRect().height || 500;
+
+  // Create a projection sized to the svg using fitSize for responsive scaling
+  const states = topojson.feature(us, us.objects.states);
+  projection = d3.geoAlbersUsa();
+  projection.fitSize([width, height], states);
+  path = d3.geoPath().projection(projection);
   // State outlines
   svg.append('g')
     .selectAll('path')
-    .data(topojson.feature(us, us.objects.states).features)
+    .data(states.features)
     .join('path')
     .attr('d', path)
     .attr('fill', '#b0b0b0')
@@ -379,12 +389,13 @@ function createMap() {
       updateActiveCity(null);
     }
   });
-  // Get city locations 
+  // Get city locations
   const mapped = cities
     .map(c => {
       const proj = projection([c.lon, c.lat]);
       return proj ? { ...c, px: proj[0], py: proj[1] } : null;
-    });
+    })
+    .filter(d => d !== null);
 
   // City dots
   dotSelection = svg.append('g')

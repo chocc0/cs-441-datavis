@@ -2,8 +2,8 @@ let scattersvg = d3.select("#scatter-svg");
 let chart, xScale, yScale, chartWidth, chartHeight;
 let scatterData = [];
 
-const width = 800;
-const height = 600;
+const width = 400;
+const height = 400;
 
 function initalizeSVG()
 {
