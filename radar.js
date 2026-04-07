@@ -3,11 +3,13 @@ const widthR = 800;
 const heightR = 800;
 const radiusR = (1/3) * Math.min(widthR, heightR); // 1/3 of the most restrictive dim. makes it flexible 
 let chartRadar;
-let atlantaChartData;
+let radarData;
+
+let activeCity = "Atlanta, GA";
 
 async function loadData() {
     try {
-        atlantaChartData = await d3.json("Atlanta Radial.json");
+        radarData = await d3.json("radar_data.json");
     } catch (err) {
         console.error("Failed to load Atlanta Radial.json:", err);
     }
@@ -21,15 +23,33 @@ function initialiseSVG(){
         .attr("transform", "translate(" + widthR/2 + "," + heightR/2 + ")");
 }
 
-function drawAtlantaRadial(data) {
+function getCityData(cityName) {
+    return radarData.find(d => d.city === cityName) 
+        ?? radarData[0];
+}
 
+export function updateCity(cityName) {
+    activeCity = cityName;
+    chartRadar.selectAll("*").remove();
+    drawRadial(getCityData(cityName));
+}
+
+export function resetCity() {
+    activeCity = null;
+    chartRadar.selectAll("*").remove();
+    drawRadial(getCityData("Atlanta, GA"));
+}
+
+function drawRadial(data) {
+
+    chartRadar.selectAll("*").remove();
     const radialScale = d3.scaleLinear()
-        .domain([70, 100]) // percentage values 
+        .domain([50, 100]) // percentage values 
         .range([0, radiusR]);
 
-    const race = ["Asian", "Black", "Hispanic", "Other", "White"];
+    const race = ["Asian", "Black", "Hispanic", "Other", "White\r"];
     const spoke = (2 * Math.PI) / race.length;
-    const increments = [0, 80, 90, 100]
+    const increments = [0, 67, 83, 100]
 
     // Draw concentric grid rings (DASHED)
     for (let ring=1; ring<=3; ring+=2) { // 10% increments
@@ -99,13 +119,13 @@ function drawAtlantaRadial(data) {
         .attr("text-anchor", (d, i) => labelAlign(spoke*i))
         .attr("font-size", "medium")
         .text(d => d + 
-            " (" + data[0]["High School Completion_2023_"+d] + "%)");
+            " (" + data["High School Completion_2021_"+d] + "%)");
 
         // Draw the data into a radar
         let radar = ""; // x,y values for each data point
         for (let i=0; i<race.length; i++) {
-            radar += ( Math.cos(spoke*i) * radialScale(data[0]["High School Completion_2023_"+race[i]]) ) + "," + 
-                ( Math.sin(spoke*i) * radialScale(data[0]["High School Completion_2023_"+race[i]]) ) + " ";
+            radar += ( Math.cos(spoke*i) * radialScale(data["High School Completion_2021_"+race[i]]) ) + "," + 
+                ( Math.sin(spoke*i) * radialScale(data["High School Completion_2021_"+race[i]]) ) + " ";
         }
         chartRadar.append("polygon")
             .attr("points", radar)
@@ -120,7 +140,7 @@ function drawAtlantaRadial(data) {
             .attr("y", -radiusR-(radiusR/5)) // -radius goes up bc y=0 is center, radius/5 aligns text
             .attr("text-anchor", "middle")
             .attr("font-size", "x-large")
-            .text("Atlanta: High School Graduation Rate by Race (2024)");
+            .text(data.city + ": High School Graduation Rate by Race (2021)");
 }
 
 // Determines how labels align with spokes
@@ -146,7 +166,5 @@ function labelPadding(spoke) {
 export async function initialiseRadar() {
     await loadData();
     initialiseSVG();
-    drawAtlantaRadial(atlantaChartData);
+    updateCity(activeCity);
 }
-
-initialiseRadar();

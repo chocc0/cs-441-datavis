@@ -1,0 +1,2130 @@
+[
+  {
+    "city": "Abilene, TX",
+    "High School Completion_2021_Asian": 90.1,
+    "High School Completion_2021_Black": 81.6,
+    "High School Completion_2021_Hispanic": 72.6,
+    "High School Completion_2021_Other": 70.7,
+    "High School Completion_2021_White\r": 93.7
+  },
+  {
+    "city": "Abington Township, PA",
+    "High School Completion_2021_Asian": 92.8,
+    "High School Completion_2021_Black": 86.2,
+    "High School Completion_2021_Hispanic": 94,
+    "High School Completion_2021_Other": 86.6,
+    "High School Completion_2021_White\r": 97
+  },
+  {
+    "city": "Ada, OK",
+    "High School Completion_2021_Asian": 76.3,
+    "High School Completion_2021_Black": 90.5,
+    "High School Completion_2021_Hispanic": 71.7,
+    "High School Completion_2021_Other": 85.7,
+    "High School Completion_2021_White\r": 89.1
+  },
+  {
+    "city": "Akron, OH",
+    "High School Completion_2021_Asian": 59.6,
+    "High School Completion_2021_Black": 87.8,
+    "High School Completion_2021_Hispanic": 73.6,
+    "High School Completion_2021_Other": 81.5,
+    "High School Completion_2021_White\r": 90.6
+  },
+  {
+    "city": "Alafaya, FL",
+    "High School Completion_2021_Asian": 88.4,
+    "High School Completion_2021_Black": 91.9,
+    "High School Completion_2021_Hispanic": 90.4,
+    "High School Completion_2021_Other": 91.7,
+    "High School Completion_2021_White\r": 95.1
+  },
+  {
+    "city": "Alameda, CA",
+    "High School Completion_2021_Asian": 86.9,
+    "High School Completion_2021_Black": 92.8,
+    "High School Completion_2021_Hispanic": 84.9,
+    "High School Completion_2021_Other": 88,
+    "High School Completion_2021_White\r": 97.5
+  },
+  {
+    "city": "Albany, GA",
+    "High School Completion_2021_Asian": 88,
+    "High School Completion_2021_Black": 80.6,
+    "High School Completion_2021_Hispanic": 76.9,
+    "High School Completion_2021_Other": 88.2,
+    "High School Completion_2021_White\r": 89.7
+  },
+  {
+    "city": "Albany, NY",
+    "High School Completion_2021_Asian": 76.2,
+    "High School Completion_2021_Black": 83.7,
+    "High School Completion_2021_Hispanic": 71.2,
+    "High School Completion_2021_Other": 79.7,
+    "High School Completion_2021_White\r": 95.7
+  },
+  {
+    "city": "Albany, OR",
+    "High School Completion_2021_Asian": 90.1,
+    "High School Completion_2021_Black": 97.6,
+    "High School Completion_2021_Hispanic": 75,
+    "High School Completion_2021_Other": 76.9,
+    "High School Completion_2021_White\r": 94.4
+  },
+  {
+    "city": "Albuquerque, NM",
+    "High School Completion_2021_Asian": 87.9,
+    "High School Completion_2021_Black": 94.3,
+    "High School Completion_2021_Hispanic": 84.8,
+    "High School Completion_2021_Other": 85.4,
+    "High School Completion_2021_White\r": 96.7
+  },
+  {
+    "city": "Alexandria, VA",
+    "High School Completion_2021_Asian": 93.4,
+    "High School Completion_2021_Black": 91.9,
+    "High School Completion_2021_Hispanic": 72.2,
+    "High School Completion_2021_Other": 78.2,
+    "High School Completion_2021_White\r": 98.7
+  },
+  {
+    "city": "Alhambra, CA",
+    "High School Completion_2021_Asian": 79.4,
+    "High School Completion_2021_Black": 93.6,
+    "High School Completion_2021_Hispanic": 83.6,
+    "High School Completion_2021_Other": 84.9,
+    "High School Completion_2021_White\r": 95.9
+  },
+  {
+    "city": "Aliso Viejo, CA",
+    "High School Completion_2021_Asian": 96.7,
+    "High School Completion_2021_Black": 99,
+    "High School Completion_2021_Hispanic": 88.1,
+    "High School Completion_2021_Other": 89.9,
+    "High School Completion_2021_White\r": 98.3
+  },
+  {
+    "city": "Allen, TX",
+    "High School Completion_2021_Asian": 95.3,
+    "High School Completion_2021_Black": 94.7,
+    "High School Completion_2021_Hispanic": 87.8,
+    "High School Completion_2021_Other": 91.2,
+    "High School Completion_2021_White\r": 97.8
+  },
+  {
+    "city": "Allentown, PA",
+    "High School Completion_2021_Asian": 80.6,
+    "High School Completion_2021_Black": 83.6,
+    "High School Completion_2021_Hispanic": 70.5,
+    "High School Completion_2021_Other": 70.3,
+    "High School Completion_2021_White\r": 90.3
+  },
+  {
+    "city": "Amarillo, TX",
+    "High School Completion_2021_Asian": 53.5,
+    "High School Completion_2021_Black": 79.5,
+    "High School Completion_2021_Hispanic": 73.1,
+    "High School Completion_2021_Other": 77.2,
+    "High School Completion_2021_White\r": 93.6
+  },
+  {
+    "city": "Amherst, NY",
+    "High School Completion_2021_Asian": 90.8,
+    "High School Completion_2021_Black": 93.1,
+    "High School Completion_2021_Hispanic": 76.2,
+    "High School Completion_2021_Other": 86.3,
+    "High School Completion_2021_White\r": 96.1
+  },
+  {
+    "city": "Anaheim, CA",
+    "High School Completion_2021_Asian": 88.8,
+    "High School Completion_2021_Black": 92.9,
+    "High School Completion_2021_Hispanic": 62.1,
+    "High School Completion_2021_Other": 63,
+    "High School Completion_2021_White\r": 93.9
+  },
+  {
+    "city": "Ann Arbor, MI",
+    "High School Completion_2021_Asian": 98,
+    "High School Completion_2021_Black": 93.2,
+    "High School Completion_2021_Hispanic": 92.7,
+    "High School Completion_2021_Other": 93.9,
+    "High School Completion_2021_White\r": 98.7
+  },
+  {
+    "city": "Antioch, CA",
+    "High School Completion_2021_Asian": 89.3,
+    "High School Completion_2021_Black": 91.7,
+    "High School Completion_2021_Hispanic": 74.3,
+    "High School Completion_2021_Other": 75.5,
+    "High School Completion_2021_White\r": 93.1
+  },
+  {
+    "city": "Apopka, FL",
+    "High School Completion_2021_Asian": 94.6,
+    "High School Completion_2021_Black": 93.7,
+    "High School Completion_2021_Hispanic": 72.9,
+    "High School Completion_2021_Other": 77.7,
+    "High School Completion_2021_White\r": 93.8
+  },
+  {
+    "city": "Apple Valley, CA",
+    "High School Completion_2021_Asian": 92.4,
+    "High School Completion_2021_Black": 91.2,
+    "High School Completion_2021_Hispanic": 73.5,
+    "High School Completion_2021_Other": 71.1,
+    "High School Completion_2021_White\r": 92.3
+  },
+  {
+    "city": "Apple Valley, MN",
+    "High School Completion_2021_Asian": 86.3,
+    "High School Completion_2021_Black": 86.5,
+    "High School Completion_2021_Hispanic": 74.5,
+    "High School Completion_2021_Other": 82.7,
+    "High School Completion_2021_White\r": 98.1
+  },
+  {
+    "city": "Arlington, TX",
+    "High School Completion_2021_Asian": 78.3,
+    "High School Completion_2021_Black": 93.5,
+    "High School Completion_2021_Hispanic": 64.5,
+    "High School Completion_2021_Other": 66.7,
+    "High School Completion_2021_White\r": 94.8
+  },
+  {
+    "city": "Arlington, VA",
+    "High School Completion_2021_Asian": 95.9,
+    "High School Completion_2021_Black": 92.4,
+    "High School Completion_2021_Hispanic": 76.3,
+    "High School Completion_2021_Other": 79.2,
+    "High School Completion_2021_White\r": 99.2
+  },
+  {
+    "city": "Arvada, CO",
+    "High School Completion_2021_Asian": 93.2,
+    "High School Completion_2021_Black": 86.9,
+    "High School Completion_2021_Hispanic": 85.4,
+    "High School Completion_2021_Other": 89.6,
+    "High School Completion_2021_White\r": 97.1
+  },
+  {
+    "city": "Athens, GA",
+    "High School Completion_2021_Asian": 92.6,
+    "High School Completion_2021_Black": 83.2,
+    "High School Completion_2021_Hispanic": 67.4,
+    "High School Completion_2021_Other": 77.5,
+    "High School Completion_2021_White\r": 96.7
+  },
+  {
+    "city": "Atlanta, GA",
+    "High School Completion_2021_Asian": 96.6,
+    "High School Completion_2021_Black": 86.3,
+    "High School Completion_2021_Hispanic": 84,
+    "High School Completion_2021_Other": 87.6,
+    "High School Completion_2021_White\r": 98.6
+  },
+  {
+    "city": "Aurora, CO",
+    "High School Completion_2021_Asian": 72.2,
+    "High School Completion_2021_Black": 90.2,
+    "High School Completion_2021_Hispanic": 68,
+    "High School Completion_2021_Other": 72.5,
+    "High School Completion_2021_White\r": 95.9
+  },
+  {
+    "city": "Aurora, IL",
+    "High School Completion_2021_Asian": 89,
+    "High School Completion_2021_Black": 89.7,
+    "High School Completion_2021_Hispanic": 57.3,
+    "High School Completion_2021_Other": 59.6,
+    "High School Completion_2021_White\r": 96.2
+  },
+  {
+    "city": "Austin, TX",
+    "High School Completion_2021_Asian": 92.7,
+    "High School Completion_2021_Black": 89.5,
+    "High School Completion_2021_Hispanic": 76.2,
+    "High School Completion_2021_Other": 78.5,
+    "High School Completion_2021_White\r": 98
+  },
+  {
+    "city": "Babylon, NY",
+    "High School Completion_2021_Asian": 84.5,
+    "High School Completion_2021_Black": 84.2,
+    "High School Completion_2021_Hispanic": 71.7,
+    "High School Completion_2021_Other": 74,
+    "High School Completion_2021_White\r": 93.7
+  },
+  {
+    "city": "Bakersfield, CA",
+    "High School Completion_2021_Asian": 86,
+    "High School Completion_2021_Black": 86.5,
+    "High School Completion_2021_Hispanic": 69.7,
+    "High School Completion_2021_Other": 72.5,
+    "High School Completion_2021_White\r": 93.3
+  },
+  {
+    "city": "Baldwin Park, CA",
+    "High School Completion_2021_Asian": 75.5,
+    "High School Completion_2021_Black": 85.7,
+    "High School Completion_2021_Hispanic": 62.1,
+    "High School Completion_2021_Other": 61.9,
+    "High School Completion_2021_White\r": 83.9
+  },
+  {
+    "city": "Baltimore, MD",
+    "High School Completion_2021_Asian": 90.2,
+    "High School Completion_2021_Black": 84.1,
+    "High School Completion_2021_Hispanic": 72.2,
+    "High School Completion_2021_Other": 77.8,
+    "High School Completion_2021_White\r": 91.9
+  },
+  {
+    "city": "Baton Rouge, LA",
+    "High School Completion_2021_Asian": 84.5,
+    "High School Completion_2021_Black": 81.8,
+    "High School Completion_2021_Hispanic": 72.3,
+    "High School Completion_2021_Other": 75.1,
+    "High School Completion_2021_White\r": 96.3
+  },
+  {
+    "city": "Beaumont, TX",
+    "High School Completion_2021_Asian": 80.4,
+    "High School Completion_2021_Black": 89.2,
+    "High School Completion_2021_Hispanic": 53.4,
+    "High School Completion_2021_Other": 54.1,
+    "High School Completion_2021_White\r": 95
+  },
+  {
+    "city": "Bellevue, WA",
+    "High School Completion_2021_Asian": 96,
+    "High School Completion_2021_Black": 94.7,
+    "High School Completion_2021_Hispanic": 73.3,
+    "High School Completion_2021_Other": 88.2,
+    "High School Completion_2021_White\r": 97.9
+  },
+  {
+    "city": "Berkeley, CA",
+    "High School Completion_2021_Asian": 96.2,
+    "High School Completion_2021_Black": 92.9,
+    "High School Completion_2021_Hispanic": 84.6,
+    "High School Completion_2021_Other": 87.8,
+    "High School Completion_2021_White\r": 98.6
+  },
+  {
+    "city": "Billings, MT",
+    "High School Completion_2021_Asian": 95.7,
+    "High School Completion_2021_Black": 94.2,
+    "High School Completion_2021_Hispanic": 82.4,
+    "High School Completion_2021_Other": 89.2,
+    "High School Completion_2021_White\r": 96
+  },
+  {
+    "city": "Birmingham, AL",
+    "High School Completion_2021_Asian": 97.2,
+    "High School Completion_2021_Black": 86.2,
+    "High School Completion_2021_Hispanic": 69.9,
+    "High School Completion_2021_Other": 79.8,
+    "High School Completion_2021_White\r": 94.4
+  },
+  {
+    "city": "Boca Raton, FL",
+    "High School Completion_2021_Asian": 91.6,
+    "High School Completion_2021_Black": 93.4,
+    "High School Completion_2021_Hispanic": 88.6,
+    "High School Completion_2021_Other": 87,
+    "High School Completion_2021_White\r": 97.6
+  },
+  {
+    "city": "Boston, MA",
+    "High School Completion_2021_Asian": 80.7,
+    "High School Completion_2021_Black": 85.2,
+    "High School Completion_2021_Hispanic": 72.7,
+    "High School Completion_2021_Other": 74.1,
+    "High School Completion_2021_White\r": 97
+  },
+  {
+    "city": "Bridgeport, CT",
+    "High School Completion_2021_Asian": 82.7,
+    "High School Completion_2021_Black": 85.2,
+    "High School Completion_2021_Hispanic": 63.5,
+    "High School Completion_2021_Other": 63.6,
+    "High School Completion_2021_White\r": 87.8
+  },
+  {
+    "city": "Broken Arrow, OK",
+    "High School Completion_2021_Asian": 86.5,
+    "High School Completion_2021_Black": 96.8,
+    "High School Completion_2021_Hispanic": 79.2,
+    "High School Completion_2021_Other": 90.1,
+    "High School Completion_2021_White\r": 96.1
+  },
+  {
+    "city": "Brookhaven, NY",
+    "High School Completion_2021_Asian": 90.2,
+    "High School Completion_2021_Black": 90.1,
+    "High School Completion_2021_Hispanic": 77.8,
+    "High School Completion_2021_Other": 81,
+    "High School Completion_2021_White\r": 94.5
+  },
+  {
+    "city": "Buffalo, NY",
+    "High School Completion_2021_Asian": 63.2,
+    "High School Completion_2021_Black": 83.5,
+    "High School Completion_2021_Hispanic": 75.3,
+    "High School Completion_2021_Other": 78.6,
+    "High School Completion_2021_White\r": 91.5
+  },
+  {
+    "city": "Burbank, CA",
+    "High School Completion_2021_Asian": 96.6,
+    "High School Completion_2021_Black": 97.8,
+    "High School Completion_2021_Hispanic": 88.5,
+    "High School Completion_2021_Other": 91.2,
+    "High School Completion_2021_White\r": 94.1
+  },
+  {
+    "city": "Cambridge, MA",
+    "High School Completion_2021_Asian": 97.2,
+    "High School Completion_2021_Black": 84.7,
+    "High School Completion_2021_Hispanic": 84.6,
+    "High School Completion_2021_Other": 92.4,
+    "High School Completion_2021_White\r": 98
+  },
+  {
+    "city": "Cape Coral, FL",
+    "High School Completion_2021_Asian": 87.2,
+    "High School Completion_2021_Black": 84.8,
+    "High School Completion_2021_Hispanic": 88.5,
+    "High School Completion_2021_Other": 88.3,
+    "High School Completion_2021_White\r": 95.2
+  },
+  {
+    "city": "Carrollton, TX",
+    "High School Completion_2021_Asian": 87.7,
+    "High School Completion_2021_Black": 95.4,
+    "High School Completion_2021_Hispanic": 70.4,
+    "High School Completion_2021_Other": 78.1,
+    "High School Completion_2021_White\r": 98.2
+  },
+  {
+    "city": "Cary, NC",
+    "High School Completion_2021_Asian": 95,
+    "High School Completion_2021_Black": 95.4,
+    "High School Completion_2021_Hispanic": 83.7,
+    "High School Completion_2021_Other": 87.7,
+    "High School Completion_2021_White\r": 98.5
+  },
+  {
+    "city": "Cedar Rapids, IA",
+    "High School Completion_2021_Asian": 86.9,
+    "High School Completion_2021_Black": 83,
+    "High School Completion_2021_Hispanic": 82.8,
+    "High School Completion_2021_Other": 85.2,
+    "High School Completion_2021_White\r": 95.6
+  },
+  {
+    "city": "Chandler, AZ",
+    "High School Completion_2021_Asian": 91.2,
+    "High School Completion_2021_Black": 96.2,
+    "High School Completion_2021_Hispanic": 83.9,
+    "High School Completion_2021_Other": 89,
+    "High School Completion_2021_White\r": 97.3
+  },
+  {
+    "city": "Charlotte, NC",
+    "High School Completion_2021_Asian": 84.4,
+    "High School Completion_2021_Black": 91.2,
+    "High School Completion_2021_Hispanic": 60.8,
+    "High School Completion_2021_Other": 64.8,
+    "High School Completion_2021_White\r": 96.9
+  },
+  {
+    "city": "Chattanooga, TN",
+    "High School Completion_2021_Asian": 86.8,
+    "High School Completion_2021_Black": 86.1,
+    "High School Completion_2021_Hispanic": 56.8,
+    "High School Completion_2021_Other": 72.1,
+    "High School Completion_2021_White\r": 93.3
+  },
+  {
+    "city": "Chesapeake, VA",
+    "High School Completion_2021_Asian": 91.8,
+    "High School Completion_2021_Black": 91.7,
+    "High School Completion_2021_Hispanic": 83.7,
+    "High School Completion_2021_Other": 87.5,
+    "High School Completion_2021_White\r": 95.3
+  },
+  {
+    "city": "Chicago, IL",
+    "High School Completion_2021_Asian": 87.6,
+    "High School Completion_2021_Black": 86.4,
+    "High School Completion_2021_Hispanic": 70.9,
+    "High School Completion_2021_Other": 72.1,
+    "High School Completion_2021_White\r": 95.9
+  },
+  {
+    "city": "Chula Vista, CA",
+    "High School Completion_2021_Asian": 92.4,
+    "High School Completion_2021_Black": 92.1,
+    "High School Completion_2021_Hispanic": 76.6,
+    "High School Completion_2021_Other": 78.5,
+    "High School Completion_2021_White\r": 95.5
+  },
+  {
+    "city": "Cincinnati, OH",
+    "High School Completion_2021_Asian": 94.5,
+    "High School Completion_2021_Black": 83.1,
+    "High School Completion_2021_Hispanic": 76.9,
+    "High School Completion_2021_Other": 82,
+    "High School Completion_2021_White\r": 93.3
+  },
+  {
+    "city": "Clarksville, TN",
+    "High School Completion_2021_Asian": 88.7,
+    "High School Completion_2021_Black": 94,
+    "High School Completion_2021_Hispanic": 87.1,
+    "High School Completion_2021_Other": 89,
+    "High School Completion_2021_White\r": 94.5
+  },
+  {
+    "city": "Clearwater, FL",
+    "High School Completion_2021_Asian": 89.7,
+    "High School Completion_2021_Black": 84.1,
+    "High School Completion_2021_Hispanic": 74.7,
+    "High School Completion_2021_Other": 74.6,
+    "High School Completion_2021_White\r": 93.7
+  },
+  {
+    "city": "Cleveland, OH",
+    "High School Completion_2021_Asian": 75.3,
+    "High School Completion_2021_Black": 81.1,
+    "High School Completion_2021_Hispanic": 71.4,
+    "High School Completion_2021_Other": 77.6,
+    "High School Completion_2021_White\r": 87.4
+  },
+  {
+    "city": "Clovis, CA",
+    "High School Completion_2021_Asian": 84.5,
+    "High School Completion_2021_Black": 95.6,
+    "High School Completion_2021_Hispanic": 88.1,
+    "High School Completion_2021_Other": 87.3,
+    "High School Completion_2021_White\r": 94.8
+  },
+  {
+    "city": "Colorado Springs, CO",
+    "High School Completion_2021_Asian": 86.3,
+    "High School Completion_2021_Black": 93.8,
+    "High School Completion_2021_Hispanic": 82.6,
+    "High School Completion_2021_Other": 86,
+    "High School Completion_2021_White\r": 96.6
+  },
+  {
+    "city": "Columbia, MO",
+    "High School Completion_2021_Asian": 94.8,
+    "High School Completion_2021_Black": 92.6,
+    "High School Completion_2021_Hispanic": 89.1,
+    "High School Completion_2021_Other": 84.2,
+    "High School Completion_2021_White\r": 96.6
+  },
+  {
+    "city": "Columbia, SC",
+    "High School Completion_2021_Asian": 94.8,
+    "High School Completion_2021_Black": 83.5,
+    "High School Completion_2021_Hispanic": 87.6,
+    "High School Completion_2021_Other": 88.6,
+    "High School Completion_2021_White\r": 96.4
+  },
+  {
+    "city": "Columbus, GA",
+    "High School Completion_2021_Asian": 91.2,
+    "High School Completion_2021_Black": 85.6,
+    "High School Completion_2021_Hispanic": 84.9,
+    "High School Completion_2021_Other": 87.3,
+    "High School Completion_2021_White\r": 91.6
+  },
+  {
+    "city": "Columbus, OH",
+    "High School Completion_2021_Asian": 86.4,
+    "High School Completion_2021_Black": 87,
+    "High School Completion_2021_Hispanic": 73.5,
+    "High School Completion_2021_Other": 81.2,
+    "High School Completion_2021_White\r": 93.6
+  },
+  {
+    "city": "Concord, CA",
+    "High School Completion_2021_Asian": 91.3,
+    "High School Completion_2021_Black": 93.4,
+    "High School Completion_2021_Hispanic": 71.1,
+    "High School Completion_2021_Other": 74.6,
+    "High School Completion_2021_White\r": 95.8
+  },
+  {
+    "city": "Concord, NC",
+    "High School Completion_2021_Asian": 93.3,
+    "High School Completion_2021_Black": 89.7,
+    "High School Completion_2021_Hispanic": 64.7,
+    "High School Completion_2021_Other": 67.9,
+    "High School Completion_2021_White\r": 93.6
+  },
+  {
+    "city": "Corona, CA",
+    "High School Completion_2021_Asian": 91.7,
+    "High School Completion_2021_Black": 96.8,
+    "High School Completion_2021_Hispanic": 74.4,
+    "High School Completion_2021_Other": 73.9,
+    "High School Completion_2021_White\r": 95.2
+  },
+  {
+    "city": "Corpus Christi, TX",
+    "High School Completion_2021_Asian": 93,
+    "High School Completion_2021_Black": 90.3,
+    "High School Completion_2021_Hispanic": 78.3,
+    "High School Completion_2021_Other": 78,
+    "High School Completion_2021_White\r": 94.6
+  },
+  {
+    "city": "Costa Mesa, CA",
+    "High School Completion_2021_Asian": 95,
+    "High School Completion_2021_Black": 97.2,
+    "High School Completion_2021_Hispanic": 65.6,
+    "High School Completion_2021_Other": 70.6,
+    "High School Completion_2021_White\r": 97.4
+  },
+  {
+    "city": "Dallas, TX",
+    "High School Completion_2021_Asian": 87.5,
+    "High School Completion_2021_Black": 88.4,
+    "High School Completion_2021_Hispanic": 55.4,
+    "High School Completion_2021_Other": 60.9,
+    "High School Completion_2021_White\r": 96.6
+  },
+  {
+    "city": "Daly City, CA",
+    "High School Completion_2021_Asian": 87.8,
+    "High School Completion_2021_Black": 90.6,
+    "High School Completion_2021_Hispanic": 79.2,
+    "High School Completion_2021_Other": 82,
+    "High School Completion_2021_White\r": 94.9
+  },
+  {
+    "city": "Dayton, OH",
+    "High School Completion_2021_Asian": 84.6,
+    "High School Completion_2021_Black": 84.7,
+    "High School Completion_2021_Hispanic": 59.6,
+    "High School Completion_2021_Other": 78.1,
+    "High School Completion_2021_White\r": 86.6
+  },
+  {
+    "city": "Denver, CO",
+    "High School Completion_2021_Asian": 85.4,
+    "High School Completion_2021_Black": 89.8,
+    "High School Completion_2021_Hispanic": 69.6,
+    "High School Completion_2021_Other": 74.6,
+    "High School Completion_2021_White\r": 98
+  },
+  {
+    "city": "Des Moines, IA",
+    "High School Completion_2021_Asian": 58.7,
+    "High School Completion_2021_Black": 82.1,
+    "High School Completion_2021_Hispanic": 60.2,
+    "High School Completion_2021_Other": 66.3,
+    "High School Completion_2021_White\r": 94.3
+  },
+  {
+    "city": "Detroit, MI",
+    "High School Completion_2021_Asian": 77.3,
+    "High School Completion_2021_Black": 84.6,
+    "High School Completion_2021_Hispanic": 54.5,
+    "High School Completion_2021_Other": 65.1,
+    "High School Completion_2021_White\r": 84.4
+  },
+  {
+    "city": "Downey, CA",
+    "High School Completion_2021_Asian": 93.1,
+    "High School Completion_2021_Black": 89,
+    "High School Completion_2021_Hispanic": 76.3,
+    "High School Completion_2021_Other": 76.1,
+    "High School Completion_2021_White\r": 91.2
+  },
+  {
+    "city": "Durham, NC",
+    "High School Completion_2021_Asian": 93.1,
+    "High School Completion_2021_Black": 90,
+    "High School Completion_2021_Hispanic": 54.7,
+    "High School Completion_2021_Other": 71.1,
+    "High School Completion_2021_White\r": 98.1
+  },
+  {
+    "city": "East Los Angeles, CA",
+    "High School Completion_2021_Asian": 75.7,
+    "High School Completion_2021_Black": 88.1,
+    "High School Completion_2021_Hispanic": 53.5,
+    "High School Completion_2021_Other": 52,
+    "High School Completion_2021_White\r": 87.4
+  },
+  {
+    "city": "El Cajon, CA",
+    "High School Completion_2021_Asian": 86.6,
+    "High School Completion_2021_Black": 93.5,
+    "High School Completion_2021_Hispanic": 74.6,
+    "High School Completion_2021_Other": 76.1,
+    "High School Completion_2021_White\r": 88.7
+  },
+  {
+    "city": "El Monte, CA",
+    "High School Completion_2021_Asian": 67.9,
+    "High School Completion_2021_Black": 76.5,
+    "High School Completion_2021_Hispanic": 56.4,
+    "High School Completion_2021_Other": 55.1,
+    "High School Completion_2021_White\r": 90.7
+  },
+  {
+    "city": "El Paso, TX",
+    "High School Completion_2021_Asian": 89.3,
+    "High School Completion_2021_Black": 96.1,
+    "High School Completion_2021_Hispanic": 77.8,
+    "High School Completion_2021_Other": 74.9,
+    "High School Completion_2021_White\r": 95.9
+  },
+  {
+    "city": "Elizabeth, NJ",
+    "High School Completion_2021_Asian": 89.1,
+    "High School Completion_2021_Black": 86.8,
+    "High School Completion_2021_Hispanic": 70,
+    "High School Completion_2021_Other": 68.7,
+    "High School Completion_2021_White\r": 79.2
+  },
+  {
+    "city": "Elk Grove, CA",
+    "High School Completion_2021_Asian": 85.8,
+    "High School Completion_2021_Black": 96,
+    "High School Completion_2021_Hispanic": 84.4,
+    "High School Completion_2021_Other": 86.9,
+    "High School Completion_2021_White\r": 96.2
+  },
+  {
+    "city": "Erie, PA",
+    "High School Completion_2021_Asian": 60.7,
+    "High School Completion_2021_Black": 80.8,
+    "High School Completion_2021_Hispanic": 62.9,
+    "High School Completion_2021_Other": 72.5,
+    "High School Completion_2021_White\r": 90.7
+  },
+  {
+    "city": "Escondido, CA",
+    "High School Completion_2021_Asian": 89.7,
+    "High School Completion_2021_Black": 94,
+    "High School Completion_2021_Hispanic": 60.3,
+    "High School Completion_2021_Other": 61.7,
+    "High School Completion_2021_White\r": 95.6
+  },
+  {
+    "city": "Eugene, OR",
+    "High School Completion_2021_Asian": 96.6,
+    "High School Completion_2021_Black": 97.8,
+    "High School Completion_2021_Hispanic": 84.8,
+    "High School Completion_2021_Other": 85.9,
+    "High School Completion_2021_White\r": 95.9
+  },
+  {
+    "city": "Evansville, IN",
+    "High School Completion_2021_Asian": 83,
+    "High School Completion_2021_Black": 83.8,
+    "High School Completion_2021_Hispanic": 69.2,
+    "High School Completion_2021_Other": 85.4,
+    "High School Completion_2021_White\r": 90
+  },
+  {
+    "city": "Fairfield, CA",
+    "High School Completion_2021_Asian": 90.1,
+    "High School Completion_2021_Black": 92.1,
+    "High School Completion_2021_Hispanic": 71.3,
+    "High School Completion_2021_Other": 72.9,
+    "High School Completion_2021_White\r": 94.9
+  },
+  {
+    "city": "Fayetteville, AR",
+    "High School Completion_2021_Asian": 93.7,
+    "High School Completion_2021_Black": 89.9,
+    "High School Completion_2021_Hispanic": 81.4,
+    "High School Completion_2021_Other": 87.8,
+    "High School Completion_2021_White\r": 95.8
+  },
+  {
+    "city": "Fayetteville, NC",
+    "High School Completion_2021_Asian": 86.2,
+    "High School Completion_2021_Black": 92.1,
+    "High School Completion_2021_Hispanic": 89.4,
+    "High School Completion_2021_Other": 89.9,
+    "High School Completion_2021_White\r": 94.8
+  },
+  {
+    "city": "Fontana, CA",
+    "High School Completion_2021_Asian": 91.6,
+    "High School Completion_2021_Black": 94.7,
+    "High School Completion_2021_Hispanic": 70.5,
+    "High School Completion_2021_Other": 70.2,
+    "High School Completion_2021_White\r": 91.4
+  },
+  {
+    "city": "Fort Collins, CO",
+    "High School Completion_2021_Asian": 93.6,
+    "High School Completion_2021_Black": 91.7,
+    "High School Completion_2021_Hispanic": 87.4,
+    "High School Completion_2021_Other": 93,
+    "High School Completion_2021_White\r": 98.3
+  },
+  {
+    "city": "Fort Lauderdale, FL",
+    "High School Completion_2021_Asian": 93.6,
+    "High School Completion_2021_Black": 78,
+    "High School Completion_2021_Hispanic": 83.4,
+    "High School Completion_2021_Other": 88.5,
+    "High School Completion_2021_White\r": 96
+  },
+  {
+    "city": "Fort Wayne, IN",
+    "High School Completion_2021_Asian": 48,
+    "High School Completion_2021_Black": 85.4,
+    "High School Completion_2021_Hispanic": 63.7,
+    "High School Completion_2021_Other": 71.3,
+    "High School Completion_2021_White\r": 94.6
+  },
+  {
+    "city": "Fort Worth, TX",
+    "High School Completion_2021_Asian": 80.9,
+    "High School Completion_2021_Black": 89.1,
+    "High School Completion_2021_Hispanic": 63.5,
+    "High School Completion_2021_Other": 63.2,
+    "High School Completion_2021_White\r": 95
+  },
+  {
+    "city": "Fremont, CA",
+    "High School Completion_2021_Asian": 94.1,
+    "High School Completion_2021_Black": 92.6,
+    "High School Completion_2021_Hispanic": 78.5,
+    "High School Completion_2021_Other": 81,
+    "High School Completion_2021_White\r": 96.2
+  },
+  {
+    "city": "Fresno, CA",
+    "High School Completion_2021_Asian": 77.1,
+    "High School Completion_2021_Black": 88.3,
+    "High School Completion_2021_Hispanic": 67.3,
+    "High School Completion_2021_Other": 68.9,
+    "High School Completion_2021_White\r": 93.4
+  },
+  {
+    "city": "Frisco, TX",
+    "High School Completion_2021_Asian": 95.7,
+    "High School Completion_2021_Black": 97,
+    "High School Completion_2021_Hispanic": 84.5,
+    "High School Completion_2021_Other": 84.8,
+    "High School Completion_2021_White\r": 98.4
+  },
+  {
+    "city": "Fullerton, CA",
+    "High School Completion_2021_Asian": 96.2,
+    "High School Completion_2021_Black": 96.4,
+    "High School Completion_2021_Hispanic": 74.6,
+    "High School Completion_2021_Other": 74.5,
+    "High School Completion_2021_White\r": 96.9
+  },
+  {
+    "city": "Garden Grove, CA",
+    "High School Completion_2021_Asian": 74.7,
+    "High School Completion_2021_Black": 77.9,
+    "High School Completion_2021_Hispanic": 63.3,
+    "High School Completion_2021_Other": 64.1,
+    "High School Completion_2021_White\r": 92.7
+  },
+  {
+    "city": "Garland, TX",
+    "High School Completion_2021_Asian": 74,
+    "High School Completion_2021_Black": 90.4,
+    "High School Completion_2021_Hispanic": 58.1,
+    "High School Completion_2021_Other": 64.1,
+    "High School Completion_2021_White\r": 94.5
+  },
+  {
+    "city": "Gilbert, AZ",
+    "High School Completion_2021_Asian": 93.3,
+    "High School Completion_2021_Black": 92.7,
+    "High School Completion_2021_Hispanic": 91.2,
+    "High School Completion_2021_Other": 91.9,
+    "High School Completion_2021_White\r": 97.9
+  },
+  {
+    "city": "Glendale, AZ",
+    "High School Completion_2021_Asian": 79,
+    "High School Completion_2021_Black": 87.8,
+    "High School Completion_2021_Hispanic": 67.1,
+    "High School Completion_2021_Other": 72.2,
+    "High School Completion_2021_White\r": 92.8
+  },
+  {
+    "city": "Glendale, CA",
+    "High School Completion_2021_Asian": 95.8,
+    "High School Completion_2021_Black": 94.8,
+    "High School Completion_2021_Hispanic": 76.7,
+    "High School Completion_2021_Other": 80.9,
+    "High School Completion_2021_White\r": 89.6
+  },
+  {
+    "city": "Grand Prairie, TX",
+    "High School Completion_2021_Asian": 83.2,
+    "High School Completion_2021_Black": 93.7,
+    "High School Completion_2021_Hispanic": 66,
+    "High School Completion_2021_Other": 66.8,
+    "High School Completion_2021_White\r": 92.9
+  },
+  {
+    "city": "Grand Rapids, MI",
+    "High School Completion_2021_Asian": 80.6,
+    "High School Completion_2021_Black": 86.4,
+    "High School Completion_2021_Hispanic": 57.7,
+    "High School Completion_2021_Other": 69.1,
+    "High School Completion_2021_White\r": 94.9
+  },
+  {
+    "city": "Greensboro, NC",
+    "High School Completion_2021_Asian": 76.6,
+    "High School Completion_2021_Black": 89.3,
+    "High School Completion_2021_Hispanic": 68,
+    "High School Completion_2021_Other": 78.6,
+    "High School Completion_2021_White\r": 95.7
+  },
+  {
+    "city": "Gresham, OR",
+    "High School Completion_2021_Asian": 80.1,
+    "High School Completion_2021_Black": 88.7,
+    "High School Completion_2021_Hispanic": 59.3,
+    "High School Completion_2021_Other": 76.1,
+    "High School Completion_2021_White\r": 94.2
+  },
+  {
+    "city": "Hampton, VA",
+    "High School Completion_2021_Asian": 78.5,
+    "High School Completion_2021_Black": 92.5,
+    "High School Completion_2021_Hispanic": 86.7,
+    "High School Completion_2021_Other": 88.9,
+    "High School Completion_2021_White\r": 94.2
+  },
+  {
+    "city": "Hartford, CT",
+    "High School Completion_2021_Asian": 86.2,
+    "High School Completion_2021_Black": 83.8,
+    "High School Completion_2021_Hispanic": 59.7,
+    "High School Completion_2021_Other": 61.3,
+    "High School Completion_2021_White\r": 83.2
+  },
+  {
+    "city": "Henderson, NV",
+    "High School Completion_2021_Asian": 95.3,
+    "High School Completion_2021_Black": 96,
+    "High School Completion_2021_Hispanic": 84.8,
+    "High School Completion_2021_Other": 84.7,
+    "High School Completion_2021_White\r": 95.6
+  },
+  {
+    "city": "Hialeah, FL",
+    "High School Completion_2021_Asian": 76.3,
+    "High School Completion_2021_Black": 75.2,
+    "High School Completion_2021_Hispanic": 73.1,
+    "High School Completion_2021_Other": 77,
+    "High School Completion_2021_White\r": 84.4
+  },
+  {
+    "city": "High Point, NC",
+    "High School Completion_2021_Asian": 76.6,
+    "High School Completion_2021_Black": 83.5,
+    "High School Completion_2021_Hispanic": 56.2,
+    "High School Completion_2021_Other": 66,
+    "High School Completion_2021_White\r": 93.9
+  },
+  {
+    "city": "Hollywood, FL",
+    "High School Completion_2021_Asian": 87.6,
+    "High School Completion_2021_Black": 86.9,
+    "High School Completion_2021_Hispanic": 85.1,
+    "High School Completion_2021_Other": 86,
+    "High School Completion_2021_White\r": 92.2
+  },
+  {
+    "city": "Houston, TX",
+    "High School Completion_2021_Asian": 87,
+    "High School Completion_2021_Black": 89.1,
+    "High School Completion_2021_Hispanic": 59.6,
+    "High School Completion_2021_Other": 60.7,
+    "High School Completion_2021_White\r": 96.7
+  },
+  {
+    "city": "Huntington Beach, CA",
+    "High School Completion_2021_Asian": 89.6,
+    "High School Completion_2021_Black": 97.6,
+    "High School Completion_2021_Hispanic": 81.5,
+    "High School Completion_2021_Other": 82.8,
+    "High School Completion_2021_White\r": 96.7
+  },
+  {
+    "city": "Huntington, WV",
+    "High School Completion_2021_Asian": 85.2,
+    "High School Completion_2021_Black": 89.8,
+    "High School Completion_2021_Hispanic": 79.2,
+    "High School Completion_2021_Other": 86.3,
+    "High School Completion_2021_White\r": 87.7
+  },
+  {
+    "city": "Huntsville, AL",
+    "High School Completion_2021_Asian": 88,
+    "High School Completion_2021_Black": 86.8,
+    "High School Completion_2021_Hispanic": 72.3,
+    "High School Completion_2021_Other": 82.6,
+    "High School Completion_2021_White\r": 94.5
+  },
+  {
+    "city": "Independence, MO",
+    "High School Completion_2021_Asian": 90.6,
+    "High School Completion_2021_Black": 95.9,
+    "High School Completion_2021_Hispanic": 75.3,
+    "High School Completion_2021_Other": 80.4,
+    "High School Completion_2021_White\r": 90.8
+  },
+  {
+    "city": "Indianapolis, IN",
+    "High School Completion_2021_Asian": 70.6,
+    "High School Completion_2021_Black": 85.3,
+    "High School Completion_2021_Hispanic": 60.6,
+    "High School Completion_2021_Other": 72.2,
+    "High School Completion_2021_White\r": 91.4
+  },
+  {
+    "city": "Inglewood, CA",
+    "High School Completion_2021_Asian": 91.8,
+    "High School Completion_2021_Black": 93.4,
+    "High School Completion_2021_Hispanic": 59.8,
+    "High School Completion_2021_Other": 62.3,
+    "High School Completion_2021_White\r": 88
+  },
+  {
+    "city": "Irvine, CA",
+    "High School Completion_2021_Asian": 96.1,
+    "High School Completion_2021_Black": 86.6,
+    "High School Completion_2021_Hispanic": 90.9,
+    "High School Completion_2021_Other": 90.7,
+    "High School Completion_2021_White\r": 98.2
+  },
+  {
+    "city": "Irving, TX",
+    "High School Completion_2021_Asian": 94.7,
+    "High School Completion_2021_Black": 96.1,
+    "High School Completion_2021_Hispanic": 54.4,
+    "High School Completion_2021_Other": 50.4,
+    "High School Completion_2021_White\r": 94.6
+  },
+  {
+    "city": "Jackson, MS",
+    "High School Completion_2021_Asian": 89.2,
+    "High School Completion_2021_Black": 84.7,
+    "High School Completion_2021_Hispanic": 51,
+    "High School Completion_2021_Other": 65,
+    "High School Completion_2021_White\r": 95.4
+  },
+  {
+    "city": "Jacksonville, FL",
+    "High School Completion_2021_Asian": 88,
+    "High School Completion_2021_Black": 88.2,
+    "High School Completion_2021_Hispanic": 83.9,
+    "High School Completion_2021_Other": 86.2,
+    "High School Completion_2021_White\r": 92.7
+  },
+  {
+    "city": "Jersey City, NJ",
+    "High School Completion_2021_Asian": 93.8,
+    "High School Completion_2021_Black": 88.7,
+    "High School Completion_2021_Hispanic": 78.9,
+    "High School Completion_2021_Other": 81.6,
+    "High School Completion_2021_White\r": 94.9
+  },
+  {
+    "city": "Kansas City, KS",
+    "High School Completion_2021_Asian": 62.4,
+    "High School Completion_2021_Black": 87.6,
+    "High School Completion_2021_Hispanic": 59.2,
+    "High School Completion_2021_Other": 64,
+    "High School Completion_2021_White\r": 89.8
+  },
+  {
+    "city": "Kansas City, MO",
+    "High School Completion_2021_Asian": 86.5,
+    "High School Completion_2021_Black": 88.6,
+    "High School Completion_2021_Hispanic": 71.3,
+    "High School Completion_2021_Other": 77.4,
+    "High School Completion_2021_White\r": 94.9
+  },
+  {
+    "city": "Killeen, TX",
+    "High School Completion_2021_Asian": 81.8,
+    "High School Completion_2021_Black": 94.2,
+    "High School Completion_2021_Hispanic": 87.7,
+    "High School Completion_2021_Other": 91.4,
+    "High School Completion_2021_White\r": 94.4
+  },
+  {
+    "city": "Knoxville, TN",
+    "High School Completion_2021_Asian": 91,
+    "High School Completion_2021_Black": 87.3,
+    "High School Completion_2021_Hispanic": 62.4,
+    "High School Completion_2021_Other": 74.2,
+    "High School Completion_2021_White\r": 91.8
+  },
+  {
+    "city": "Lakewood, CA",
+    "High School Completion_2021_Asian": 91.8,
+    "High School Completion_2021_Black": 98.2,
+    "High School Completion_2021_Hispanic": 82.7,
+    "High School Completion_2021_Other": 82.1,
+    "High School Completion_2021_White\r": 95.3
+  },
+  {
+    "city": "Lakewood, CO",
+    "High School Completion_2021_Asian": 83.9,
+    "High School Completion_2021_Black": 97.7,
+    "High School Completion_2021_Hispanic": 81.1,
+    "High School Completion_2021_Other": 87,
+    "High School Completion_2021_White\r": 96.2
+  },
+  {
+    "city": "Lancaster, CA",
+    "High School Completion_2021_Asian": 84,
+    "High School Completion_2021_Black": 86.9,
+    "High School Completion_2021_Hispanic": 69.9,
+    "High School Completion_2021_Other": 73,
+    "High School Completion_2021_White\r": 91.8
+  },
+  {
+    "city": "Lansing, MI",
+    "High School Completion_2021_Asian": 83.1,
+    "High School Completion_2021_Black": 87.4,
+    "High School Completion_2021_Hispanic": 84.9,
+    "High School Completion_2021_Other": 87.1,
+    "High School Completion_2021_White\r": 93.4
+  },
+  {
+    "city": "Laredo, TX",
+    "High School Completion_2021_Asian": 94.4,
+    "High School Completion_2021_Black": 90,
+    "High School Completion_2021_Hispanic": 68.6,
+    "High School Completion_2021_Other": 68.3,
+    "High School Completion_2021_White\r": 87.9
+  },
+  {
+    "city": "Las Cruces, NM",
+    "High School Completion_2021_Asian": 84.6,
+    "High School Completion_2021_Black": 83.9,
+    "High School Completion_2021_Hispanic": 83.2,
+    "High School Completion_2021_Other": 79.7,
+    "High School Completion_2021_White\r": 95.5
+  },
+  {
+    "city": "Las Vegas, NV",
+    "High School Completion_2021_Asian": 91.9,
+    "High School Completion_2021_Black": 88.3,
+    "High School Completion_2021_Hispanic": 66,
+    "High School Completion_2021_Other": 69.3,
+    "High School Completion_2021_White\r": 94.1
+  },
+  {
+    "city": "Lexington, KY",
+    "High School Completion_2021_Asian": 89.2,
+    "High School Completion_2021_Black": 88.9,
+    "High School Completion_2021_Hispanic": 64.1,
+    "High School Completion_2021_Other": 71.3,
+    "High School Completion_2021_White\r": 95.4
+  },
+  {
+    "city": "Lincoln, NE",
+    "High School Completion_2021_Asian": 79.8,
+    "High School Completion_2021_Black": 87.1,
+    "High School Completion_2021_Hispanic": 69,
+    "High School Completion_2021_Other": 76.4,
+    "High School Completion_2021_White\r": 95.9
+  },
+  {
+    "city": "Little Rock, AR",
+    "High School Completion_2021_Asian": 86.6,
+    "High School Completion_2021_Black": 90,
+    "High School Completion_2021_Hispanic": 67.6,
+    "High School Completion_2021_Other": 86.3,
+    "High School Completion_2021_White\r": 96
+  },
+  {
+    "city": "Long Beach, CA",
+    "High School Completion_2021_Asian": 79.7,
+    "High School Completion_2021_Black": 90.9,
+    "High School Completion_2021_Hispanic": 63.4,
+    "High School Completion_2021_Other": 66.9,
+    "High School Completion_2021_White\r": 96.1
+  },
+  {
+    "city": "Lorain, OH",
+    "High School Completion_2021_Asian": 77.2,
+    "High School Completion_2021_Black": 78.1,
+    "High School Completion_2021_Hispanic": 74.3,
+    "High School Completion_2021_Other": 78.3,
+    "High School Completion_2021_White\r": 88.4
+  },
+  {
+    "city": "Los Angeles, CA",
+    "High School Completion_2021_Asian": 90.9,
+    "High School Completion_2021_Black": 89.3,
+    "High School Completion_2021_Hispanic": 58.3,
+    "High School Completion_2021_Other": 60.3,
+    "High School Completion_2021_White\r": 95.9
+  },
+  {
+    "city": "Louisville, KY",
+    "High School Completion_2021_Asian": 79.9,
+    "High School Completion_2021_Black": 88.2,
+    "High School Completion_2021_Hispanic": 77.1,
+    "High School Completion_2021_Other": 81.1,
+    "High School Completion_2021_White\r": 92.2
+  },
+  {
+    "city": "Lubbock, TX",
+    "High School Completion_2021_Asian": 92.9,
+    "High School Completion_2021_Black": 88.9,
+    "High School Completion_2021_Hispanic": 75,
+    "High School Completion_2021_Other": 75,
+    "High School Completion_2021_White\r": 96.1
+  },
+  {
+    "city": "Madison, WI",
+    "High School Completion_2021_Asian": 92.4,
+    "High School Completion_2021_Black": 88.8,
+    "High School Completion_2021_Hispanic": 79.2,
+    "High School Completion_2021_Other": 84.7,
+    "High School Completion_2021_White\r": 97.8
+  },
+  {
+    "city": "Manchester, NH",
+    "High School Completion_2021_Asian": 81.2,
+    "High School Completion_2021_Black": 78.2,
+    "High School Completion_2021_Hispanic": 67.1,
+    "High School Completion_2021_Other": 78.1,
+    "High School Completion_2021_White\r": 91.5
+  },
+  {
+    "city": "McAllen, TX",
+    "High School Completion_2021_Asian": 92,
+    "High School Completion_2021_Black": 92.5,
+    "High School Completion_2021_Hispanic": 74,
+    "High School Completion_2021_Other": 67.9,
+    "High School Completion_2021_White\r": 97.1
+  },
+  {
+    "city": "Memphis, TN",
+    "High School Completion_2021_Asian": 84.1,
+    "High School Completion_2021_Black": 85.8,
+    "High School Completion_2021_Hispanic": 50.6,
+    "High School Completion_2021_Other": 57.7,
+    "High School Completion_2021_White\r": 95.3
+  },
+  {
+    "city": "Mesa, AZ",
+    "High School Completion_2021_Asian": 93,
+    "High School Completion_2021_Black": 95,
+    "High School Completion_2021_Hispanic": 73.6,
+    "High School Completion_2021_Other": 78.1,
+    "High School Completion_2021_White\r": 95.4
+  },
+  {
+    "city": "Mesquite, TX",
+    "High School Completion_2021_Asian": 80.7,
+    "High School Completion_2021_Black": 93,
+    "High School Completion_2021_Hispanic": 61.4,
+    "High School Completion_2021_Other": 63.4,
+    "High School Completion_2021_White\r": 91.4
+  },
+  {
+    "city": "Miami, FL",
+    "High School Completion_2021_Asian": 96.5,
+    "High School Completion_2021_Black": 75.7,
+    "High School Completion_2021_Hispanic": 76.5,
+    "High School Completion_2021_Other": 77,
+    "High School Completion_2021_White\r": 96.3
+  },
+  {
+    "city": "Milwaukee, WI",
+    "High School Completion_2021_Asian": 74.9,
+    "High School Completion_2021_Black": 84.9,
+    "High School Completion_2021_Hispanic": 64.4,
+    "High School Completion_2021_Other": 68.3,
+    "High School Completion_2021_White\r": 93.9
+  },
+  {
+    "city": "Minneapolis, MN",
+    "High School Completion_2021_Asian": 84.6,
+    "High School Completion_2021_Black": 74.7,
+    "High School Completion_2021_Hispanic": 66.1,
+    "High School Completion_2021_Other": 76.5,
+    "High School Completion_2021_White\r": 97.7
+  },
+  {
+    "city": "Miramar, FL",
+    "High School Completion_2021_Asian": 91,
+    "High School Completion_2021_Black": 92.7,
+    "High School Completion_2021_Hispanic": 90.3,
+    "High School Completion_2021_Other": 87.1,
+    "High School Completion_2021_White\r": 95.8
+  },
+  {
+    "city": "Mobile, AL",
+    "High School Completion_2021_Asian": 79.4,
+    "High School Completion_2021_Black": 86.4,
+    "High School Completion_2021_Hispanic": 88.4,
+    "High School Completion_2021_Other": 89.5,
+    "High School Completion_2021_White\r": 93.6
+  },
+  {
+    "city": "Modesto, CA",
+    "High School Completion_2021_Asian": 83.5,
+    "High School Completion_2021_Black": 88.1,
+    "High School Completion_2021_Hispanic": 71.2,
+    "High School Completion_2021_Other": 73.6,
+    "High School Completion_2021_White\r": 91.9
+  },
+  {
+    "city": "Montgomery, AL",
+    "High School Completion_2021_Asian": 91.9,
+    "High School Completion_2021_Black": 84,
+    "High School Completion_2021_Hispanic": 66.1,
+    "High School Completion_2021_Other": 78.8,
+    "High School Completion_2021_White\r": 94.4
+  },
+  {
+    "city": "Moreno Valley, CA",
+    "High School Completion_2021_Asian": 87.7,
+    "High School Completion_2021_Black": 92.8,
+    "High School Completion_2021_Hispanic": 66.4,
+    "High School Completion_2021_Other": 66.6,
+    "High School Completion_2021_White\r": 93.1
+  },
+  {
+    "city": "Murfreesboro, TN",
+    "High School Completion_2021_Asian": 93.6,
+    "High School Completion_2021_Black": 93.9,
+    "High School Completion_2021_Hispanic": 67.6,
+    "High School Completion_2021_Other": 85.6,
+    "High School Completion_2021_White\r": 95.7
+  },
+  {
+    "city": "Murrieta, CA",
+    "High School Completion_2021_Asian": 90.4,
+    "High School Completion_2021_Black": 96.5,
+    "High School Completion_2021_Hispanic": 86.1,
+    "High School Completion_2021_Other": 87.3,
+    "High School Completion_2021_White\r": 96
+  },
+  {
+    "city": "Nashville, TN",
+    "High School Completion_2021_Asian": 80.4,
+    "High School Completion_2021_Black": 89.3,
+    "High School Completion_2021_Hispanic": 59.3,
+    "High School Completion_2021_Other": 74.9,
+    "High School Completion_2021_White\r": 94.6
+  },
+  {
+    "city": "New Haven, CT",
+    "High School Completion_2021_Asian": 94.8,
+    "High School Completion_2021_Black": 87.3,
+    "High School Completion_2021_Hispanic": 71.6,
+    "High School Completion_2021_Other": 75.4,
+    "High School Completion_2021_White\r": 92.3
+  },
+  {
+    "city": "New Orleans, LA",
+    "High School Completion_2021_Asian": 76.8,
+    "High School Completion_2021_Black": 83.7,
+    "High School Completion_2021_Hispanic": 80.9,
+    "High School Completion_2021_Other": 84.9,
+    "High School Completion_2021_White\r": 96.9
+  },
+  {
+    "city": "New York, NY",
+    "High School Completion_2021_Asian": 76.8,
+    "High School Completion_2021_Black": 84.7,
+    "High School Completion_2021_Hispanic": 70.8,
+    "High School Completion_2021_Other": 71.2,
+    "High School Completion_2021_White\r": 94
+  },
+  {
+    "city": "Newark, NJ",
+    "High School Completion_2021_Asian": 82.6,
+    "High School Completion_2021_Black": 84.3,
+    "High School Completion_2021_Hispanic": 66.7,
+    "High School Completion_2021_Other": 69.2,
+    "High School Completion_2021_White\r": 71.1
+  },
+  {
+    "city": "Newport News, VA",
+    "High School Completion_2021_Asian": 79.8,
+    "High School Completion_2021_Black": 90.2,
+    "High School Completion_2021_Hispanic": 79.4,
+    "High School Completion_2021_Other": 86.7,
+    "High School Completion_2021_White\r": 95.6
+  },
+  {
+    "city": "Norfolk, VA",
+    "High School Completion_2021_Asian": 91.5,
+    "High School Completion_2021_Black": 82.9,
+    "High School Completion_2021_Hispanic": 79.5,
+    "High School Completion_2021_Other": 82.5,
+    "High School Completion_2021_White\r": 94.6
+  },
+  {
+    "city": "North Las Vegas, NV",
+    "High School Completion_2021_Asian": 88.8,
+    "High School Completion_2021_Black": 90.4,
+    "High School Completion_2021_Hispanic": 63.5,
+    "High School Completion_2021_Other": 67,
+    "High School Completion_2021_White\r": 93
+  },
+  {
+    "city": "Oakland, CA",
+    "High School Completion_2021_Asian": 78.3,
+    "High School Completion_2021_Black": 90,
+    "High School Completion_2021_Hispanic": 64,
+    "High School Completion_2021_Other": 68.6,
+    "High School Completion_2021_White\r": 97.4
+  },
+  {
+    "city": "Oceanside, CA",
+    "High School Completion_2021_Asian": 91.2,
+    "High School Completion_2021_Black": 94.1,
+    "High School Completion_2021_Hispanic": 67.6,
+    "High School Completion_2021_Other": 70.9,
+    "High School Completion_2021_White\r": 96.6
+  },
+  {
+    "city": "Oklahoma City, OK",
+    "High School Completion_2021_Asian": 80.9,
+    "High School Completion_2021_Black": 91.2,
+    "High School Completion_2021_Hispanic": 57.6,
+    "High School Completion_2021_Other": 76.4,
+    "High School Completion_2021_White\r": 94.1
+  },
+  {
+    "city": "Omaha, NE",
+    "High School Completion_2021_Asian": 72.3,
+    "High School Completion_2021_Black": 87.9,
+    "High School Completion_2021_Hispanic": 60.3,
+    "High School Completion_2021_Other": 72.8,
+    "High School Completion_2021_White\r": 95.8
+  },
+  {
+    "city": "Ontario, CA",
+    "High School Completion_2021_Asian": 89.4,
+    "High School Completion_2021_Black": 91,
+    "High School Completion_2021_Hispanic": 66.8,
+    "High School Completion_2021_Other": 67.7,
+    "High School Completion_2021_White\r": 92.8
+  },
+  {
+    "city": "Orange, CA",
+    "High School Completion_2021_Asian": 94.2,
+    "High School Completion_2021_Black": 88.3,
+    "High School Completion_2021_Hispanic": 72.3,
+    "High School Completion_2021_Other": 77.4,
+    "High School Completion_2021_White\r": 96.1
+  },
+  {
+    "city": "Orlando, FL",
+    "High School Completion_2021_Asian": 92.6,
+    "High School Completion_2021_Black": 84.5,
+    "High School Completion_2021_Hispanic": 90.2,
+    "High School Completion_2021_Other": 89.8,
+    "High School Completion_2021_White\r": 96.4
+  },
+  {
+    "city": "Overland Park, KS",
+    "High School Completion_2021_Asian": 95.7,
+    "High School Completion_2021_Black": 90.1,
+    "High School Completion_2021_Hispanic": 84.6,
+    "High School Completion_2021_Other": 88.2,
+    "High School Completion_2021_White\r": 98.5
+  },
+  {
+    "city": "Oxnard, CA",
+    "High School Completion_2021_Asian": 93.3,
+    "High School Completion_2021_Black": 91.9,
+    "High School Completion_2021_Hispanic": 60.2,
+    "High School Completion_2021_Other": 57,
+    "High School Completion_2021_White\r": 95.1
+  },
+  {
+    "city": "Palm Bay, FL",
+    "High School Completion_2021_Asian": 81.8,
+    "High School Completion_2021_Black": 87.7,
+    "High School Completion_2021_Hispanic": 84.8,
+    "High School Completion_2021_Other": 81.1,
+    "High School Completion_2021_White\r": 92
+  },
+  {
+    "city": "Palmdale, CA",
+    "High School Completion_2021_Asian": 86.8,
+    "High School Completion_2021_Black": 87.4,
+    "High School Completion_2021_Hispanic": 66.2,
+    "High School Completion_2021_Other": 66.7,
+    "High School Completion_2021_White\r": 92.1
+  },
+  {
+    "city": "Pasadena, CA",
+    "High School Completion_2021_Asian": 97.5,
+    "High School Completion_2021_Black": 91.8,
+    "High School Completion_2021_Hispanic": 73.4,
+    "High School Completion_2021_Other": 73.4,
+    "High School Completion_2021_White\r": 96.6
+  },
+  {
+    "city": "Pasadena, TX",
+    "High School Completion_2021_Asian": 86.8,
+    "High School Completion_2021_Black": 89,
+    "High School Completion_2021_Hispanic": 61.5,
+    "High School Completion_2021_Other": 62.2,
+    "High School Completion_2021_White\r": 91.5
+  },
+  {
+    "city": "Paterson, NJ",
+    "High School Completion_2021_Asian": 77.3,
+    "High School Completion_2021_Black": 85.9,
+    "High School Completion_2021_Hispanic": 71.9,
+    "High School Completion_2021_Other": 71.1,
+    "High School Completion_2021_White\r": 83.8
+  },
+  {
+    "city": "Pembroke Pines, FL",
+    "High School Completion_2021_Asian": 89.8,
+    "High School Completion_2021_Black": 95.6,
+    "High School Completion_2021_Hispanic": 92.9,
+    "High School Completion_2021_Other": 92.7,
+    "High School Completion_2021_White\r": 95.6
+  },
+  {
+    "city": "Peoria, AZ",
+    "High School Completion_2021_Asian": 85.1,
+    "High School Completion_2021_Black": 96.3,
+    "High School Completion_2021_Hispanic": 83.4,
+    "High School Completion_2021_Other": 82.9,
+    "High School Completion_2021_White\r": 95.1
+  },
+  {
+    "city": "Peoria, IL",
+    "High School Completion_2021_Asian": 92.5,
+    "High School Completion_2021_Black": 83.1,
+    "High School Completion_2021_Hispanic": 79.5,
+    "High School Completion_2021_Other": 84.5,
+    "High School Completion_2021_White\r": 94.5
+  },
+  {
+    "city": "Philadelphia, PA",
+    "High School Completion_2021_Asian": 73.2,
+    "High School Completion_2021_Black": 86.9,
+    "High School Completion_2021_Hispanic": 71.9,
+    "High School Completion_2021_Other": 74.1,
+    "High School Completion_2021_White\r": 93.4
+  },
+  {
+    "city": "Phoenix, AZ",
+    "High School Completion_2021_Asian": 86.7,
+    "High School Completion_2021_Black": 89.8,
+    "High School Completion_2021_Hispanic": 65.5,
+    "High School Completion_2021_Other": 69.8,
+    "High School Completion_2021_White\r": 95.1
+  },
+  {
+    "city": "Pittsburgh, PA",
+    "High School Completion_2021_Asian": 92.5,
+    "High School Completion_2021_Black": 89.1,
+    "High School Completion_2021_Hispanic": 87.3,
+    "High School Completion_2021_Other": 91.8,
+    "High School Completion_2021_White\r": 95.1
+  },
+  {
+    "city": "Plano, TX",
+    "High School Completion_2021_Asian": 93.7,
+    "High School Completion_2021_Black": 96.7,
+    "High School Completion_2021_Hispanic": 72.9,
+    "High School Completion_2021_Other": 80.5,
+    "High School Completion_2021_White\r": 97.4
+  },
+  {
+    "city": "Pomona, CA",
+    "High School Completion_2021_Asian": 86.9,
+    "High School Completion_2021_Black": 86.6,
+    "High School Completion_2021_Hispanic": 63.2,
+    "High School Completion_2021_Other": 64.4,
+    "High School Completion_2021_White\r": 90.9
+  },
+  {
+    "city": "Portland, OR",
+    "High School Completion_2021_Asian": 80.4,
+    "High School Completion_2021_Black": 89.2,
+    "High School Completion_2021_Hispanic": 79.1,
+    "High School Completion_2021_Other": 87.2,
+    "High School Completion_2021_White\r": 96.7
+  },
+  {
+    "city": "Providence, RI",
+    "High School Completion_2021_Asian": 84.6,
+    "High School Completion_2021_Black": 85.7,
+    "High School Completion_2021_Hispanic": 73.3,
+    "High School Completion_2021_Other": 70.4,
+    "High School Completion_2021_White\r": 92.4
+  },
+  {
+    "city": "Provo, UT",
+    "High School Completion_2021_Asian": 88,
+    "High School Completion_2021_Black": 95.3,
+    "High School Completion_2021_Hispanic": 73.5,
+    "High School Completion_2021_Other": 81.5,
+    "High School Completion_2021_White\r": 97.9
+  },
+  {
+    "city": "Pueblo, CO",
+    "High School Completion_2021_Asian": 88.3,
+    "High School Completion_2021_Black": 86.5,
+    "High School Completion_2021_Hispanic": 83.9,
+    "High School Completion_2021_Other": 82.3,
+    "High School Completion_2021_White\r": 93.9
+  },
+  {
+    "city": "Raleigh, NC",
+    "High School Completion_2021_Asian": 89.4,
+    "High School Completion_2021_Black": 91.6,
+    "High School Completion_2021_Hispanic": 62.6,
+    "High School Completion_2021_Other": 68.5,
+    "High School Completion_2021_White\r": 97.6
+  },
+  {
+    "city": "Rancho Cucamonga, CA",
+    "High School Completion_2021_Asian": 94,
+    "High School Completion_2021_Black": 92.4,
+    "High School Completion_2021_Hispanic": 85.8,
+    "High School Completion_2021_Other": 86.9,
+    "High School Completion_2021_White\r": 96.1
+  },
+  {
+    "city": "Reno, NV",
+    "High School Completion_2021_Asian": 92.5,
+    "High School Completion_2021_Black": 90.8,
+    "High School Completion_2021_Hispanic": 66.3,
+    "High School Completion_2021_Other": 69,
+    "High School Completion_2021_White\r": 95.8
+  },
+  {
+    "city": "Richmond, CA",
+    "High School Completion_2021_Asian": 83.9,
+    "High School Completion_2021_Black": 90.4,
+    "High School Completion_2021_Hispanic": 60.6,
+    "High School Completion_2021_Other": 63.8,
+    "High School Completion_2021_White\r": 95.3
+  },
+  {
+    "city": "Richmond, VA",
+    "High School Completion_2021_Asian": 88.6,
+    "High School Completion_2021_Black": 81.5,
+    "High School Completion_2021_Hispanic": 58.3,
+    "High School Completion_2021_Other": 77.1,
+    "High School Completion_2021_White\r": 96.9
+  },
+  {
+    "city": "Riverside, CA",
+    "High School Completion_2021_Asian": 89.1,
+    "High School Completion_2021_Black": 92.2,
+    "High School Completion_2021_Hispanic": 71.8,
+    "High School Completion_2021_Other": 71.7,
+    "High School Completion_2021_White\r": 93.9
+  },
+  {
+    "city": "Rochester, MN",
+    "High School Completion_2021_Asian": 88.6,
+    "High School Completion_2021_Black": 70.6,
+    "High School Completion_2021_Hispanic": 76.7,
+    "High School Completion_2021_Other": 95,
+    "High School Completion_2021_White\r": 97.8
+  },
+  {
+    "city": "Rochester, NY",
+    "High School Completion_2021_Asian": 71.2,
+    "High School Completion_2021_Black": 77.7,
+    "High School Completion_2021_Hispanic": 66.6,
+    "High School Completion_2021_Other": 71.8,
+    "High School Completion_2021_White\r": 92
+  },
+  {
+    "city": "Rockford, IL",
+    "High School Completion_2021_Asian": 81.4,
+    "High School Completion_2021_Black": 83.8,
+    "High School Completion_2021_Hispanic": 61.7,
+    "High School Completion_2021_Other": 64.7,
+    "High School Completion_2021_White\r": 90.3
+  },
+  {
+    "city": "Roseville, CA",
+    "High School Completion_2021_Asian": 94.7,
+    "High School Completion_2021_Black": 97.5,
+    "High School Completion_2021_Hispanic": 87.9,
+    "High School Completion_2021_Other": 88.6,
+    "High School Completion_2021_White\r": 97.3
+  },
+  {
+    "city": "Sacramento, CA",
+    "High School Completion_2021_Asian": 80.8,
+    "High School Completion_2021_Black": 91.3,
+    "High School Completion_2021_Hispanic": 75.4,
+    "High School Completion_2021_Other": 77.9,
+    "High School Completion_2021_White\r": 94.2
+  },
+  {
+    "city": "Salem, OR",
+    "High School Completion_2021_Asian": 83.3,
+    "High School Completion_2021_Black": 95,
+    "High School Completion_2021_Hispanic": 61.8,
+    "High School Completion_2021_Other": 67.9,
+    "High School Completion_2021_White\r": 94.6
+  },
+  {
+    "city": "Salinas, CA",
+    "High School Completion_2021_Asian": 90.1,
+    "High School Completion_2021_Black": 89.9,
+    "High School Completion_2021_Hispanic": 52,
+    "High School Completion_2021_Other": 48.8,
+    "High School Completion_2021_White\r": 91.4
+  },
+  {
+    "city": "Salt Lake City, UT",
+    "High School Completion_2021_Asian": 84.7,
+    "High School Completion_2021_Black": 84.5,
+    "High School Completion_2021_Hispanic": 69.3,
+    "High School Completion_2021_Other": 72.4,
+    "High School Completion_2021_White\r": 96.6
+  },
+  {
+    "city": "San Antonio, TX",
+    "High School Completion_2021_Asian": 86.5,
+    "High School Completion_2021_Black": 91.5,
+    "High School Completion_2021_Hispanic": 76.7,
+    "High School Completion_2021_Other": 76.6,
+    "High School Completion_2021_White\r": 95.6
+  },
+  {
+    "city": "San Bernardino, CA",
+    "High School Completion_2021_Asian": 83.4,
+    "High School Completion_2021_Black": 80.8,
+    "High School Completion_2021_Hispanic": 62.7,
+    "High School Completion_2021_Other": 64.1,
+    "High School Completion_2021_White\r": 86.3
+  },
+  {
+    "city": "San Diego, CA",
+    "High School Completion_2021_Asian": 89.2,
+    "High School Completion_2021_Black": 91.2,
+    "High School Completion_2021_Hispanic": 73.4,
+    "High School Completion_2021_Other": 78.7,
+    "High School Completion_2021_White\r": 97.6
+  },
+  {
+    "city": "San Francisco, CA",
+    "High School Completion_2021_Asian": 80.5,
+    "High School Completion_2021_Black": 87.3,
+    "High School Completion_2021_Hispanic": 79.2,
+    "High School Completion_2021_Other": 82.4,
+    "High School Completion_2021_White\r": 98.4
+  },
+  {
+    "city": "San Jose, CA",
+    "High School Completion_2021_Asian": 87.6,
+    "High School Completion_2021_Black": 91.4,
+    "High School Completion_2021_Hispanic": 69.6,
+    "High School Completion_2021_Other": 70.5,
+    "High School Completion_2021_White\r": 96.1
+  },
+  {
+    "city": "San Mateo, CA",
+    "High School Completion_2021_Asian": 94.5,
+    "High School Completion_2021_Black": 97.6,
+    "High School Completion_2021_Hispanic": 73.5,
+    "High School Completion_2021_Other": 77.4,
+    "High School Completion_2021_White\r": 97.7
+  },
+  {
+    "city": "Santa Ana, CA",
+    "High School Completion_2021_Asian": 76.3,
+    "High School Completion_2021_Black": 88.3,
+    "High School Completion_2021_Hispanic": 54.8,
+    "High School Completion_2021_Other": 54,
+    "High School Completion_2021_White\r": 94.8
+  },
+  {
+    "city": "Santa Clara, CA",
+    "High School Completion_2021_Asian": 96.5,
+    "High School Completion_2021_Black": 98.8,
+    "High School Completion_2021_Hispanic": 80.1,
+    "High School Completion_2021_Other": 81.2,
+    "High School Completion_2021_White\r": 96.2
+  },
+  {
+    "city": "Santa Clarita, CA",
+    "High School Completion_2021_Asian": 95.9,
+    "High School Completion_2021_Black": 95.7,
+    "High School Completion_2021_Hispanic": 79.5,
+    "High School Completion_2021_Other": 83.5,
+    "High School Completion_2021_White\r": 96.4
+  },
+  {
+    "city": "Santa Rosa, CA",
+    "High School Completion_2021_Asian": 86.9,
+    "High School Completion_2021_Black": 83.5,
+    "High School Completion_2021_Hispanic": 62.4,
+    "High School Completion_2021_Other": 63.9,
+    "High School Completion_2021_White\r": 95.5
+  },
+  {
+    "city": "Savannah, GA",
+    "High School Completion_2021_Asian": 78.5,
+    "High School Completion_2021_Black": 84.1,
+    "High School Completion_2021_Hispanic": 84,
+    "High School Completion_2021_Other": 88.8,
+    "High School Completion_2021_White\r": 95.6
+  },
+  {
+    "city": "Scottsdale, AZ",
+    "High School Completion_2021_Asian": 97.9,
+    "High School Completion_2021_Black": 98.9,
+    "High School Completion_2021_Hispanic": 86.9,
+    "High School Completion_2021_Other": 91.5,
+    "High School Completion_2021_White\r": 98.3
+  },
+  {
+    "city": "Seattle, WA",
+    "High School Completion_2021_Asian": 90,
+    "High School Completion_2021_Black": 89.8,
+    "High School Completion_2021_Hispanic": 85.7,
+    "High School Completion_2021_Other": 90.1,
+    "High School Completion_2021_White\r": 98.4
+  },
+  {
+    "city": "Shreveport, LA",
+    "High School Completion_2021_Asian": 85.9,
+    "High School Completion_2021_Black": 82.4,
+    "High School Completion_2021_Hispanic": 81.5,
+    "High School Completion_2021_Other": 86.4,
+    "High School Completion_2021_White\r": 93.2
+  },
+  {
+    "city": "Simi Valley, CA",
+    "High School Completion_2021_Asian": 91,
+    "High School Completion_2021_Black": 97.3,
+    "High School Completion_2021_Hispanic": 78.5,
+    "High School Completion_2021_Other": 80.7,
+    "High School Completion_2021_White\r": 96.2
+  },
+  {
+    "city": "Sioux Falls, SD",
+    "High School Completion_2021_Asian": 73.9,
+    "High School Completion_2021_Black": 83.9,
+    "High School Completion_2021_Hispanic": 73.5,
+    "High School Completion_2021_Other": 80.1,
+    "High School Completion_2021_White\r": 95.6
+  },
+  {
+    "city": "South Bend, IN",
+    "High School Completion_2021_Asian": 87.9,
+    "High School Completion_2021_Black": 83.6,
+    "High School Completion_2021_Hispanic": 71.7,
+    "High School Completion_2021_Other": 79.1,
+    "High School Completion_2021_White\r": 92.8
+  },
+  {
+    "city": "Spokane, WA",
+    "High School Completion_2021_Asian": 78,
+    "High School Completion_2021_Black": 90.1,
+    "High School Completion_2021_Hispanic": 88.8,
+    "High School Completion_2021_Other": 89.5,
+    "High School Completion_2021_White\r": 94.3
+  },
+  {
+    "city": "Springfield, IL",
+    "High School Completion_2021_Asian": 94.1,
+    "High School Completion_2021_Black": 80,
+    "High School Completion_2021_Hispanic": 86.8,
+    "High School Completion_2021_Other": 90.2,
+    "High School Completion_2021_White\r": 93.7
+  },
+  {
+    "city": "Springfield, MA",
+    "High School Completion_2021_Asian": 68.6,
+    "High School Completion_2021_Black": 86.8,
+    "High School Completion_2021_Hispanic": 65.9,
+    "High School Completion_2021_Other": 70.6,
+    "High School Completion_2021_White\r": 90.5
+  },
+  {
+    "city": "Springfield, MO",
+    "High School Completion_2021_Asian": 93.8,
+    "High School Completion_2021_Black": 81.1,
+    "High School Completion_2021_Hispanic": 82.6,
+    "High School Completion_2021_Other": 86.6,
+    "High School Completion_2021_White\r": 92.3
+  },
+  {
+    "city": "St. Louis, MO",
+    "High School Completion_2021_Asian": 87.3,
+    "High School Completion_2021_Black": 83.1,
+    "High School Completion_2021_Hispanic": 79.1,
+    "High School Completion_2021_Other": 87.4,
+    "High School Completion_2021_White\r": 94.8
+  },
+  {
+    "city": "St. Paul, MN",
+    "High School Completion_2021_Asian": 63.9,
+    "High School Completion_2021_Black": 79.8,
+    "High School Completion_2021_Hispanic": 72.9,
+    "High School Completion_2021_Other": 83.5,
+    "High School Completion_2021_White\r": 97
+  },
+  {
+    "city": "St. Petersburg, FL",
+    "High School Completion_2021_Asian": 83.2,
+    "High School Completion_2021_Black": 89.2,
+    "High School Completion_2021_Hispanic": 87.9,
+    "High School Completion_2021_Other": 89.3,
+    "High School Completion_2021_White\r": 95.7
+  },
+  {
+    "city": "Stockton, CA",
+    "High School Completion_2021_Asian": 78.3,
+    "High School Completion_2021_Black": 89.9,
+    "High School Completion_2021_Hispanic": 66.6,
+    "High School Completion_2021_Other": 69.6,
+    "High School Completion_2021_White\r": 90.7
+  },
+  {
+    "city": "Sunnyvale, CA",
+    "High School Completion_2021_Asian": 96,
+    "High School Completion_2021_Black": 95.2,
+    "High School Completion_2021_Hispanic": 72.3,
+    "High School Completion_2021_Other": 79.6,
+    "High School Completion_2021_White\r": 97.6
+  },
+  {
+    "city": "Syracuse, NY",
+    "High School Completion_2021_Asian": 66,
+    "High School Completion_2021_Black": 76.9,
+    "High School Completion_2021_Hispanic": 76.1,
+    "High School Completion_2021_Other": 76.4,
+    "High School Completion_2021_White\r": 90.7
+  },
+  {
+    "city": "Tacoma, WA",
+    "High School Completion_2021_Asian": 78.5,
+    "High School Completion_2021_Black": 89.8,
+    "High School Completion_2021_Hispanic": 73.2,
+    "High School Completion_2021_Other": 85.2,
+    "High School Completion_2021_White\r": 94.3
+  },
+  {
+    "city": "Tallahassee, FL",
+    "High School Completion_2021_Asian": 94.7,
+    "High School Completion_2021_Black": 87.7,
+    "High School Completion_2021_Hispanic": 90.4,
+    "High School Completion_2021_Other": 91,
+    "High School Completion_2021_White\r": 96.4
+  },
+  {
+    "city": "Tampa, FL",
+    "High School Completion_2021_Asian": 88,
+    "High School Completion_2021_Black": 84.1,
+    "High School Completion_2021_Hispanic": 78.2,
+    "High School Completion_2021_Other": 78.4,
+    "High School Completion_2021_White\r": 95.4
+  },
+  {
+    "city": "Tempe, AZ",
+    "High School Completion_2021_Asian": 95.5,
+    "High School Completion_2021_Black": 92.4,
+    "High School Completion_2021_Hispanic": 82.1,
+    "High School Completion_2021_Other": 83.9,
+    "High School Completion_2021_White\r": 97.2
+  },
+  {
+    "city": "Thousand Oaks, CA",
+    "High School Completion_2021_Asian": 96.3,
+    "High School Completion_2021_Black": 99,
+    "High School Completion_2021_Hispanic": 76.4,
+    "High School Completion_2021_Other": 84.1,
+    "High School Completion_2021_White\r": 98
+  },
+  {
+    "city": "Toledo, OH",
+    "High School Completion_2021_Asian": 74.3,
+    "High School Completion_2021_Black": 82.9,
+    "High School Completion_2021_Hispanic": 77.2,
+    "High School Completion_2021_Other": 77.3,
+    "High School Completion_2021_White\r": 90.3
+  },
+  {
+    "city": "Torrance, CA",
+    "High School Completion_2021_Asian": 95.4,
+    "High School Completion_2021_Black": 92,
+    "High School Completion_2021_Hispanic": 88.8,
+    "High School Completion_2021_Other": 89,
+    "High School Completion_2021_White\r": 96.9
+  },
+  {
+    "city": "Tucson, AZ",
+    "High School Completion_2021_Asian": 87.4,
+    "High School Completion_2021_Black": 84.2,
+    "High School Completion_2021_Hispanic": 75,
+    "High School Completion_2021_Other": 76,
+    "High School Completion_2021_White\r": 95.1
+  },
+  {
+    "city": "Tulsa, OK",
+    "High School Completion_2021_Asian": 73.3,
+    "High School Completion_2021_Black": 89.6,
+    "High School Completion_2021_Hispanic": 59.8,
+    "High School Completion_2021_Other": 77.2,
+    "High School Completion_2021_White\r": 93.7
+  },
+  {
+    "city": "Vancouver, WA",
+    "High School Completion_2021_Asian": 86.2,
+    "High School Completion_2021_Black": 92.3,
+    "High School Completion_2021_Hispanic": 71.2,
+    "High School Completion_2021_Other": 78.5,
+    "High School Completion_2021_White\r": 94.2
+  },
+  {
+    "city": "Virginia Beach, VA",
+    "High School Completion_2021_Asian": 89.7,
+    "High School Completion_2021_Black": 92.5,
+    "High School Completion_2021_Hispanic": 87.4,
+    "High School Completion_2021_Other": 90.3,
+    "High School Completion_2021_White\r": 96.3
+  },
+  {
+    "city": "Visalia, CA",
+    "High School Completion_2021_Asian": 81.2,
+    "High School Completion_2021_Black": 95.9,
+    "High School Completion_2021_Hispanic": 76.9,
+    "High School Completion_2021_Other": 78,
+    "High School Completion_2021_White\r": 95.3
+  },
+  {
+    "city": "Waco, TX",
+    "High School Completion_2021_Asian": 89.6,
+    "High School Completion_2021_Black": 85.4,
+    "High School Completion_2021_Hispanic": 61.6,
+    "High School Completion_2021_Other": 69.6,
+    "High School Completion_2021_White\r": 95.8
+  },
+  {
+    "city": "Warren, MI",
+    "High School Completion_2021_Asian": 76.8,
+    "High School Completion_2021_Black": 91,
+    "High School Completion_2021_Hispanic": 84.3,
+    "High School Completion_2021_Other": 81.1,
+    "High School Completion_2021_White\r": 87.1
+  },
+  {
+    "city": "Washington, DC",
+    "High School Completion_2021_Asian": 94.5,
+    "High School Completion_2021_Black": 88,
+    "High School Completion_2021_Hispanic": 78.6,
+    "High School Completion_2021_Other": 80.2,
+    "High School Completion_2021_White\r": 99.5
+  },
+  {
+    "city": "Waterbury, CT",
+    "High School Completion_2021_Asian": 63.7,
+    "High School Completion_2021_Black": 84.6,
+    "High School Completion_2021_Hispanic": 70.8,
+    "High School Completion_2021_Other": 71.2,
+    "High School Completion_2021_White\r": 86.7
+  },
+  {
+    "city": "West Jordan, UT",
+    "High School Completion_2021_Asian": 87.7,
+    "High School Completion_2021_Black": 96.9,
+    "High School Completion_2021_Hispanic": 77.4,
+    "High School Completion_2021_Other": 77.8,
+    "High School Completion_2021_White\r": 95.7
+  },
+  {
+    "city": "West Valley City, UT",
+    "High School Completion_2021_Asian": 84.3,
+    "High School Completion_2021_Black": 87.9,
+    "High School Completion_2021_Hispanic": 66.8,
+    "High School Completion_2021_Other": 67.9,
+    "High School Completion_2021_White\r": 93.8
+  },
+  {
+    "city": "Westminster, CA",
+    "High School Completion_2021_Asian": 74.5,
+    "High School Completion_2021_Black": 88.7,
+    "High School Completion_2021_Hispanic": 66.7,
+    "High School Completion_2021_Other": 67,
+    "High School Completion_2021_White\r": 94
+  },
+  {
+    "city": "Westminster, CO",
+    "High School Completion_2021_Asian": 76.8,
+    "High School Completion_2021_Black": 93.4,
+    "High School Completion_2021_Hispanic": 78.1,
+    "High School Completion_2021_Other": 81.9,
+    "High School Completion_2021_White\r": 96.7
+  },
+  {
+    "city": "Wichita Falls, TX",
+    "High School Completion_2021_Asian": 80.7,
+    "High School Completion_2021_Black": 82.2,
+    "High School Completion_2021_Hispanic": 71.9,
+    "High School Completion_2021_Other": 71.3,
+    "High School Completion_2021_White\r": 93.3
+  },
+  {
+    "city": "Wichita, KS",
+    "High School Completion_2021_Asian": 73.9,
+    "High School Completion_2021_Black": 87.8,
+    "High School Completion_2021_Hispanic": 63.9,
+    "High School Completion_2021_Other": 71.1,
+    "High School Completion_2021_White\r": 93.8
+  },
+  {
+    "city": "Winston-Salem, NC",
+    "High School Completion_2021_Asian": 89.2,
+    "High School Completion_2021_Black": 88.1,
+    "High School Completion_2021_Hispanic": 58.9,
+    "High School Completion_2021_Other": 68.2,
+    "High School Completion_2021_White\r": 94.3
+  },
+  {
+    "city": "Worcester, MA",
+    "High School Completion_2021_Asian": 75,
+    "High School Completion_2021_Black": 89.5,
+    "High School Completion_2021_Hispanic": 69.5,
+    "High School Completion_2021_Other": 72.1,
+    "High School Completion_2021_White\r": 92.2
+  },
+  {
+    "city": "Yonkers, NY",
+    "High School Completion_2021_Asian": 91.8,
+    "High School Completion_2021_Black": 84,
+    "High School Completion_2021_Hispanic": 72.3,
+    "High School Completion_2021_Other": 72,
+    "High School Completion_2021_White\r": 90.1
+  }
+]
