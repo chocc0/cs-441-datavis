@@ -1,6 +1,7 @@
 import {initialiseMap, highlightCityMap, clearHighlightMap} from './map.js'
 import {initialiseRadar, updateCity, resetCity} from './radar.js'
 import {initializeScatter, highlightCityScatter, clearHighlightScatter} from './scatter.js'
+import {initialiseBar} from './barchart.js'
 
 let activeCity = null;
 let headerHeight = 0;
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initialize() {
+    initialiseBar();
     initialiseMap();
     initialiseRadar();
     initializeScatter();

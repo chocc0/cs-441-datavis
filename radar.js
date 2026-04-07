@@ -184,19 +184,5 @@ function labelPadding(spoke) {
 export async function initialiseRadar() {
     await loadData();
     initialiseSVG();
-    drawAtlantaRadial(atlantaChartData);
-
-    // // Attach a debounced resize handler to redraw on layout changes
-    // if (!window._radarResizeAttached) {
-    //     window._radarResizeAttached = true;
-    //     let resizeTimeout = null;
-    //     window.addEventListener('resize', () => {
-    //         clearTimeout(resizeTimeout);
-    //         resizeTimeout = setTimeout(() => {
-    //             initialiseSVG();
-    //             drawAtlantaRadial(atlantaChartData);
-    //         }, 150);
-    //     });
-    // }
     updateCity(activeCity);
 }
