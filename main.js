@@ -1,5 +1,5 @@
 import {initialiseMap, highlightCityMap, clearHighlightMap} from './map.js'
-import {initialiseRadar} from './radar.js'
+import {initialiseRadar, updateCity, resetCity} from './radar.js'
 import {initializeScatter, highlightCityScatter, clearHighlightScatter} from './scatter.js'
 
 const maxScroll =  window.visualViewport.height;
@@ -21,11 +21,13 @@ export function updateActiveCity(city) {
     if (city === null) {
         clearHighlightMap();
         clearHighlightScatter();
+        resetCity();
     }
     else {
         console.log("Active city updated to: " + city.city);
         highlightCityMap(city);
         highlightCityScatter(city);
+        updateCity(city.city);
     }
 }
 
