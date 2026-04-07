@@ -417,11 +417,15 @@ function createMap() {
 }
 
 function buildColorLegend() {
-  const bar    = document.getElementById('color-bar');
+  const bar  = document.getElementById('color-bar');
   const minv = document.getElementById('color-min');
   const maxv = document.getElementById('color-max');
-  const STEPS  = 8;
-  minv.innerHTML = `<span>${pocExtent[0].toFixed(1)}</span><span>${pocExtent[1].toFixed(1)}</span>`
+  const W    = 180; // match CSS max-width
+  const STEPS = 10;
+
+  bar.innerHTML = '';
+
+  // Swatches fill the bar div via flex (CSS handles width/height)
   for (let i = 0; i < STEPS; i++) {
     const t  = i / (STEPS - 1);
     const sw = document.createElement('div');
@@ -429,38 +433,66 @@ function buildColorLegend() {
     sw.style.background = colorScale(pocExtent[0] + t * (pocExtent[1] - pocExtent[0]));
     bar.appendChild(sw);
   }
-  const barWidth = STEPS * 28;
-  bar.style.width = barWidth + 'px';
+
+  // Label row below the bar
+  const labelRow = document.createElement('div');
+  labelRow.style.cssText = `display:flex;justify-content:space-between;width:${W}px;max-width:100%;font-size:10px;margin-top:2px;`;
+  labelRow.innerHTML = `<span>${pocExtent[0].toFixed(1)} pts</span><span>${pocExtent[1].toFixed(1)} pts</span>`;
+  bar.insertAdjacentElement('afterend', labelRow);
+
+  if (minv) minv.style.display = 'none';
+  if (maxv) maxv.style.display = 'none';
 }
 
 
 function buildSizeLegend() {
-  const svg    = d3.select('#size-legend-svg');
-  const minv = document.getElementById('size-min');
-  const stops  = [co2Extent[0], (co2Extent[0] + co2Extent[1]) / 2, co2Extent[1]];
-  const radii  = stops.map(v => radiusScale(v));
-  const totalW = 200;
-  const spacing = totalW / stops.length;
-  const cy = 30;
+  const sizeSvg = d3.select('#size-legend-svg');
+  const minv    = document.getElementById('size-min');
 
+  const W          = 180; // match CSS width
+  const displayMin = co2Extent[0];
+  const displayMax = Math.min(co2Extent[1], 25); // cap outliers
+  const mid        = (displayMin + displayMax) / 2;
+  const stops      = [displayMin, mid, displayMax];
+  const radii      = stops.map(v => radiusScale(Math.min(v, displayMax)));
+
+  const maxR    = radii[2];
+  const LABEL_H = 14;
+  const svgH    = maxR * 2 + LABEL_H + 4;
+  const spacing = W / stops.length;
+
+  sizeSvg.attr('width', W).attr('height', svgH);
+  sizeSvg.selectAll('*').remove();
+
+  // Bottom-align circles on a shared baseline above the label row
+  const baselineY = svgH - LABEL_H - 2;
 
   stops.forEach((val, i) => {
     const cx = spacing * i + spacing / 2;
-    svg.append('circle')
+    const cy = baselineY - radii[i];
+
+    sizeSvg.append('circle')
       .attr('cx', cx).attr('cy', cy)
       .attr('r',  radii[i])
       .attr('fill', 'rgba(55, 46, 46, 0.15)')
       .attr('stroke', 'rgba(27, 27, 27, 0.35)')
-      .attr('stroke-width', 2.5);
+      .attr('stroke-width', 1.5);
+
+    sizeSvg.append('text')
+      .attr('x', cx).attr('y', svgH - 2)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', '10px')
+      .attr('fill', '#333')
+      .text(val.toFixed(1) + ' MT');
   });
-  minv.innerHTML = `<span>${stops[0].toFixed(1)}</span><span>${stops[2].toFixed(1)}</span>`;
+
+  if (minv) minv.style.display = 'none';
 }
 
 export async function initialiseMap()
 {
   console.log("run");
   createMap();
-  // buildColorLegend();
-  // buildSizeLegend();
+  buildColorLegend();
+  buildSizeLegend();
 }
-

@@ -71,14 +71,14 @@ function initalizeSVG()
         .style("fill", "black")
         .text("");
 
-    scattersvg.append("text")
-        .attr("id", "chart-title")
-        .attr("x", width / 2)
-        .attr("y", 20)
-        .attr("text-anchor", "middle")
-        .style("font-size", `${Math.max(12, Math.round(25 * scale))}px`)
-        .style("fill", "black")
-        .text("");
+    // scattersvg.append("text")
+    //     .attr("id", "chart-title")
+    //     .attr("x", width / 2)
+    //     .attr("y", 20)
+    //     .attr("text-anchor", "middle")
+    //     .style("font-size", `${Math.max(12, Math.round(25 * scale))}px`)
+    //     .style("fill", "black")
+    //     .text("");
     
 }
 

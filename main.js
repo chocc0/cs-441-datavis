@@ -26,7 +26,7 @@ function setVisibility() {
     const footerTop = document.querySelector('footer').getBoundingClientRect().top + window.scrollY;
 
     const inHeader = scrolled < headerHeight;
-    const inFooter = scrolled + window.innerHeight >= footerTop + footerHeight;
+    const inFooter = scrolled + window.innerHeight * 1.5 >= footerTop + footerHeight;
 
     if (inHeader || inFooter) {
         // Hide everything in header and footer zones
@@ -34,25 +34,25 @@ function setVisibility() {
         barWrapper.style.visibility = 'hidden';
         svgWrapper.style.opacity = '0';
         svgWrapper.style.visibility = 'hidden';
-    } else if (showSvg) {
-        // #para6 reached — show svg-wrapper, hide bar-wrapper
-        barWrapper.style.opacity = '0';
-        setTimeout(() => { barWrapper.style.visibility = 'hidden'; }, 100);
-        svgWrapper.style.visibility = 'visible';
-        svgWrapper.style.opacity = '1';
-    } else {
+    } else if (!showSvg) {
         // Before #para6 — show bar-wrapper, hide svg-wrapper
         barWrapper.style.visibility = 'visible';
         barWrapper.style.opacity = '1';
         svgWrapper.style.opacity = '0';
         svgWrapper.style.visibility = 'hidden';
+    } else if (showSvg){
+        // #para6 reached — show svg-wrapper, hide bar-wrapper
+        barWrapper.style.opacity = '0';
+        setTimeout(() => { barWrapper.style.visibility = 'hidden'; }, 100);
+        svgWrapper.style.visibility = 'visible';
+        svgWrapper.style.opacity = '1';
     }
 }
 
 function updateGraphic(classList) {
     if (classList.contains('map')) {
         showSvg = true;
-    } else if (classList.contains('scatter')) {
+    } else if (classList.contains('bar')) {
         showSvg = false;
     }
     setVisibility();
