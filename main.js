@@ -2,9 +2,15 @@ import {initialiseMap, highlightCityMap, clearHighlightMap} from './map.js'
 import {initialiseRadar, updateCity, resetCity} from './radar.js'
 import {initializeScatter, highlightCityScatter, clearHighlightScatter} from './scatter.js'
 
-const maxScroll =  window.visualViewport.height;
-
 let activeCity = null;
+let headerHeight = 0;
+let footerHeight = 0;
+let showSvg = false; // tracks whether #para6 has been reached
+
+document.addEventListener('DOMContentLoaded', () => {
+    headerHeight = document.querySelector('#front-page')?.offsetHeight ?? 0;
+    footerHeight = document.querySelector('footer')?.offsetHeight ?? 0;
+});
 
 function initialize() {
     initialiseMap();
@@ -12,18 +18,54 @@ function initialize() {
     initializeScatter();
 }
 
-function updateGraphic(s){
-    // console.log(s);
+function setVisibility() {
+    const barWrapper = document.querySelector('.bar-wrapper');
+    const svgWrapper = document.querySelector('.svg-wrapper');
+
+    const scrolled = window.scrollY;
+    const footerTop = document.querySelector('footer').getBoundingClientRect().top + window.scrollY;
+
+    const inHeader = scrolled < headerHeight;
+    const inFooter = scrolled + window.innerHeight >= footerTop + footerHeight;
+
+    if (inHeader || inFooter) {
+        // Hide everything in header and footer zones
+        barWrapper.style.opacity = '0';
+        barWrapper.style.visibility = 'hidden';
+        svgWrapper.style.opacity = '0';
+        svgWrapper.style.visibility = 'hidden';
+    } else if (showSvg) {
+        // #para6 reached — show svg-wrapper, hide bar-wrapper
+        barWrapper.style.opacity = '0';
+        setTimeout(() => { barWrapper.style.visibility = 'hidden'; }, 100);
+        svgWrapper.style.visibility = 'visible';
+        svgWrapper.style.opacity = '1';
+    } else {
+        // Before #para6 — show bar-wrapper, hide svg-wrapper
+        barWrapper.style.visibility = 'visible';
+        barWrapper.style.opacity = '1';
+        svgWrapper.style.opacity = '0';
+        svgWrapper.style.visibility = 'hidden';
+    }
+}
+
+function updateGraphic(classList) {
+    if (classList.contains('map')) {
+        showSvg = true;
+    } else if (classList.contains('scatter')) {
+        showSvg = false;
+    }
+    setVisibility();
 }
 
 export function updateActiveCity(city) {
     activeCity = city;
+    console.log(activeCity)
     if (city === null) {
         clearHighlightMap();
         clearHighlightScatter();
         resetCity();
-    }
-    else {
+    } else {
         console.log("Active city updated to: " + city.city);
         highlightCityMap(city);
         highlightCityScatter(city);
@@ -31,25 +73,15 @@ export function updateActiveCity(city) {
     }
 }
 
-window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY;
-    if(scrolled >= maxScroll){
-        document.querySelector('.scatterplot-wrapper').style.visibility = "visible";
-        document.querySelector('.map-wrapper').style.visibility = "visible";
-    } else {
-        document.querySelector('.scatterplot-wrapper').style.visibility = "hidden";
-        document.querySelector('.map-wrapper').style.visibility = "hidden";
-    }
-});
+window.addEventListener('scroll', setVisibility);
 
 const sections = document.querySelectorAll('.para');
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const state = entry.target.classList;
-      updateGraphic(state); // your update function
-    }
-  });
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            updateGraphic(entry.target.classList);
+        }
+    });
 }, { threshold: 0.5 });
 
 sections.forEach(s => observer.observe(s));
