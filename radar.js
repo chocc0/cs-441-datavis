@@ -158,7 +158,7 @@ function drawRadial(data) {
             .attr("y", -radiusR-(radiusR/5)) // -radius goes up bc y=0 is center, radius/5 aligns text
             .attr("text-anchor", "middle")
             .style("font-size", titleSize)
-            .text(data.city + ": High School Graduation Rate by Race (2021)");
+            .text("High School Graduation Rate by Race");
 }
 
 // Determines how labels align with spokes
@@ -186,17 +186,5 @@ export async function initialiseRadar() {
     initialiseSVG();
     drawAtlantaRadial(atlantaChartData);
 
-    // // Attach a debounced resize handler to redraw on layout changes
-    // if (!window._radarResizeAttached) {
-    //     window._radarResizeAttached = true;
-    //     let resizeTimeout = null;
-    //     window.addEventListener('resize', () => {
-    //         clearTimeout(resizeTimeout);
-    //         resizeTimeout = setTimeout(() => {
-    //             initialiseSVG();
-    //             drawAtlantaRadial(atlantaChartData);
-    //         }, 150);
-    //     });
-    // }
     updateCity(activeCity);
 }

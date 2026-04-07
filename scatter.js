@@ -71,14 +71,14 @@ function initalizeSVG()
         .style("fill", "black")
         .text("");
 
-    // scattersvg.append("text")
-    //     .attr("id", "chart-title")
-    //     .attr("x", width / 2)
-    //     .attr("y", 20)
-    //     .attr("text-anchor", "middle")
-    //     .style("font-size", `${Math.max(12, Math.round(25 * scale))}px`)
-    //     .style("fill", "black")
-    //     .text("");
+    scattersvg.append("text")
+        .attr("id", "chart-title")
+        .attr("x", width / 2)
+        .attr("y", 20)
+        .attr("text-anchor", "middle")
+        .style("font-size", `${Math.max(12, Math.round(25 * scale))}px`)
+        .style("fill", "black")
+        .text("");
     
 }
 
@@ -256,7 +256,7 @@ export async function initializeScatter()
 {
     await loadData();
     initalizeSVG();
-    updateScatterPlot(scatterData, "Air Pollution vs Cardiovascular Disease Deaths (2021)");
+    updateScatterPlot(scatterData, "Air Pollution vs Cardiovascular Disease Deaths");
 
     // // Attach a debounced resize handler so the chart redraws when layout changes
     // if (!window._scatterResizeAttached) {
