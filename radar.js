@@ -1,6 +1,6 @@
 let svgRadar = d3.select("#radar-svg");
 let widthR = 800;
-let heightR = 800;
+let heightR = 1000;
 let radiusR = 200;
 let chartRadar;
 let radarData;
@@ -21,17 +21,17 @@ function initialiseSVG(){
 
     // Compute available size from layout; enforce minimum scale
     const bbox = svgRadar.node().getBoundingClientRect();
-    const MIN_WIDTH = 360;
-    const MIN_HEIGHT = 270;
+    const MIN_WIDTH = 500;
+    const MIN_HEIGHT = 200;
     widthR = Math.max(MIN_WIDTH, Math.round(bbox.width) || MIN_WIDTH);
-    heightR = Math.max(MIN_HEIGHT, Math.round(bbox.height) || Math.round(widthR * 0.75));
+    heightR = Math.max(MIN_HEIGHT, Math.round(bbox.height) || Math.round(widthR));
 
     // Set viewBox so svg scales responsively
     svgRadar.attr('viewBox', `0 0 ${widthR} ${heightR}`)
             .attr('preserveAspectRatio', 'xMidYMid meet');
 
     // radius is a third of the smaller dimension
-    radiusR = (1/3) * Math.min(widthR, heightR);
+    radiusR = (0.5) * Math.min(widthR, heightR);
 
     chartRadar = svgRadar.append("g")
         .attr("transform", `translate(${widthR/2},${heightR/2})`);
@@ -69,8 +69,8 @@ function drawRadial(data) {
     const spoke = (2 * Math.PI) / race.length;
     const increments = [0, 60, 70, 80, 90, 100]
     // scale-dependent font sizes
-    const ringLabelSize = `${Math.max(8, Math.round(radiusR * 0.06))}px`;
-    const axisLabelSize = `${Math.max(10, Math.round(radiusR * 0.07))}px`;
+    const ringLabelSize = `${Math.max(7, Math.round(radiusR * 0.06))}px`;
+    const axisLabelSize = `${Math.max(12, Math.round(radiusR * 0.07))}px`;
     const titleSize = `${Math.max(12, Math.round(radiusR * 0.09))}px`;
 
     // Draw concentric grid rings (DASHED)
@@ -151,18 +151,10 @@ function drawRadial(data) {
         }
         chartRadar.append("polygon")
             .attr("points", radar)
-            .attr("fill", "#9ed6ff")
+            .attr("fill", "rgb(104, 173, 223)")
             .attr("fill-opacity", 0.2)
             .attr("stroke-width", Math.max(1, Math.round(radiusR * 0.01)))
-            .attr("stroke", "#0095ff");
-
-        // Add title above graph
-        // chartRadar.append("text")
-        //     .attr("x", 0)
-        //     .attr("y", -radiusR-(radiusR/5)) // -radius goes up bc y=0 is center, radius/5 aligns text
-        //     .attr("text-anchor", "middle")
-        //     .style("font-size", titleSize)
-        //     .text("High School Graduation Rate by Race");
+            .attr("stroke", "#4c9db2");
 }
 
 // Determines how labels align with spokes

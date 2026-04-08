@@ -50,6 +50,14 @@ main {
   font-weight: 650;
 }
 
+sup{
+  font-size: 0.7em;
+}
+
+a {
+  color: rgb(12, 40, 75); 
+}
+
 /* Fixed panel: anchored to the right 58% of the viewport, fully contained */
 .svg-wrapper,
 .pie-wrapper {
