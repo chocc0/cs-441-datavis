@@ -31,11 +31,15 @@ function setVisibility() {
     const pieWrapper = document.querySelector('.pie-wrapper');
     const svgWrapper = document.querySelector('.svg-wrapper');
 
+    const para6 = document.querySelector("#para6");
+    const space = para6.getBoundingClientRect(); // for scrolling from AI
+    const trigger = window.innerHeight * 0.5;
+
     const scrolled = window.scrollY;
-    const footerTop = document.querySelector('footer').getBoundingClientRect().top + window.scrollY;
+    const footerTop = document.querySelector('footer').getBoundingClientRect().top;
 
     const inHeader = scrolled < headerHeight;
-    const inFooter = scrolled + window.innerHeight * 1.5 >= footerTop + footerHeight;
+    const inFooter = footerTop < window.innerHeight; 
 
     if (inHeader || inFooter) {
         // Hide everything in header and footer zones
@@ -43,7 +47,7 @@ function setVisibility() {
         pieWrapper.style.visibility = 'hidden';
         svgWrapper.style.opacity = '0';
         svgWrapper.style.visibility = 'hidden';
-    } else if (!showSvg) {
+    } else if (space.top > trigger) {
         // Before #para6 — show bar-wrapper, hide svg-wrapper
         pieWrapper.style.visibility = 'visible';
         pieWrapper.style.opacity = '1';
