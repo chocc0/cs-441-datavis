@@ -14,20 +14,20 @@ function initalizeSVG()
 
     // Compute available size from CSS/layout; enforce a minimum scale
     const bbox = scattersvg.node().getBoundingClientRect();
-    const MIN_WIDTH = 600;
-    const MIN_HEIGHT = 360; // 4:3 fallback
+    const MIN_WIDTH = 800;
+    const MIN_HEIGHT = 500; // 4:3 fallback
     const width = Math.max(MIN_WIDTH, Math.round(bbox.width) || MIN_WIDTH);
     const height = Math.max(MIN_HEIGHT, Math.round(bbox.height) || Math.round(width * 0.75));
 
     // Scale factor relative to the design target (400x400)
-    const scale = Math.max(0.5, Math.min(2, Math.min(width / 400, height / 400)));
+    const scale = Math.max(0.8, Math.min(2, Math.min(width / 400, height / 400)));
     scattersvg.node().__scatter_scale = scale;
 
     // Set viewBox so the SVG scales responsively while we work in pixel units
     scattersvg.attr('viewBox', `0 0 ${width} ${height}`)
               .attr('preserveAspectRatio', 'xMidYMid meet');
 
-    const margin = { top: 20, right: 20, bottom: 50, left: 60 };
+    const margin = { top: 50, right: 10, bottom: 60, left: 80 };
     chartWidth = width - margin.left - margin.right;
     chartHeight = height - margin.top - margin.bottom;
 
@@ -57,7 +57,7 @@ function initalizeSVG()
         .attr("x", chartWidth / 2)
         .attr("y", chartHeight + 50)
         .attr("text-anchor", "middle")
-        .style("font-size", `${Math.max(10, Math.round(20 * scale))}px`)
+        .style("font-size", `${Math.max(100, Math.round(20 * scale))}px`)
         .style("fill", "black")
         .text("");
 
@@ -67,18 +67,10 @@ function initalizeSVG()
         .attr("x", -chartHeight / 2)
         .attr("y", -55)
         .attr("text-anchor", "middle")
-        .style("font-size", `${Math.max(10, Math.round(20 * scale))}px`)
+        .style("font-size", `${Math.max(100, Math.round(50 * scale))}px`)
         .style("fill", "black")
         .text("");
 
-    // scattersvg.append("text")
-    //     .attr("id", "chart-title")
-    //     .attr("x", width / 2)
-    //     .attr("y", 20)
-    //     .attr("text-anchor", "middle")
-    //     .style("font-size", `${Math.max(12, Math.round(25 * scale))}px`)
-    //     .style("fill", "black")
-    //     .text("");
     
 }
 
@@ -122,10 +114,10 @@ export function highlightCityScatter(city)
 {
     if (!chart) return; 
     chart.selectAll(".dot")
-        .attr("opacity", d => d.city === city.city ? 1.0 : 0.3)
+        .attr("opacity", d => d.city === city.city ? 1.0 : 0.2)
         .attr("stroke", d => d.city === city.city ? "#ffffff" : "rgba(0,0,0,0.4)")
-        .attr("stroke-width", d => d.city === city.city ? 2.5 : 0.5)
-        .attr("r", d => d.city === city.city ? 9 : 4);
+        .attr("stroke-width", d => d.city === city.city ? 3 : 0.5)
+        .attr("r", d => d.city === city.city ? 12 : 10);
 }
 
 export function clearHighlightScatter()
@@ -136,7 +128,7 @@ export function clearHighlightScatter()
         .attr("opacity", 0.7)
         .attr("stroke", "rgba(0,0,0,0.4)")
         .attr("stroke-width", 0.5)
-        .attr("r", 4);
+        .attr("r", 10);
 }
 
 function updateScatterPlot(data, title = "")
@@ -199,7 +191,7 @@ function updateScatterPlot(data, title = "")
         .attr("stroke-width", 0.5)
         .transition()
         .duration(1000)
-        .attr("r", Math.max(3, Math.round(6 * scale)));
+        .attr("r", Math.max(4, Math.round(6 * scale)));
 
     chart.selectAll(".dot")
         .on("mouseover", showInfo)
@@ -210,7 +202,7 @@ function updateScatterPlot(data, title = "")
     scattersvg.on("mousedown", function() {
     activeCity = null;
     updateActiveCity(null);
-    //clearHighlightScatter();
+    clearHighlightScatter();
     });
 
     // Axes
@@ -225,17 +217,17 @@ function updateScatterPlot(data, title = "")
         .call(d3.axisLeft(yScale));
 
     // Tweak tick label sizes to avoid cramping
-    const tickFont = `${Math.max(9, Math.round(12 * scale))}px`;
+    const tickFont = `${Math.max(9, Math.round(16 * scale))}px`;
     chart.selectAll('.x-axis text').style('font-size', tickFont);
     chart.selectAll('.y-axis text').style('font-size', tickFont);
 
     // Update axis label font sizes in case of resize
-    chart.select('.x-label').style('font-size', `${Math.max(10, Math.round(16 * scale))}px`);
-    chart.select('.y-label').style('font-size', `${Math.max(10, Math.round(16 * scale))}px`);
+    chart.select('.x-label').style('font-size', `${Math.max(10, Math.round(22 * scale))}px`);
+    chart.select('.y-label').style('font-size', `${Math.max(10, Math.round(22 * scale))}px`);
 
     // Axis labels
-    chart.select(".x-label").text("Air Pollution - Ozone Total");
-    chart.select(".y-label").text("Cardiovascular Disease Deaths Total\r");
+    chart.select(".x-label").text("Air Pollution, Ozone (ppb)");
+    chart.select(".y-label").text("Deaths by Cardiovascular Disease");
 
     if (title.length > 0)
     {
@@ -253,16 +245,12 @@ async function loadData()
     });
 }
 
-export async function initializeScatter(initialCity = null)
+export async function initializeScatter()
 {
     await loadData();
     initalizeSVG();
     updateScatterPlot(scatterData, "Air Pollution vs Cardiovascular Disease Deaths");
-    if (initialCity) {
-        setTimeout(() => {
-            highlightCityScatter(initialCity);
-        }, 1050); // match the transition duration
-    }    
+
     // // Attach a debounced resize handler so the chart redraws when layout changes
     // if (!window._scatterResizeAttached) {
     //     window._scatterResizeAttached = true;
@@ -275,6 +263,6 @@ export async function initializeScatter(initialCity = null)
     //         }, 150);
     //     });
     // }
-    
 }
 
+initializeScatter();
