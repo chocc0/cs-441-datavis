@@ -168,7 +168,8 @@ a {
 /* SVGs scale to their container, never overflow */
 #map-svg,
 #scatter-svg,
-#radar-svg {
+#radar-svg,
+#pie-svg {
   width: 100%;
   height: 100%;
   max-width: 100%;

@@ -4,7 +4,7 @@ const height = 400;
 let svg = d3.select("#pie-svg");
 
 const data = [{label: " over norm", value: 45, color: "#ffaa68", p: Math.round(45 / 171 * 100)}, 
-    {label: " under norm", value: (171-45), color: "#4c9db2", p: Math.round((171-45) / 171 * 100)}];
+    {label: " under norm", value: (171-45), color: "#bfced1", p: Math.round((171-45) / 171 * 100)}];
 
 function initPie() {
     svg.attr("width",width);
@@ -18,7 +18,7 @@ function initPie() {
     const radius = Math.min(chartWidth, chartHeight) / 2;
 
     let pieChart = svg.append("g")
-        .attr("transform", "translate(" + (width/2) + "," + (height/2 + 40) + ")");
+        .attr("transform", "translate(" + (width/2) + "," + (height * 0.8) + ")");
 
     // Define an x scale which will assign a spot on the x axis to each of the unique values of colour in the dataset
     let pie = d3.pie().value(d => d.value)
@@ -31,7 +31,8 @@ function initPie() {
     let arcs = pieChart.selectAll(".arc")
                     .data(pie(data))
                     .enter().append("g")
-                    .attr("class", "arc");
+                    .attr("class", "arc")
+                    .style("font-weight", 500);
 
     arcs.append("path")
         .attr("d", colorArc)
@@ -42,14 +43,13 @@ function initPie() {
         .attr("transform", d => `translate(${labelArc.centroid(d)})`)
         .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
-        .attr("font-size", "16px")
-        .attr("font-family", "Georgia")
+        .attr("font-size", "12px")
         .style("fill", "dark gray")
         .text(d => d.data.p + "% " + d.data.label);
 
     const title = svg.append("text")
         .attr("x", width / 2)
-        .attr("y", 30)
+        .attr("y", 70)
         .attr("text-anchor", "middle")
         .style("font-size", "18px")
         .style("font-weight", "bold")
@@ -57,7 +57,7 @@ function initPie() {
 
     title.append("tspan") // tspan from AI
         .attr("x", width/2)
-        .text("Percent of Homes in Flint, MI in 2015")
+        .text("Percent of Homes in Flint, MI (2015)")
     title.append("tspan")
         .attr("x", width/2)
         .attr("dy", "1.2em")
@@ -65,7 +65,7 @@ function initPie() {
     title.append("tspan")
         .attr("x", width/2)
         .attr("dy", "1.2em")
-        .text("Over or Under the Norm (15 ppb)");
+        .text("Relative to Norm(15 ppb)");
 
 }
 

@@ -120,6 +120,16 @@ export function highlightCityScatter(city)
         .attr("r", d => d.city === city.city ? 12 : 10);
 }
 
+export function highlightCitiesScatter(cityNames) {
+  if (!dotSelection) return;
+  const nameSet = new Set(cityNames);
+  dotSelection
+    .attr('opacity', d => nameSet.has(d.city) ? 1.0 : 0.15)
+    .attr('stroke', d => nameSet.has(d.city) ? '#ffffff' : 'rgba(0,0,0,0.2)')
+    .attr('stroke-width', d => nameSet.has(d.city) ? 2.5 : 1)
+    .attr('r', d => nameSet.has(d.city) ? radiusScale(d.co2) * 1.3 : radiusScale(d.co2));
+}
+
 export function clearHighlightScatter()
 {
     if (!chart) return;

@@ -1,4 +1,4 @@
-import {initialiseMap, highlightCityMap, clearHighlightMap, highlightCitiesMap, cities} from './map.js'
+import {initialiseMap, highlightCityMap, clearHighlightMap, cities} from './map.js'
 import {initialiseRadar, updateCity, resetCity} from './radar.js'
 import {initializeScatter, highlightCityScatter, clearHighlightScatter} from './scatter.js'
 import { initializePie } from './piechart.js';
@@ -12,29 +12,6 @@ let showSvg = false; // tracks whether #para6 has been reached
 const title = document.querySelector(".svg-title")
 const infoblock = document.querySelector("#info-block")
 const scatterInfoBlock = document.querySelector("#scatter-info-block")
-
-// --- Highlight-data city groups ---
-// Each entry maps a highlight-data element (by its text content substring) to a list of cities
-const HIGHLIGHT_GROUPS = [
-  {
-    // para2: Flint cardiovascular mortality
-    match: "50% higher cardiovascular mortality",
-    cities: ["Flint, MI"],
-    label: "Flint, MI — 50% higher cardiovascular mortality rate than the national average"
-  },
-  {
-    // para9 (rurality): rural areas with higher cardiovascular mortality
-    match: "rural areas (between 3-10% rurality)",
-    cities: ["Clarksville, TN", "Chesapeake, VA", "Apple Valley, CA", "Brookhaven, NY", "Albany, GA", "Billings, MT"],
-    label: "Clarksville, TN, Chesapeake, VA, Apple Valley, CA, Brookhaven, NY, Albany, GA, Billings, MT"
-  },
-  {
-    // para9 (Atlanta graduation): Black and Hispanic students 13% lower graduation
-    match: "Black and Hispanic students experience a 13%",
-    cities: ["Atlanta, GA"],
-    label: "Atlanta, GA"
-  }
-];
 
 document.addEventListener('DOMContentLoaded', () => {
     headerHeight = document.querySelector('#front-page')?.offsetHeight ?? 0;
@@ -88,6 +65,8 @@ function activateHighlightGroup(group) {
     resetCity();
 
     highlightCitiesMap(group.cities);
+    highlightCitiesScatter(group.cities);
+
 
     // Update the title to show the group label
     if (title) title.textContent = group.label;

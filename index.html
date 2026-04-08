@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pollution &amp; People of Color — City Map</title>
+    <title>Urban Pollution in the U.S. | CS 441 Project</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <!-- Fonts -->
@@ -17,15 +18,15 @@
 
     <main>
       <div class="article">
-        <p id="para1" class="para bar">Environmental cleanliness is an essential part of fostering healthy lives and creating a fair society. However, ignorance towards environmental crises has shown us the underlying struggles that result from such carelessness. Consider the Flint Water Crisis in 2015. Flint not only suffered an environmental disaster that poisoned its population, but the event also revealed that marginalized communities bear the brunt of environmental consequences.</p>
+        <p id="para1" class="para pie">Environmental cleanliness is an essential part of fostering healthy lives and creating a fair society. However, ignorance towards environmental crises has shown us the underlying struggles that result from such carelessness. Consider the Flint Water Crisis in 2015. Flint not only suffered an environmental disaster that poisoned its population, but the event also revealed that marginalized communities bear the brunt of environmental consequences.</p>
         
-        <p id="para2" class="para bar"><span class="highlight-data">Data from the City Health Dashboard shows that Flint experienced a 50% higher cardiovascular mortality rate compared to the national average.</span> “Simply put, the economic situation in Flint and the logic that made providing poisoned water seem like a reasonable idea would not have occurred without racism."<sup>1</sup> While no single person’s racial biases were to blame for the lethal levels of lead, Flint’s outcry directed national focus on “structural racism." Kemi Fuentes-George–a Middlebury College political science professor–may have synthesized it best:</p>
+        <p id="para2" class="para pie">“Simply put, the economic situation in Flint and the logic that made providing poisoned water seem like a reasonable idea would not have occurred without racism."<sup>1</sup> While no single person’s racial biases were to blame for the lethal levels of lead, Flint’s outcry directed national focus on “structural racism." Kemi Fuentes-George–a Middlebury College political science professor–may have synthesized it best:</p>
 
-        <p id="para3" class="para quote bar">"While the American political economy has done pretty well so far at externalizing environmental costs to the poor and marginalized, environmental hazards do travel, perhaps more easily than poor black citizens. In the same way that racist and authoritarian police practices have killed Eric Garner, Jack Crawford and Kelly Thomas, the environmental vulnerability that has devastated Flint – rotting infrastructure, industrial pollution, intransigent political institutions – puts us all at risk."<sup>1</sup></p>
+        <p id="para3" class="para quote pie">"While the American political economy has done pretty well so far at externalizing environmental costs to the poor and marginalized, environmental hazards do travel, perhaps more easily than poor black citizens. In the same way that racist and authoritarian police practices have killed Eric Garner, Jack Crawford and Kelly Thomas, the environmental vulnerability that has devastated Flint – rotting infrastructure, industrial pollution, intransigent political institutions – puts us all at risk."<sup>1</sup></p>
 
-        <p id="para4" class="para bar">For years, local officials denied claims of elevated lead concentrations and occurrences of Legionnaires Disease. The city government violated Environmental Protection Agency regulations by flushing water samples used in cleanliness reports in an effort to dismiss the allegations.<sup>2</sup>  Excess lead in Flint’s pipes reacted with chlorine, an antibacterial agent used to keep drinking water safe, and triggered an uptick in Legionnaires’ disease.<sup>3</sup> This governmental negligence imparted elevated blood-lead levels in as many as 1 in 10 children, according to investigations at Hurley Medical Center.<sup>4</sup> Flint’s child population is now facing developmental risks and lower life expectancies. The Flint Water Crisis demonstrates that environmental trends are difficult to track, which can result in a lack of institutional accountability for the physical consequences. Although environmental indicators point to health risks, institutions are motivated to confound and dismiss data inappropriately.</p>
+        <p id="para4" class="para pie">For years, local officials denied claims of elevated lead concentrations and occurrences of Legionnaires Disease. The city government violated Environmental Protection Agency regulations by flushing water samples used in cleanliness reports in an effort to dismiss the allegations.<sup>2</sup>  Excess lead in Flint’s pipes reacted with chlorine, an antibacterial agent used to keep drinking water safe, and triggered an uptick in Legionnaires’ disease.<sup>3</sup> This governmental negligence imparted elevated blood-lead levels in as many as 1 in 10 children, according to investigations at Hurley Medical Center.<sup>4</sup> Flint’s child population is now facing developmental risks and lower life expectancies. The Flint Water Crisis demonstrates that environmental trends are difficult to track, which can result in a lack of institutional accountability for the physical consequences. Although environmental indicators point to health risks, institutions are motivated to confound and dismiss data inappropriately.</p>
 
-        <p id="para5" class="para">So, what happened after the Flint Water Crisis? In August 2025, the city declared the problem “fixed,” but many citizens argued as the structural racism problem had not been addressed.<sup>5</sup> The question then becomes, what next? Or, more accurately, where is next? Where is the next city that will face infrastructural and environmental racism and have to wait over a decade for it to be “fixed?"</p>
+        <p id="para5" class="para pie">So, what happened after the Flint Water Crisis? In August 2025, the city declared the problem “fixed,” but many citizens argued as the structural racism problem had not been addressed.<sup>5</sup> The question then becomes, what next? Or, more accurately, where is next? Where is the next city that will face infrastructural and environmental racism and have to wait over a decade for it to be “fixed?"</p>
 
         <p id="para6" class="para">Let’s look at the data extrapolated from the City Health Dashboard on pollution in urban cities. Depicted are cities that have populations of over 500,000. The POC Gap Index was derived from the difference in exposure to air pollution between people of color (POC) and white residents within a city. Other statistics were directly extracted from the 2021 City Health Dashboard dataset.</p>
 
@@ -53,10 +54,6 @@
         <div class="svg-title"></div>
         <!-- Map SVG -->
         <div class="map-wrapper">
-          <!-- <div class="title">
-              <h1>Pollution &amp; People of Color — US Cities</h1>
-              <p>CO₂ per capita, ozone levels, and POC gap index across 265 US cities</p>
-          </div> -->
           <div id="map-wrap">
             <svg id="map-svg" viewBox="0 0 1000 500"></svg>
           </div>
