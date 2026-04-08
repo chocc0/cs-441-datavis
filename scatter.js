@@ -14,8 +14,8 @@ function initalizeSVG()
 
     // Compute available size from CSS/layout; enforce a minimum scale
     const bbox = scattersvg.node().getBoundingClientRect();
-    const MIN_WIDTH = 360;
-    const MIN_HEIGHT = 270; // 4:3 fallback
+    const MIN_WIDTH = 600;
+    const MIN_HEIGHT = 360; // 4:3 fallback
     const width = Math.max(MIN_WIDTH, Math.round(bbox.width) || MIN_WIDTH);
     const height = Math.max(MIN_HEIGHT, Math.round(bbox.height) || Math.round(width * 0.75));
 
@@ -27,7 +27,7 @@ function initalizeSVG()
     scattersvg.attr('viewBox', `0 0 ${width} ${height}`)
               .attr('preserveAspectRatio', 'xMidYMid meet');
 
-    const margin = { top: 30, right: 30, bottom: 60, left: 70 };
+    const margin = { top: 20, right: 20, bottom: 50, left: 60 };
     chartWidth = width - margin.left - margin.right;
     chartHeight = height - margin.top - margin.bottom;
 
@@ -87,6 +87,7 @@ const hovering = document.getElementById("scatter-info-block");
 function showInfo(event, d)
 {
     hovering.style.display = "block";
+    hovering.style.opacity = 1;
     hovering.style.left = (event.clientX + 10) + "px";
     hovering.style.top = (event.clientY) + "px";
     document.getElementById("city-labelScatter").textContent = d.city;

@@ -304,6 +304,7 @@ const hovering = document.getElementById('info-block');
  
 function showInfo(event, d) {
   hovering.style.display = 'block';
+  hovering.style.opacity = 1;
   hovering.style.left = (event.clientX + 10) + 'px';
   hovering.style.top  = (event.clientY - 0) + 'px';
   document.getElementById('city-label').textContent  = d.city;

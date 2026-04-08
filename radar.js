@@ -155,12 +155,12 @@ function drawRadial(data) {
             .attr("stroke", "#0095ff");
 
         // Add title above graph
-        chartRadar.append("text")
-            .attr("x", 0)
-            .attr("y", -radiusR-(radiusR/5)) // -radius goes up bc y=0 is center, radius/5 aligns text
-            .attr("text-anchor", "middle")
-            .style("font-size", titleSize)
-            .text("High School Graduation Rate by Race");
+        // chartRadar.append("text")
+        //     .attr("x", 0)
+        //     .attr("y", -radiusR-(radiusR/5)) // -radius goes up bc y=0 is center, radius/5 aligns text
+        //     .attr("text-anchor", "middle")
+        //     .style("font-size", titleSize)
+        //     .text("High School Graduation Rate by Race");
 }
 
 // Determines how labels align with spokes

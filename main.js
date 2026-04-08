@@ -10,8 +10,6 @@ let showSvg = false; // tracks whether #para6 has been reached
 const title = document.querySelector(".svg-title")
 const infoblock = document.querySelector("#info-block")
 const scatterInfoBlock = document.querySelector("#scatter-info-block")
-document.querySelector(".svg-title").textContent = " "
-
 
 document.addEventListener('DOMContentLoaded', () => {
     headerHeight = document.querySelector('#front-page')?.offsetHeight ?? 0;
@@ -72,7 +70,7 @@ export function updateActiveCity(city) {
         clearHighlightScatter();
         resetCity();
     } else {
-        title.textContent = "Selected City: " + city.city
+        title.textContent = city.city
         console.log("Active city updated to: " + city.city);
         highlightCityMap(city);
         highlightCityScatter(city);
