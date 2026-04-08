@@ -77,7 +77,7 @@ a {
 
 /* Fixed panel: anchored to the right 58% of the viewport, fully contained */
 .svg-wrapper,
-.bar-wrapper {
+.pie-wrapper {
   gap: 10px;
   display: flex;
   flex-direction: column;
@@ -97,11 +97,6 @@ a {
 }
 
 .svg-wrapper {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.bar-wrapper {
   opacity: 0;
   visibility: hidden;
 }
@@ -132,7 +127,7 @@ a {
 /* Each chart wrapper fills its flex slot */
 .scatterplot-wrapper,
 .radar-wrapper,
-.bar-wrapper {
+.pie-wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -204,8 +199,12 @@ a {
   box-sizing: border-box;
 }
 
-.bar-wrapper{
-  background-color: blue;
+.pie-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
 }
 
 #legend {
@@ -269,7 +268,7 @@ a {
 
 @media screen and (max-width: 1200px) {
   .svg-wrapper,
-  .bar-wrapper {
+  .pie-wrapper {
     left: 38%;
   }
 

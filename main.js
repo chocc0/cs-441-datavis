@@ -1,6 +1,7 @@
 import {initialiseMap, highlightCityMap, clearHighlightMap, highlightCitiesMap, cities} from './map.js'
 import {initialiseRadar, updateCity, resetCity} from './radar.js'
 import {initializeScatter, highlightCityScatter, clearHighlightScatter} from './scatter.js'
+import { initializePie } from './piechart.js';
 
 let activeCity = null;
 let activeHighlightGroup = null; // tracks which highlight-data group is active
@@ -115,12 +116,12 @@ async function initialize() {
     await initialiseMap();
     await initialiseRadar();
     await initializeScatter(atl);
-
+    initializePie();
     updateActiveCity(atl);
 }
 
 function setVisibility() {
-    const barWrapper = document.querySelector('.bar-wrapper');
+    const pieWrapper = document.querySelector('.pie-wrapper');
     const svgWrapper = document.querySelector('.svg-wrapper');
 
     const scrolled = window.scrollY;
@@ -131,20 +132,20 @@ function setVisibility() {
 
     if (inHeader || inFooter) {
         // Hide everything in header and footer zones
-        barWrapper.style.opacity = '0';
-        barWrapper.style.visibility = 'hidden';
+        pieWrapper.style.opacity = '0';
+        pieWrapper.style.visibility = 'hidden';
         svgWrapper.style.opacity = '0';
         svgWrapper.style.visibility = 'hidden';
     } else if (!showSvg) {
         // Before #para6 — show bar-wrapper, hide svg-wrapper
-        barWrapper.style.visibility = 'visible';
-        barWrapper.style.opacity = '1';
+        pieWrapper.style.visibility = 'visible';
+        pieWrapper.style.opacity = '1';
         svgWrapper.style.opacity = '0';
         svgWrapper.style.visibility = 'hidden';
     } else if (showSvg){
         // #para6 reached — show svg-wrapper, hide bar-wrapper
-        barWrapper.style.opacity = '0';
-        setTimeout(() => { barWrapper.style.visibility = 'hidden'; }, 100);
+        pieWrapper.style.opacity = '0';
+        setTimeout(() => { pieWrapper.style.visibility = 'hidden'; }, 100);
         svgWrapper.style.visibility = 'visible';
         svgWrapper.style.opacity = '1';
     }
@@ -153,7 +154,7 @@ function setVisibility() {
 function updateGraphic(classList) {
     if (classList.contains('map')) {
         showSvg = true;
-    } else if (classList.contains('bar')) {
+    } else if (classList.contains('pie')) {
         showSvg = false;
     }
     setVisibility();
