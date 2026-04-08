@@ -3,8 +3,8 @@ const height = 400;
 
 let svg = d3.select("#pie-svg");
 
-const data = [{label: " over norm", value: 45, color: "#a92424", p: Math.round(45 / 171 * 100)}, 
-    {label: " under norm", value: (171-45), color: "#7f7fde", p: Math.round((171-45) / 171 * 100)}];
+const data = [{label: " over norm", value: 45, color: "#ffaa68", p: Math.round(45 / 171 * 100)}, 
+    {label: " under norm", value: (171-45), color: "#4c9db2", p: Math.round((171-45) / 171 * 100)}];
 
 function initPie() {
     svg.attr("width",width);
@@ -36,7 +36,7 @@ function initPie() {
     arcs.append("path")
         .attr("d", colorArc)
         .attr("fill", d => d.data.color)
-        .attr("stroke", "gray")
+        .attr("stroke", "dark gray")
 
     arcs.append("text")
         .attr("transform", d => `translate(${labelArc.centroid(d)})`)
