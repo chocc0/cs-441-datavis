@@ -210,7 +210,7 @@ function updateScatterPlot(data, title = "")
     scattersvg.on("mousedown", function() {
     activeCity = null;
     updateActiveCity(null);
-    clearHighlightScatter();
+    //clearHighlightScatter();
     });
 
     // Axes
@@ -253,12 +253,16 @@ async function loadData()
     });
 }
 
-export async function initializeScatter()
+export async function initializeScatter(initialCity = null)
 {
     await loadData();
     initalizeSVG();
     updateScatterPlot(scatterData, "Air Pollution vs Cardiovascular Disease Deaths");
-
+    if (initialCity) {
+        setTimeout(() => {
+            highlightCityScatter(initialCity);
+        }, 1050); // match the transition duration
+    }    
     // // Attach a debounced resize handler so the chart redraws when layout changes
     // if (!window._scatterResizeAttached) {
     //     window._scatterResizeAttached = true;
@@ -271,6 +275,6 @@ export async function initializeScatter()
     //         }, 150);
     //     });
     // }
+    
 }
 
-initializeScatter();

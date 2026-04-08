@@ -95,6 +95,7 @@ const RAW = [
   ["Fairfield, CA", "CA", 5.7, 7.5, 35.7, 38.2494, -122.04, 193.4],
   ["Fayetteville, AR", "AR", 9.1, 1.1, 39.1, 36.0626, -94.1574, 429.3],
   ["Fayetteville, NC", "NC", 4.7, 2.3, 39.0, 35.0527, -78.8784, 245.6],
+  ["Flint, MI", "MI", 6.8, 1.1, 37.8, 43.0125, -83.6875, 348.6],
   ["Fontana, CA", "CA", 4.5, 13.2, 49.6, 34.0922, -117.435, 230.6],
   ["Fort Collins, CO", "CO", 6.5, 1.3, 44.5, 40.5853, -105.0844, 166.7],
   ["Fort Lauderdale, FL", "FL", 4.9, 6.9, 33.6, 26.1224, -80.1373, 269.7],
@@ -274,6 +275,8 @@ const cities = RAW.map(r => ({
   city: r[0], state: r[1], co2: r[2], poc_gap: r[3], ozone: r[4], lat: r[5], lon: r[6], cardio: r[7]
 }));
 
+export { cities };
+
 const co2Extent = d3.extent(cities, d => d.co2);   // [min, max] for radius
 const pocExtent = d3.extent(cities, d => d.poc_gap); 
 
@@ -362,7 +365,7 @@ export function clearHighlightMap() {
 }
 
 function createMap() {
-  d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(us => {
+  return d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(us => {
   // Read svg size from viewBox (fallback to bounding box)
   const vb = (svg.attr('viewBox') || '0 0 1000 500').split(/\s+/).map(Number);
   const width = vb[2] || svg.node().getBoundingClientRect().width || 1000;
@@ -412,7 +415,10 @@ function createMap() {
     .attr('opacity', 0.5)
     .on('mousemove', showInfo)
     .on('mouseleave', hideInfo)
-    .on('mousedown', updateRadar)
+    .on('mousedown', updateRadar);
+
+  const atl = mapped.find(d => d.city === "Atlanta, GA");
+  highlightCityMap(atl);
   });
 
 }

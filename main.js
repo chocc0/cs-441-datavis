@@ -1,4 +1,4 @@
-import {initialiseMap, highlightCityMap, clearHighlightMap} from './map.js'
+import {initialiseMap, highlightCityMap, clearHighlightMap, cities} from './map.js'
 import {initialiseRadar, updateCity, resetCity} from './radar.js'
 import {initializeScatter, highlightCityScatter, clearHighlightScatter} from './scatter.js'
 
@@ -16,10 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
     footerHeight = document.querySelector('footer')?.offsetHeight ?? 0;
 });
 
-function initialize() {
-    initialiseMap();
-    initialiseRadar();
-    initializeScatter();
+async function initialize() {
+    const atl = cities.find(d => d.city === "Atlanta, GA");
+
+    await initialiseMap();
+    await initialiseRadar();
+    await initializeScatter(atl);
+
+    updateActiveCity(atl);
 }
 
 function setVisibility() {

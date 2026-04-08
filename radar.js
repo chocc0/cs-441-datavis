@@ -46,12 +46,14 @@ function getCityData(cityName) {
 
 export function updateCity(cityName) {
     activeCity = cityName;
+    if (!chartRadar || !radarData) return; 
     chartRadar.selectAll("*").remove();
     drawRadial(getCityData(cityName));
 }
 
 export function resetCity() {
     activeCity = null;
+    if (!chartRadar || !radarData) return; 
     chartRadar.selectAll("*").remove();
     drawRadial(getCityData("Atlanta, GA"));
 }
@@ -186,7 +188,5 @@ function labelPadding(spoke) {
 export async function initialiseRadar() {
     await loadData();
     initialiseSVG();
-    drawAtlantaRadial(atlantaChartData);
-
     updateCity(activeCity);
 }
