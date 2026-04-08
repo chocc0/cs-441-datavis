@@ -46,8 +46,25 @@ main {
   gap: 30px;
 }
 
-.highlight-data{
-  font-weight: 650;
+/* Clickable highlight-data spans */
+.highlight-data {
+  background: rgba(79, 104, 137, 0.12);
+  border-bottom: 2px solid rgba(79, 104, 137, 0.5);
+  border-radius: 2px;
+  padding: 1px 2px;
+  transition: background-color 0.2s ease;
+  transition: border-color 0.2s ease;
+}
+
+.highlight-data:hover {
+  background: rgba(79, 104, 137, 0.22);
+  border-bottom-color: rgb(79, 104, 137);
+}
+ 
+.highlight-data-active {
+  background: rgba(79, 104, 137, 0.30);
+  border-bottom: 2px solid rgb(79, 104, 137);
+  font-weight: 600;
 }
 
 sup{
