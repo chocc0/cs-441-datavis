@@ -57,7 +57,7 @@ function initPie() {
 
     title.append("tspan") // tspan from AI
         .attr("x", width/2)
-        .text("Percent of Homes in Flint, MI in 2021")
+        .text("Percent of Homes in Flint, MI in 2015")
     title.append("tspan")
         .attr("x", width/2)
         .attr("dy", "1.2em")
