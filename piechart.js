@@ -1,5 +1,5 @@
-const width = 650;
-const height = 400;
+const width = 550;
+const height = 550;
 
 let svg = d3.select("#pie-svg");
 
@@ -15,10 +15,10 @@ function initPie() {
     const margin = { top: 30, right: 30, bottom: 50, left: 50 };
     let chartWidth = width - margin.left - margin.right;
     let chartHeight = height - margin.top - margin.bottom;
-    const radius = Math.min(chartWidth, chartHeight) / 2;
+    const radius = Math.min(chartWidth, chartHeight) / 2 - 10;
 
     let pieChart = svg.append("g")
-        .attr("transform", "translate(" + (width/2) + "," + (height * 0.8) + ")");
+        .attr("transform", "translate(" + (width/2+75) + "," + (height * 0.8) + ")"); 
 
     // Define an x scale which will assign a spot on the x axis to each of the unique values of colour in the dataset
     let pie = d3.pie().value(d => d.value)
@@ -43,29 +43,25 @@ function initPie() {
         .attr("transform", d => `translate(${labelArc.centroid(d)})`)
         .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
-        .attr("font-size", "12px")
+        .attr("font-size", "16px")
         .style("fill", "dark gray")
         .text(d => d.data.p + "% " + d.data.label);
 
     const title = svg.append("text")
         .attr("x", width / 2)
-        .attr("y", 70)
+        .attr("y", 150) // 20
         .attr("text-anchor", "middle")
-        .style("font-size", "18px")
+        .style("font-size", "22px") // 25
         .style("font-weight", "bold")
         .style("fill", "black");
 
     title.append("tspan") // tspan from AI
-        .attr("x", width/2)
-        .text("Percent of Homes in Flint, MI (2015)")
+        .attr("x", width/2 + 75)
+        .text("Lead Water Levels (ppb) in Flint, MI Homes (2015)")
     title.append("tspan")
-        .attr("x", width/2)
+        .attr("x", width/2+75)
         .attr("dy", "1.2em")
-        .text("with Lead Levels in Water (ppb)");
-    title.append("tspan")
-        .attr("x", width/2)
-        .attr("dy", "1.2em")
-        .text("Relative to Norm(15 ppb)");
+        .text("Relative to Norm (15 ppb)");
 
 }
 
